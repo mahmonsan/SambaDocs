@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Figure manipulation FigureOperation operation | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Figure manipulation FigureOperation operation | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="figure-manipulation-figureoperation-operation">Figure manipulation <em>FigureOperation</em> operation</h1>
+
+<p>The <strong>FigureProperty</strong> <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-operation">lmpo-operation</a> contains a varios actions. It's value consists of a collection of signal manipulation commands <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-cmd">lmpo-cmd</a>.<br>
+A &quot;<strong>lmpo-cmd</strong>&quot; consists of  <strong><em>cmd-name</em></strong>  &quot;<em>italic</em>, <strong>polt</strong> &quot; and list of <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#cmd-config"><strong>cmd-config</strong></a> seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.<br>
+A <strong>cmd-config</strong> consists of a keyword &quot;<strong>polt</strong>&quot; and a value, they are seperated by a colon &quot;:&quot; or by a colon+space &quot;: &quot;. Some <strong>cmd_configs</strong> are valueless.
+The following table describes all possible <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-cmd">lmpo-cmds</a> of the <strong>Figure</strong> <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-operation">lmpo-operation</a>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>lmpo-cmd</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <em><strong>figure</strong></em>; figure <a href="#Figure-properties">properties</a> }</td>
+<td>set the figure's properties.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="figure-properties">Figure properties</h2>
+<p>using the <strong>plot</strong> cmd one could set some plot properties listed in the following table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>figure property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <strong>title</strong>:x }</td>
+<td>changes the figure title.</td>
+</tr>
+<tr>
+<td>{ <strong>title-color</strong>:x }</td>
+<td>changes the title's color of the figure. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>title-fontsize</strong>:x }</td>
+<td>set the title font size.</td>
+</tr>
+<tr>
+<td>{ <strong>title-font</strong>:x }</td>
+<td>set the title font type. possible font types (not implemented)</td>
+</tr>
+<tr>
+<td>{ <strong>title-fontweight</strong>:x }</td>
+<td>set the title font weight. possible font weights x{bold,normal}.</td>
+</tr>
+<tr>
+<td>{ <strong>title-background</strong>:x }</td>
+<td>set the title background color. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>window-title</strong>:x }</td>
+<td>changes the title of the figure window.</td>
+</tr>
+<tr>
+<td>{ <strong>background</strong>:x }</td>
+<td>set the background color of the plot. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>width</strong>:x }</td>
+<td>set the width of the figure window in pixel.</td>
+</tr>
+<tr>
+<td>{ <strong>height</strong>:x }</td>
+<td>set the height of the figure window in pixel.</td>
+</tr>
+<tr>
+<td>{ <strong>dark-theme</strong>:x }</td>
+<td>toggle the dark theme on/off x{on,off}.</td>
+</tr>
+<tr>
+<td>{ <strong>rescale</strong>:x }</td>
+<td>rescale all figure plots.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-xml">&lt;FigureActions&gt;
+        &lt;Operation Name=&quot;FigureProperty&quot;&gt;
+          &lt;Value&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;figure; title:Test file; title-color:#fff0f0f0; title-fontsize:18; title-fontweight:bold; title-background:#ef202020; width:900; height:900 &lt;/anyType&gt;
+          &lt;/Value&gt;
+        &lt;/Operation&gt;
+         &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+          &lt;Value&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;plot; grid:on;title:Polynom output; title-color:#fff0f0f0; title-fontsize:14; border-color:#ff505050; background:#ef202020; legend-text-color:#fff0f0f0&lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;tracker-string-format;format: {0}\n{1}: {2:0.00####}\n{3}: {4:0.00###} &lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves-color; curve#1:#ff0000ff; curve#2:#ff00ff00; curve#3:#ffff0000; curve#4:#ff800000; curve#5:#ffff00ff; curve#6:#ff0080ff; curve#7:#ffffff00; curve#8:#ff8080ff; curve#9:#30408080; curve#10:#ff808000&lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curve; curve#:1;line-style:dash&lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add-curve-from-csv;file:\\rafs05\transfer\mshat\ToDelete\Samba19x Data\LoggingTool Data\\Book1.csv&lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xaxis; fontsize: 12; text-color:#fff0f0f0; label-color: #fff0f0f0; label-fontsize: 12 &lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xaxis; minor-grid-color:#ff606060; major-grid-color: #ff707070; tick-color: #ff909090 &lt;/anyType&gt;  
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; fontsize: 12; text-color:#fff0f0f0; label-color: #fff0f0f0; label-fontsize: 12 &lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; minor-grid-color:#ff606060; major-grid-color: #ff707070; tick-color: #ff909090 &lt;/anyType&gt;  
+          &lt;/Value&gt;
+        &lt;/Operation&gt;
+            &lt;Operation Name=&quot;Annotation&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:text;xpos:5;text-content:Centered Text&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:text;xpos:7;text-content:topleft Text&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:point;xpos1:3;xpos2:7&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:hline;ypos1:-1000;ypos2:1000&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:vline;xpos1:2;xpos2:6&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#:1; text-color:#ff0000ff; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#:2; text-color:#ff00ff00; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#:3; text-color:#ffff0000; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#:4; text-color:#ff800000; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;lineann; ann#:1; color:#ff0000ff; text-color:#ff0000ff; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;lineann; ann#:2; color:#ff00ff00; text-color:#ff00ff00; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;lineann; ann#:3; color:#ffff0000; text-color:#ffff0000; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;lineann; ann#:4; color:#ff800000; text-color:#ff800000; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pointann; ann#:1; color:#ff0000ff; text-color:#ff0000ff; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pointann; ann#:2; color:#ff00ff00; text-color:#ff00ff00; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pointann; ann#:3; color:#ffff0000; text-color:#ffff0000; text-fontsize:12 &lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pointann; ann#:4; color:#ff800000; text-color:#ff800000; text-fontsize:12 &lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+      &lt;/FigureActions&gt;
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

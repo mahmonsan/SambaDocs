@@ -1,0 +1,2308 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/projects/Documentation/samba19xdocfx/samba19xdocfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "log_codes": [
+        "invalid-note-section",
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/idefigureviewer/IDEFigureViewerUserManual.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/idefigureviewer/IDEFigureViewerUserManual.html",
+          "hash": "rGpb7tmYH8OyVgVLNJIusg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "invalid-note-section",
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/idefigureviewer/idefigureviewer_um.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/idefigureviewer/idefigureviewer_um.html",
+          "hash": "FcJC8vDQ+4O+jui3LVg7tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/loggingtool/loggingtool_um.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/loggingtool/loggingtool_um.html",
+          "hash": "q9IdLdKxDt6ryN9mcRfAzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/loggingtool/signalplotfiguremanipulation.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/loggingtool/signalplotfiguremanipulation.html",
+          "hash": "mDdTAtwq9SKgqj4bVXIhKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/idelogo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/idelogo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/idetitle.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/idetitle.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image10.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image11.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image12.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image13.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image14.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image2.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image3.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image4.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image5.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image6.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image7.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image8.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/samba19xui/media/image9.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/samba19xui/media/image9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "invalid-note-section",
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/samba19xui/samba19xui_um.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/samba19xui/samba19xui_um.html",
+          "hash": "KClyegVuwLOyazXzJe+rUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/samba19xui/samba19xui_um_.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/samba19xui/samba19xui_um_.html",
+          "hash": "7qbia1sEB61FCVBWRhE42A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/automeasurement_um.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/sidimat19xa/automeasurement_um.html",
+          "hash": "hVVaFt/7KPk2v/N2nMG2GA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/Images.odp",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/Images.odp"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image1.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image10.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image11.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image12.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image13.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image14.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image15.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image15.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image16.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image16.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image17.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image17.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image18.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image18.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image19.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image19.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image2.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image20.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image20.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image21.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image21.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image22.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image22.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image23.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image23.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image24.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image24.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image25.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image25.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image26.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image26.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image27.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image27.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image28.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image28.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image29.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image29.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image3.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image30.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image30.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image31.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image31.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image32.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image32.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image33.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image33.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image34.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image34.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image35.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image35.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image36.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image36.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image37.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image37.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image38.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image38.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image39.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image39.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image4.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image5.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image6.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image7.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image8.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/media/image9.png",
+      "output": {
+        "resource": {
+          "relative_path": "GuiUserManuals/sidimat19xa/media/image9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/sidimat19xa/sidimat19xa_um.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/sidimat19xa/sidimat19xa_um.html",
+          "hash": "Wyb1QcA0oxPelqMQsrbm6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "GuiUserManuals/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/toc.html",
+          "hash": "pnLF74E2WLfnS0xCYjEfpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "GuiUserManuals/view3d19x/view3d19x_um.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuiUserManuals/view3d19x/view3d19x_um.html",
+          "hash": "Ulqa0ukqTIxHW8WackGLHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/AnnotationOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/AnnotationOperation.html",
+          "hash": "g48K8NB91zH7dMqL4+EOpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/FigureOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/FigureOperation.html",
+          "hash": "VjB8bcDs4ejliqgHyf8vaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/PlotPropertyOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/PlotPropertyOperation.html",
+          "hash": "gk3cS87fWxi2vBUROPT4ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/SignalOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/SignalOperation.html",
+          "hash": "lcNgX0/RUT35InrHR97f9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/gui/Sidimat19xA_Operation.1.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/gui/Sidimat19xA_Operation.1.html",
+          "hash": "R5wM9jNeCjQUtyOPxMvcwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/gui/description.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/gui/description.html",
+          "hash": "Pnk/cmMXcXpkSmQrDd23Bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/gui/filestructure.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/gui/filestructure.html",
+          "hash": "Koj2d6b7J1hU5syzVqvO/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/gui/gettingstarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/gui/gettingstarted.html",
+          "hash": "hHKzNn6vPKr/0Z4SfuVWaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/gui/images/addd.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/gui/images/addd.html",
+          "hash": "ypOFY0fK8ZI0R9FVP2f3nQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/gui/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/gui/intro.html",
+          "hash": "nLPp24flWaVxgVEwc0midg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/gui/knownbugs.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/gui/knownbugs.html",
+          "hash": "Ua0B8XVLrobWqb0aH5isEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/gui/troubleshooting.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/gui/troubleshooting.html",
+          "hash": "nHIeuOWw0rL7+SX5Uruekw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/intro.html",
+          "hash": "OESs+lDTjSk9EcPKN5mBHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LoggingTool/logmanintro.md",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/logmanintro.html",
+          "hash": "cpUY6XlhR601UsAfL2uEtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "LoggingTool/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "LoggingTool/toc.html",
+          "hash": "lIuktZIJjd6qrWGSXbHDPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "KOuXfJY96N7PO/C4X7cafw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "eWl/m2iB2mgjZPbLc4xDqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI1/rci1_doc.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI1/rci1_doc.html",
+          "hash": "uOkWntu4NSSpWLnhg/0HTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/Test.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/Test.html",
+          "hash": "HeYHKx9poPzcI6bjj0Lv7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/commandstbl.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/commandstbl.html",
+          "hash": "iJqZQb24UYN5Vi2qorE1pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/filter-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/filter-get.html",
+          "hash": "mwNDfldt3hCJSgVSguxmeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/filter-set.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/filter-set.html",
+          "hash": "y6IVI2thnGIwvvXTkrPVHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/iosignal-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/iosignal-get.html",
+          "hash": "8ihvrrbqSbqdqgdhsr7apA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/iosignal-set.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/iosignal-set.html",
+          "hash": "RqEB5yf0A/zqDo2pR5wftQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/luint16param-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/luint16param-get.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/luint16param-set.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/luint16param-set.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/mixparam-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/mixparam-get.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/mixparam-set.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/mixparam-set.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/multipliers-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/multipliers-get.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/multipliers-set.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/multipliers-set.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/sfloatparam-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/sfloatparam-get.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/sfloatparam-set.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/sfloatparam-set.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/sintparam-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/sintparam-get.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/sintparam-set.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/sintparam-set.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/status-get.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/status-get.html",
+          "hash": "AiS6fPyGwuLuBd51pYkCJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/status-set.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/status-set.html",
+          "hash": "R0Gz8RrCkP4S/fe4mj7hiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/commands/system-actions.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/commands/system-actions.html",
+          "hash": "frYWoeKLGzGXzd3gKuvtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/enumerations/componenttypes.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/enumerations/componenttypes.html",
+          "hash": "EWe9jMRY8V+Nu3pfiGufGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/enumerations/enumerations.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/enumerations/enumerations.html",
+          "hash": "QFk4kpzjBzTd0RJwQJwGnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/enumerations/pointertypes.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/enumerations/pointertypes.html",
+          "hash": "IDtIK6COpA3LSibvmfYmAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/enumerations/systemactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/enumerations/systemactions.html",
+          "hash": "6y/mo07FRJirwtBB7z9Utg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/enumerations/systemconfigs.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/enumerations/systemconfigs.html",
+          "hash": "Pju1KMP4Z5ya2LMAqhMzrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/intro.html",
+          "hash": "fjQEb0642jSbKa04I+Cu8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "firmware/RCI2/rci2-protocol.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/RCI2/rci2-protocol.html",
+          "hash": "YuxQQySIuKaT05AbGzQ/TA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "firmware/fw_doc.md",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/fw_doc.html",
+          "hash": "ooKnDuCTd3PB6AMEJ5o4Sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "firmware/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "firmware/toc.html",
+          "hash": "Lyt04rnvjOJ4TfKug3i49A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/IDELogo.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/IDELogo.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/IDELogo.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/IDELogo.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "FNByQYeryTQjJ9M14gq7bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/CheckSpecValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/CheckSpecValue.html",
+          "hash": "KvfK6N3NqKBQZ6/sDrYpDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/LoggValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/LoggValue.html",
+          "hash": "ztr2P80Wtu5tCFzXknW16g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/OperationValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/OperationValue.html",
+          "hash": "4BszLS1zxeGq/Uuqp2UuIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/ReportValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/ReportValue.html",
+          "hash": "JPrjs30Yf5HM7xujTXGU7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/SaveValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/SaveValue.html",
+          "hash": "awdrLsDwkg9A/EuOCu8Lig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/Sidimat19xA_Operation.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/Sidimat19xA_Operation.html",
+          "hash": "abVXuRtBpHbDB2uGyPNeww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/idelogo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/idelogo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/idetitle.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/idetitle.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image10.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image11.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image12.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image13.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image14.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image2.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image3.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image4.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image5.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image6.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image7.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image8.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "samba19xui/gui/media/image9.png",
+      "output": {
+        "resource": {
+          "relative_path": "samba19xui/gui/media/image9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "invalid-note-section",
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/gui/samba19xui_um.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/gui/samba19xui_um.html",
+          "hash": "TrfcWgedNsvdOdpFAVdPwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/gui/samba19xui_um_.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/gui/samba19xui_um_.html",
+          "hash": "oYyItucHybS2QZjLJIqrOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "samba19xui/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/intro.html",
+          "hash": "5nthFqJTpJV2/+0lt5jkEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "samba19xui/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "samba19xui/toc.html",
+          "hash": "ZVSGY3KNoaeTf1WiVLMqhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/CheckSpecValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/CheckSpecValue.html",
+          "hash": "R3rox92wSv8bnjxNzVGWkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/LoggValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/LoggValue.html",
+          "hash": "/2Tajbpjg+w0mGsMcbPMBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/OperationValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/OperationValue.html",
+          "hash": "/u4Zn0y0xzx5YIrZB5OFPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/ReportValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/ReportValue.html",
+          "hash": "pWqYCKATIDOTyYP4CzHXkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/SaveValue.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/SaveValue.html",
+          "hash": "bE0mrUXmB6oftHC3dFqgBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/Sidimat19xA_Operation.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/Sidimat19xA_Operation.html",
+          "hash": "D9Wyzjjb8wWmN3sqXZMIhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/CheckSpecSamOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/CheckSpecSamOperation.html",
+          "hash": "oVB9qPaOwj3B4J4bAHi+ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/LoggSamOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/LoggSamOperation.html",
+          "hash": "UOXvqT0sU1sjNutgScHgMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/MeasurementSamOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/MeasurementSamOperation.html",
+          "hash": "R5wM9jNeCjQUtyOPxMvcwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/OperationSamOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/OperationSamOperation.html",
+          "hash": "E9QVazfgn0b6Ysx4pxBj3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/PneumSystemSamCmd.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/PneumSystemSamCmd.html",
+          "hash": "R5wM9jNeCjQUtyOPxMvcwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/ReportSamOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/ReportSamOperation.html",
+          "hash": "FTNbHgiq+eomhh4OKpotZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/SaveSamOperation.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/SaveSamOperation.html",
+          "hash": "Me5Tb/eqSl4NcLMTNUv9WQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/definitions.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/definitions.html",
+          "hash": "d5ZWMkvC0uxtv36Yk1fn6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/am-cmds/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/am-cmds/intro.html",
+          "hash": "JPYqtmg+CvzwQPXSyvWicA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/gui/Sidimat19xA_Operation.1.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/gui/Sidimat19xA_Operation.1.html",
+          "hash": "R5wM9jNeCjQUtyOPxMvcwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/gui/description.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/gui/description.html",
+          "hash": "Rn15KSMMe/dBIWTrMSr5YA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/gui/filestructure.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/gui/filestructure.html",
+          "hash": "yW6o3D20D3taYIqLjg4jiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/gui/gettingstarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/gui/gettingstarted.html",
+          "hash": "mRPhCTgW6asZSU7PufoauQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/addmeasbtn.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/addmeasbtn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/antialias.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/antialias.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/cachebtn.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/cachebtn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/commserver.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/commserver.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/connected.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/connected.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/connection.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/connection.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/controlbuttonbar.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/controlbuttonbar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/cutbtn.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/cutbtn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/fastload.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/fastload.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/firststart.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/firststart.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/guioverview.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/guioverview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/meassett.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/meassett.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/openbtn.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/openbtn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/openbtn2.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/openbtn2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/savebtn.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/savebtn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/savebtn2.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/savebtn2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/saveloadtab.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/saveloadtab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/specplotbtn.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/specplotbtn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/start.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/start.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/startambtn.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/startambtn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/timeplotbtn.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/timeplotbtn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/tracech0.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/tracech0.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/tracech1.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/tracech1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/tracelen.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/tracelen.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/tracesetttab.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/tracesetttab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/tracesetttab2.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/tracesetttab2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "sidimat19xa/gui/images/undersample.png",
+      "output": {
+        "resource": {
+          "relative_path": "sidimat19xa/gui/images/undersample.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/gui/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/gui/intro.html",
+          "hash": "iGkuRJKTrlYYEzPCdkiuxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/gui/knownbugs.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/gui/knownbugs.html",
+          "hash": "RFwpFc5S5IliqF2QqqZQ/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/gui/troubleshooting.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/gui/troubleshooting.html",
+          "hash": "lXiepL7ZMFXk/8DaD1gkhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sidimat19xa/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/intro.html",
+          "hash": "V/ecTUw4lhtPm6RXW6Wj7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "sidimat19xa/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sidimat19xa/toc.html",
+          "hash": "qZ0uM/a4BqsDcVlH3j0H9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "5gZIn2MnXL3GF6gpn0V9VQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

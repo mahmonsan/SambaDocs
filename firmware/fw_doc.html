@@ -1,0 +1,1717 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Common Info | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Common Info | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><strong>Active Vibration Isolation Systems</strong></p>
+<p>Firmware Functionality and Parameter Description</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AUTHOR(S):</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>REVISION:</strong></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>DATE:</strong></td>
+<td>August 2, 2017</td>
+</tr>
+</tbody>
+</table>
+<h1 id="common-info">Common Info</h1>
+<h2 id="document-revision-information">Document Revision Information:</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revision</td>
+<td>Date</td>
+<td>Author</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>Revision 1.0</td>
+<td>01.12.2016</td>
+<td>MSHAT</td>
+<td>First revision</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="definitions">Definitions</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Controller</th>
+<th>This is a digital control unit equipped with a DSP “Digital Signal Processor”. It controls the AVIS.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Firmware</td>
+<td>This is the software running on the controller in the normal mode. The firmware contains all the control algorithms and performance and safety procedure to provide the AVIS.</td>
+</tr>
+<tr class="even">
+<td>Normal mode</td>
+<td>This is a controller operation mode when the firmware of the active vibration isolation system is running</td>
+</tr>
+<tr class="odd">
+<td>Monitor mode</td>
+<td>This is a controller operation mode when the monitor program is running. This mode is intended to update the firmware.</td>
+</tr>
+<tr class="even">
+<td><p>Monitor program</p>
+<p>“Firmware loader”</p></td>
+<td>This is the software running on the controller in monitor operation mode to update the firmware.</td>
+</tr>
+<tr class="odd">
+<td>Proximity</td>
+<td>Displacement sensor</td>
+</tr>
+<tr class="even">
+<td>Geophone</td>
+<td>Velocity sensor</td>
+</tr>
+<tr class="odd">
+<td>Velocity loop</td>
+<td>This is the control loop to cancel the vibration. The geophones are used as a Feedback signal.</td>
+</tr>
+<tr class="even">
+<td>Pneumatic Loop</td>
+<td>This is the control loop to get the system payload to its operation position in case of pneumatic systems. The proximities are here used as a feedback signal.</td>
+</tr>
+<tr class="odd">
+<td>Position loop</td>
+<td>This is the control loop to keep the position of the payload quite. The proximities are used as a feedback signals.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference-documents">Reference Documents</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Document Name</strong></th>
+<th><strong>Discription</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Remote Command Interface description</em></td>
+<td>This contains an overview about the RCI-commands.</td>
+</tr>
+<tr>
+<td><em>Digital filter in TC standard firmware</em></td>
+<td>This document describes the digital filters implemented in the firmware.</td>
+</tr>
+<tr>
+<td><em>SAMBA19xUI User Interface Manual</em></td>
+<td>User manual for the SAMBA19xUI User Interface.</td>
+</tr>
+<tr>
+<td><em>C67monitor tool user manual</em></td>
+<td>This document contains a description of the monitor tool to upload the firmware on the opticon controller.</td>
+</tr>
+<tr>
+<td><em>Opticon_Digital_IO_Specification</em></td>
+<td>This document describes the functionality and specification of the opticon digital I/O Interface.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="abbreviations">Abbreviations</h2>
+<table>
+<thead>
+<tr>
+<th>Firmware</th>
+<th>The running program on the embedded controller. This can be in binary or hexadecimal format. This program controls the IDE Systems.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AVIS</td>
+<td>Active Vibration Isolation System</td>
+</tr>
+<tr>
+<td>IIR2-Filter</td>
+<td>Infinite Impulse Response filter second order</td>
+</tr>
+<tr>
+<td>Xtrans “Xt”</td>
+<td>The translation X-Axis of the 6 degrees of freedom</td>
+</tr>
+<tr>
+<td>Ytrans “Yt”</td>
+<td>The translation Y-Axis of the 6 degrees of freedom</td>
+</tr>
+<tr>
+<td>Ztrans “Zt”</td>
+<td>The translation Z-Axis of the 6 degrees of freedom</td>
+</tr>
+<tr>
+<td>Xrot “Xr”</td>
+<td>The rotation X-Axis of the 6 degrees of freedom</td>
+</tr>
+<tr>
+<td>Yrot “Yr”</td>
+<td>The rotation Y-Axis of the 6 degrees of freedom</td>
+</tr>
+<tr>
+<td>Zrot “Zr”</td>
+<td>The rotation Z-Axis of the 6 degrees of freedom</td>
+</tr>
+<tr>
+<td>X1FB</td>
+<td>The geophone input signal of Isolator #1 in the X-direction</td>
+</tr>
+<tr>
+<td>Y1FB</td>
+<td>The geophone input signal of Isolator #1 in the Y-direction</td>
+</tr>
+<tr>
+<td>Z1FB</td>
+<td>The geophone input signal of Isolator #1 in the Z-direction</td>
+</tr>
+<tr>
+<td>X2FB</td>
+<td>The geophone input signal of Isolator #2 in the X-direction</td>
+</tr>
+<tr>
+<td>Y2FB</td>
+<td>The geophone input signal of Isolator #2 in the Y-direction</td>
+</tr>
+<tr>
+<td>Z2FB</td>
+<td>The geophone input signal of Isolator #2 in the Z-direction</td>
+</tr>
+<tr>
+<td>X3FB</td>
+<td>The geophone input signal of Isolator #3 in the X-direction</td>
+</tr>
+<tr>
+<td>Y3FB</td>
+<td>The geophone input signal of Isolator #3 in the Y-direction</td>
+</tr>
+<tr>
+<td>Z3FB</td>
+<td>The geophone input signal of Isolator #3 in the Z-direction</td>
+</tr>
+<tr>
+<td>X4FB</td>
+<td>The geophone input signal of Isolator #4 in the X-direction</td>
+</tr>
+<tr>
+<td>Y4FB</td>
+<td>The geophone input signal of Isolator #4 in the Y-direction</td>
+</tr>
+<tr>
+<td>Z4FB</td>
+<td>The geophone input signal of Isolator #4 in the Z-direction</td>
+</tr>
+<tr>
+<td>Z1prox</td>
+<td>The vertical proximity sensor input signal of Isolator #1</td>
+</tr>
+<tr>
+<td>Z2prox</td>
+<td>The vertical proximity sensor input signal of Isolator #2</td>
+</tr>
+<tr>
+<td>Z3prox</td>
+<td>The vertical proximity sensor input signal of Isolator #3</td>
+</tr>
+<tr>
+<td>H1prox</td>
+<td>The horizontal proximity sensor input signal off Isolator #1</td>
+</tr>
+<tr>
+<td>H2prox</td>
+<td>The horizontal proximity sensor input signal off Isolator #2</td>
+</tr>
+<tr>
+<td>H3prox</td>
+<td>The horizontal proximity sensor input signal off Isolator #3</td>
+</tr>
+<tr>
+<td>X1Out</td>
+<td>The linear motor of Isolator #1 in the X-direction</td>
+</tr>
+<tr>
+<td>Y1Out</td>
+<td>The linear motor of Isolator #1 in the Y-direction</td>
+</tr>
+<tr>
+<td>Z1Out</td>
+<td>The linear motor of Isolator #1 in the Z-direction</td>
+</tr>
+<tr>
+<td>X2Out</td>
+<td>The linear motor of Isolator #2 in the X-direction</td>
+</tr>
+<tr>
+<td>Y2Out</td>
+<td>The linear motor of Isolator #2 in the Y-direction</td>
+</tr>
+<tr>
+<td>Z2Out</td>
+<td>The linear motor of Isolator #2 in the Z-direction</td>
+</tr>
+<tr>
+<td>X3Out</td>
+<td>The linear motor of Isolator #3 in the X-direction</td>
+</tr>
+<tr>
+<td>Y3Out</td>
+<td>The linear motor of Isolator #3 in the Y-direction</td>
+</tr>
+<tr>
+<td>Z3Out</td>
+<td>The linear motor of Isolator #3 in the Z-direction</td>
+</tr>
+<tr>
+<td>X4Out</td>
+<td>The linear motor of Isolator #4 in the X-direction</td>
+</tr>
+<tr>
+<td>Y4Out</td>
+<td>The linear motor of Isolator #4 in the Y-direction</td>
+</tr>
+<tr>
+<td>Z4Out</td>
+<td>The linear motor of Isolator #4 in the Z-direction</td>
+</tr>
+<tr>
+<td>IIR2-Filter</td>
+<td>Infinite Impulse Response filter second order</td>
+</tr>
+</tbody>
+</table>
+<h2 id="firmware-versions-conforming-to-this-document">Firmware Versions conforming to this document</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Firmware name</strong></th>
+<th><strong>Version</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>C67_STD_FW3.3.121.hex</em></td>
+<td>3.3.121</td>
+<td>Special firmware for opticon controller.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table of Figures</p>
+<p><a href="#_Toc468369391">Figure 3.1: The principal design of the firmware used for the AVIS 8</a></p>
+<p><a href="#_Toc468369392">Figure 4.1: Velocity loop flow chart 9</a></p>
+<p><a href="#_Toc468369393">Figure 5.1: Position loop flow chart 13</a></p>
+<p><a href="#_Toc468369394">Figure 6.1: Pneumatic loop flow chart 18</a></p>
+<p><a href="#_Toc468369395">Figure 6.2: The pneumatic startup phase flow chart 21</a></p>
+<p><a href="#_Toc468369396">Figure 6.3: Move up action flow chart. 22</a></p>
+<p><a href="#_Toc468369397">Figure 6.4: Move down action flow chart. 22</a></p>
+<p><a href="#_Toc236133396">Figure 7.1: Flow chart of FF control channel 27</a></p>
+<p><a href="#_Toc468369399">Figure 8.1: Flow chart of FF control channel 33</a></p>
+<p><a href="#_Toc468369400">Figure 9.1: Flowchart of the motor overcurrent routine 36</a></p>
+<p><a href="#_Toc468369401">Figure 9.2: Flowchart of the motor overcurrent routine 37</a></p>
+<p><a href="#_Toc468369402">Figure 10.1: Flowchart for the automatic loop switch 41</a></p>
+<p><a href="#_Toc468369403">Figure 11.1: Excitation nodes of the velocity loop 42</a></p>
+<p><a href="#_Toc468369404">Figure 11.2: Excitation nodes of the position loop 43</a></p>
+<p><a href="#_Toc468369405">Figure 11.3: Excitation nodes of the pneumatic loop 43</a></p>
+<p><a href="#_Toc468369406">Figure 12.1: Diagnostic nodes of the velocity loop 45</a></p>
+<p><a href="#_Toc468369407">Figure 12.2: Diagnostic nodes of the position loop 46</a></p>
+<p><a href="#_Toc468369408">Figure 12.3: Diagnostic nodes of the pneumatic loop 46</a></p>
+<p><a href="#_Toc468369409">Figure 13.1: Flowchart of the input signals 48</a></p>
+<p><a href="#_Toc468369410">Figure 14.1: Ramp driving flow diagram. 51</a></p>
+<p>Table of tables</p>
+<p><a href="#_Toc468369411">Table 4.1: Loop status 12</a></p>
+<p><a href="#_Toc468369412">Table 5.1: Position individual loop status bit-mask 16</a></p>
+<p><a href="#_Toc468369413">Table 6.1: Vertical status “Payload vertical position status” 19</a></p>
+<p><a href="#_Ref211240805">Table 6.2: Explanation of notions and variables. 20</a></p>
+<p><a href="#_Toc468369415">Table 6.3: Pneumatic individual loop status bit-mask 24</a></p>
+<p><a href="#_Toc468369416">Table 6.4: Parameters of the pneumatic loop 25</a></p>
+<p><a href="#_Toc236133382">Table 7.1: Parameters used to calculate the additional stage input signals 30</a></p>
+<p><a href="#_Toc236133383">Table 7.2: Various FF parameters 32</a></p>
+<p><a href="#_Toc468369419">Table 8.1: Various pneumatic SFF parameters 35</a></p>
+<p><a href="#_Toc236133384">Table 9.1: Parameters of the motor overcurrent routine 38</a></p>
+<p><a href="#_Toc468369421">Table 10.1: Parameters of automatic loop switch 40</a></p>
+<p><a href="#_Toc468369422">Table 11.1: Parameters of the noise excitation 44</a></p>
+<p><a href="#_Toc468369423">Table 15.1: Monitor and Reset Keys functionality. 52</a></p>
+<p><a href="#_Toc468369424">Table 15.2: Monitor and Reset LEDs functionality 52</a></p>
+<p><a href="#_Toc468369425">Table 16.1: Amplifier digital signals. 53</a></p>
+<p><a href="#_Toc468369426">Table 18.1: Digital input functionality description. 55</a></p>
+<p><a href="#_Toc468369427">Table 18.2: Digital output functionality description. 55</a></p>
+<p><a href="#_Toc468369428">Table 19.1: Various parameters 56</a></p>
+<p><a href="#_Toc468369429">Table 19.2: Read-Only Parameters. 57</a></p>
+<h1 id="introduction">Introduction</h1>
+<p>This document basically describes the structure and functionality of the firmware which is used for the IDE active vibration isolation systems “AVIS”. Furthermore it describes all parameters that are configurable and accessible by the remote command interface. The functionality and the effect of the parameters are in this document described.</p>
+<p>The firmware supports the remote commands interface “RCI” as an interface to a host PC. To change and configure all parameters the SAMBA19xUI user Interface version 1.9.0.7 or higher is needed.</p>
+<p>All configurable parameters are accessible through the remote command interface RCI (See <em>Remote Command Interface description).</em></p>
+<h1 id="firmware-common-description">Firmware Common Description</h1>
+<p>The firmware is the software running on the embedded controller; in our case opticon-controller. This document is intended to describe the firmware running on the opticon controller. The firmware contains the implementation of the control algorithms of the various control loops, safety, failsafe, monitoring and diagnostic routine. Furthermore it contains the implementation of the remote command interface “RCI”. The RCI is the interface to communicate to the controller; it allows the user to access all firmware parameters, for more information about the RCI see the reference document <em>Remote Command Interface description</em>.</p>
+<p>The biggest differences of this firmware version to prior versions are:</p>
+<ul>
+<li>Introducing of the temperature sensor inputs.</li>
+<li>Introducing of a performance routine and earth quake detection routine.</li>
+<li>Introducing of the position and pneumatic individual loop status.</li>
+<li>Introducing of the power supply current limit.</li>
+</ul>
+<p>The following flow diagram shows the principal layout of the firmware containing the various control loops, noise generator and diagnostic tool and so on.</p>
+<p><span id="_Toc468369391" class="anchor"></span>Figure 3.1: The principal design of the firmware used for the AVIS</p>
+<p><img src="media/image2.png" alt="img"></p>
+<h1 id="velocity-loop">Velocity Loop</h1>
+<h2 id="velocity-loop-overview">Velocity Loop Overview</h2>
+<p>The velocity loop is the control loop using the geophone input signals as feedback signals. The velocity loop builds the 6 degrees of freedom of the AVIS (called ‘logical axes’) using the geophone signals and the sensor steering matrix or “input steering matrix”. The ‘sensor steering matrix’ assigns each sensor signal to the logical axes using its multiplier. The built logical axes are filtered through seven filter stages ‘IIR2-Filter’. The output of the seventh filter will be limited by FB-Limiter. In case of activated FF-subsystem the FF-Axes-Output are added to velocity logical axes. Furthermore in case of electro pneumatic loop and the dither compensation status is active then the dither compensation axes output will be added to the axes output. The logical axis then affects the corresponding motors by another matrix called motor steering matrix or “Output steering matrix”.</p>
+<p>The following flow chart describes the process of the velocity loop algorithm.
+<span id="_Toc468369392" class="anchor"></span>Figure 4.1: Velocity loop flow chart</p>
+<p><img src="media/image3.png" alt="img"></p>
+<p>The following equations describe the calculation of the logical axes.</p>
+<p>(1)</p>
+<p>(2)</p>
+<p>Whereas:</p>
+<p>: Logical axes raw input.</p>
+<p>: Axes output, this is the axes output after the summation point in the flow chart.</p>
+<p>: Velocity sensor vector (X1FB, Y1FB, Z1FB, X2FB, Z2FB, Y3FB, Z3FB and Z4FB).</p>
+<p>: Velocity motor vector (X1Out, Y1Out, Z1Out, … , X4Out, Y4Out, Z4Out).</p>
+<h2 id="velocity-loop-parameters">Velocity Loop Parameters</h2>
+<h3 id="sensor-steering-matrix-coefficients-logical-axis-input-multipliers">Sensor Steering Matrix Coefficients (Logical Axis Input Multipliers)</h3>
+<p>Equation #3 calculates the logical axis using the geophone signals</p>
+<p>(3)</p>
+<p>For each logical axis there are 7 coefficients (multipliers), one coefficient for each sensor. Changing the multiplier affects the behavior of the axis.</p>
+<p>For SAMBA-UI users the sensor steering matrix is located on the “<em><strong>Velocity loop”</strong></em> sheet.</p>
+<p>For SAMBA19xUI users the sensor steering matrix is located on the “<em><strong>Velocity, Velocity Matrix”</strong></em> sheet.</p>
+<p>The sensor steering matrix is adjustable through <em><strong>VSSMV</strong></em> and <em><strong>VGSMV</strong></em> RCI-Commands.</p>
+<h3 id="motor-steering-matrix-coefficients-logical-axis-output-multipliers">Motor Steering Matrix Coefficients (Logical Axis Output Multipliers)</h3>
+<p>Equation #4 calculates the logical axis</p>
+<p>(4)</p>
+<p>For each logical axis there are 12 coefficients “multipliers”, each multiplier corresponds to one motor output of the 12 motors. Changing the multiplier affects the corresponding motors output.</p>
+<p>For SAMBA-UI users the motor steering matrix is located on the “<em><strong>Velocity loop”</strong></em> sheet.</p>
+<p>For SAMBA19xUI users the motor steering matrix is located on the “<em><strong>Velocity, Velocity Matrix”</strong></em> sheet.</p>
+<p>The motor steering matrix is adjustable through <em><strong>VSMMV</strong></em> and <em><strong>VGMMV</strong></em> RCI-Commands.</p>
+<h3 id="stage-filter-parameter">Stage Filter Parameter</h3>
+<p>As mentioned above the velocity loop contains 42 filters “controllers” for filtering the signals of the 6 logical axes and to stabilize the velocity loop. Each axis will be filtered by 7 configurable filters.</p>
+<p>The used filters in the firmware are IIR2-Filters “Infinite Impulse Recursive second order”.</p>
+<p>There are 6 configurable parameters for each filter that the user can modify. The first parameter is the filters type and the other five are the configuration parameters related to this filter type. Not each filter type needs 5 configuration parameters, some filters have 3 parameters, others have only 2 parameters and others don’t have any configuration parameters.</p>
+<p>For more information about the filters and to know how to configure them see “<em>digital filter in TC standard firmware</em>”.</p>
+<p>This PDF file is included in the SAMBA package.</p>
+<p>For SAMBA-UI users the velocity loop filters could be configured on the <em><strong>“Velocity loop”</strong></em> sheet.</p>
+<p>For SAMBA19xUI users the velocity loop filters could be configured on the <em><strong>“Velocity, Velocity Filter”</strong></em> sheet.</p>
+<p>The stage filters of the velocity loop are configurable through <em><strong>VSVFS</strong></em> and <em><strong>VGVFS</strong></em> RCI-Commands.</p>
+<h3 id="individual-loop-status">Individual Loop status</h3>
+<p>The individual loop status is a velocity loop setting parameter to switch the logical axis separately on/off. Each bit of the first 6 bits of this parameter corresponds to a logical axis.</p>
+<p><span id="_Toc468369411" class="anchor"></span>Table 4.1: Loop status</p>
+<table>
+<thead>
+<tr>
+<th><strong>Bit</strong></th>
+<th><strong>Corresponding axis</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bit1</td>
+<td>Xtrans</td>
+</tr>
+<tr>
+<td>Bit2</td>
+<td>Zrot</td>
+</tr>
+<tr>
+<td>Bit3</td>
+<td>Ytrans</td>
+</tr>
+<tr>
+<td>Bit4</td>
+<td>Ztrans</td>
+</tr>
+<tr>
+<td>Bit5</td>
+<td>Yrot</td>
+</tr>
+<tr>
+<td>Bit6</td>
+<td>Xrot</td>
+</tr>
+</tbody>
+</table>
+<p>For SAMBA UI users individual loop status could be found on the <em><strong>“Velocity loop”</strong></em> sheet.</p>
+<p>For SAMBA19xUI users individual loop status could be found on the <em><strong>“Velocity, Velocity Filter”</strong></em> or <em><strong>”Status”</strong></em> sheet.</p>
+<p>The individual loop status could be set or get using <em><strong>BSSTS</strong></em> or <em><strong>BGSTS</strong></em> RCI-Command.</p>
+<h3 id="fb-limiter">FB-Limiter</h3>
+<p>Each velocity axes has a limiter value. The output of the seventh stage will be limited by the limiter value.</p>
+<p>The limiter values are adjustable using the RCI-Commands <em><strong>BSFBL</strong></em> and <em><strong>BGFBL</strong></em>.</p>
+<p>For SAMBA UI users the FB-Limiter could be accessed on the <em><strong>“Velocity loop”</strong></em> sheet.</p>
+<p>For SAMBA19xUI users the FB-Limiter could be accessed on the <em><strong>“Velocity loop, Velocity Filter”</strong></em> sheet.</p>
+<h1 id="position-loop-parameters">Position Loop Parameters</h1>
+<h2 id="position-loop-overview">Position Loop Overview</h2>
+<p>The position loop is a part of the firmware to control the position of AVIS. The input- and output-devices of the position loop are configurable, and they could be any sensor respectively actuator signal. The position loop in the firmware is optional and can be switched off. It is fixed implemented in the firmware but the firmware processes the position loop algorithm only if it is configured “enabled”. In the default setting the position loop is disabled.</p>
+<p>To use the position control loop to control the position of the payload the proximity-without-offset “<em><strong>Prox1_NO</strong></em>, … , <em><strong>ProxH4_NO</strong></em>” input signals should be configured as the input devices and the linear motors as output devices of the logical axes.</p>
+<p>The position loop works principal like the velocity loop. It contains input and output steering matrix to build the 6 degrees of freedom. The logical axes go through 6 digital filters “controllers”.</p>
+<p>The following figure show the principal design of the position loop implemented in the firmware.</p>
+<p><span id="_Toc468369393" class="anchor"></span>Figure 5.1: Position loop flow chart</p>
+<p><img src="media/image12.png" alt="img"></p>
+<p>The position loop consists of 10 logical axes “FB-Loops”. The last two axes are realizing the control loops for the inclinometer control loop.</p>
+<p>Equations 5 und 6 describe the building of the 6 degrees of freedom “logical axis” for the position axis.</p>
+<p>(5)</p>
+<p>(6)</p>
+<p>Whereas:</p>
+<p>: Logical axes raw input.</p>
+<p>: Position axes output. It is equal to the logical axis after stage 3, when the position loop is on “active”.</p>
+<p>: Position sensor multiplier vector with 6 elements, the sensor signals are configurable.</p>
+<p>: Position actuator multiplier vector with 8 elements, the actuator signals are configurable.</p>
+<h2 id="position-loop-parameters-1">Position Loop Parameters</h2>
+<h3 id="sensor-steering-matrix-coefficients-logical-axis-input-multipliers-1">Sensor steering Matrix Coefficients (Logical Axis Input Multipliers)</h3>
+<p>The logical axis of the position loop will be calculated through equation 7.</p>
+<p>(7)</p>
+<p>For each position logical axis there are 6 sensor multipliers.</p>
+<p>Changing the sensor matrix coefficient influences the logical axis amount.</p>
+<p>For SAMBA-UI users the sensor steering matrix is located on the “<em><strong>Position loop”</strong></em> sheet.</p>
+<p>For SAMBA19xUI users the sensor steering matrix is located on the “<em><strong>Position, Sensor Matrix”</strong></em> sheet.</p>
+<p>The sensor matrix coefficients of the position loop are accessible through the Two RCI-Commands <em><strong>CSSMV</strong></em> and <em><strong>CGSMV</strong></em>.</p>
+<h3 id="motor-steering-matrix-coefficients-logical-axis-output-multiplier">Motor Steering Matrix Coefficients (Logical Axis Output Multiplier)</h3>
+<p>The following equation calculates the motor outputs from the position logical axis output.</p>
+<p>(8)</p>
+<p>For each logical axis there are 8 coefficients “multipliers”. Each multiplier corresponds to one actuator “output devices”. Changing the multiplier affects the corresponding actuator output.</p>
+<p>For SAMBA-UI users the sensor steering matrix is located on the “<em><strong>Position loop”</strong></em> sheet.</p>
+<p>For SAMBA19xUI users the sensor steering matrix is located on the “<em><strong>Position, Motor Matrix”</strong></em> sheet.</p>
+<p>The motor matrix coefficients of the position loop are accessible through the Two RCI-Commands <em><strong>CSMMV</strong></em> and <em><strong>CGMMV</strong></em>.</p>
+<h3 id="stage-filter-parameter-1">Stage Filter Parameter</h3>
+<p>The position loop contains 24 filters to filter and stabilize the 6 logical axes. Each axis is filtered through 4 filters. The filters are configurable.</p>
+<p>For more information about the filters and to understand how to configure them see “<em>Digital filter in TC standard firmware</em>”. This PDF file is included in SAMBA installation folder.</p>
+<p>For SAMBA UI users the position loop filters could be found on the <em><strong>“Position loop”</strong></em> sheet.</p>
+<p>For SAMBA19xUI users the position loop filters could be found on the <em><strong>“Position, Tuning”</strong></em> sheet.</p>
+<p>The position loop filters are configurable through the two RCI-Commands <em><strong>CSPFS</strong></em> and <em><strong>CGPFS</strong></em>.</p>
+<h3 id="position-individual-loop-status">Position Individual Loop status</h3>
+<p>The individual loop status toggles the logical axis separately on/off. Each bit of this parameter corresponds to a logical axis.</p>
+<p><span id="_Toc468369412" class="anchor"></span>Table 5.1: Position individual loop status bit-mask
+| <strong>Bit</strong> | <strong>Corresponding axis</strong> |
+| ------- | ---------------------- |
+| Bit1    | Xrot                   |
+| Bit2    | Yrot                   |
+| Bit3    | Ytrans                 |
+| Bit4    | Ytrans                 |
+| Bit5    | Zrot                   |
+| Bit6    | Ztrans                 |</p>
+<p>For SAMBA19xUI users the position individual loop status could be found on the <em><strong>“Position, Tuning”</strong></em> or <em><strong>”Status”</strong></em> sheet.</p>
+<p>The individual loop status could be set or get using <em><strong>BSSST</strong></em> or <em><strong>BGSST</strong></em> RCI-Command.</p>
+<h3 id="position-loop-inputs-and-outputs-devices">Position loop inputs and outputs devices</h3>
+<p>As mentioned above the input and output signals of the position loop are configurable and they could be any sensor (input) signal respectively any actuator (motor) signal.</p>
+<p>For SAMBA UI users the inputs devices could be configured on sheet <em><strong>“Position loop”</strong></em>.</p>
+<p>For SAMBA19xUI users the inputs devices could be configured on sheet “<em><strong>Position, Sensor Matrix”</strong></em>.</p>
+<p>The position loop input devices will be configured using the RCI-Commands <em><strong>CSPSD</strong></em></p>
+<p>And <em><strong>CGPSD</strong></em>.</p>
+<p>For SAMBA UI users the outputs devices could be configured on sheet <em><strong>“Position loop”</strong></em>.</p>
+<p>For SAMBA19xUI users the outputs devices could be configured on sheet “<em><strong>Position, Motor Matrix”</strong></em>.</p>
+<p>The position loop output devices are configurable using the RCI-Commands <em><strong>CSPMD</strong></em> and <em><strong>CGPMD</strong></em>.</p>
+<h3 id="proximity-offset">Proximity Offset</h3>
+<p>For each proximity sensor input there is an offset supported in the firmware. Three of them are for the vertical proximities “ZxProx” and the other three are for the horizontal proximities “HxProx”.</p>
+<p>The offset will be subtracted from the actual input value to build the virtual input signal (Prox_NO “proximity-without-offset”).</p>
+<p>Changing the offset influences the proximity-without-offset signals and so the position logical axis, if those signals are configured as input devices.</p>
+<p>The offset values define the absolute position that the position loop tries to hold.</p>
+<p>The best values for the offset are the actual proximity values, when the system payload is not vibrating and all control loops are switched off “minimal energy state”. In case of an electro pneumatic system the vertical proximity offsets should be equal to the set point used for the payload leveling by the pneumatic loop.</p>
+<p>For SAMBA-UI user the proximity offset values are accessible on the sheet “<em><strong>Position loop”</strong></em>.</p>
+<p>For SAMBA19xUI user the proximity offset values are accessible on the sheet “<em><strong>Position, Tuning”.</strong></em></p>
+<p><img src="media/image17.emf" alt="img">Proximity offset values are also accessible using the <em><strong>CSPOV</strong></em>, <em><strong>CGPOV</strong></em> and <em><strong>CAUCO</strong></em> RCI-Commands.</p>
+<h1 id="pneumatic-loop">Pneumatic Loop</h1>
+<h2 id="overview">Overview</h2>
+<p>The pneumatic loop is a feedback loop to control the inflated height of the system in case the system is equipped with electro pneumatic valves. Electro pneumatic valve means that the valve is operated by a voltage input coming from the controller.</p>
+<p>The pneumatic loop works like the position and velocity loop with logical axes. It consists of three logical axes “Ztpneum , Yrpneum and Xrpneum”.</p>
+<p>Four vertical proximity sensor inputs are used to build the logical axes using the pneumatic sensor matrix. The running setpoint is subtracted from the Ztpneu input and optional from the other two axes, when the use-setpoint-for-all-axes option is active.</p>
+<p>With this option the pneumatic loop could be configured so to control the system isolator wise (co-located, sensor/valve control). Then the logical axes signal will be filtered by four IIR2-Filters. The filtered logical axes “axes output” will be divided to the valve outputs using the pneumatic motor steering matrix. The valve offsets and the dither signal will be added to the valve outputs.</p>
+<p>The following flow chart shows the structure of the pneumatic loop algorithm implemented in the firmware.
+<span id="_Toc468369394" class="anchor"></span>Figure 6.1: Pneumatic loop flow chart</p>
+<p><img src="media/image18.png" alt="img"></p>
+<p><strong>Note</strong>: The fourth input of the pneumatic loop “ProxV4” doesn’t exist in the firmware as input signal. It is internally mapped to the “InpZ4FB” input.</p>
+<p>The VRef Value is calculated using the following equation.</p>
+<p>(9)</p>
+<p>Where:</p>
+<p><sup>:</sup> Actual VRef.</p>
+<p><sup>:</sup> Previous VRef.</p>
+<p><sup>:</sup> Adjusted Setpoint</p>
+<p><sup>:</sup> Weighting constant or smoothing factor is equal to 5/SF (SF: Sample Frequency).</p>
+<p><strong>Note</strong>: The isolator heights are calculated like the VRef value.</p>
+<p>The pneumatic loop is in the firmware configurable “optional” like the position loop.</p>
+<p>The vertical status value gives information about the current status of the payload height “VDown, VGoinguptosoftstop, VUpsoft, VGoingup, VUp, VGoingdown, VPowerup and VOk”.
+<span id="_Toc468369413" class="anchor"></span>Table 6.1: Vertical status “Payload vertical position status”</p>
+<table>
+<thead>
+<tr>
+<th><strong>State</strong></th>
+<th><strong>Its Number</strong></th>
+<th><strong>comment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VDown</td>
+<td>0</td>
+<td>When the payload height bellow VRefDown+SoftupHeight. During this state the control loop is off. Valve outputs are set to down-offset.</td>
+</tr>
+<tr>
+<td>VGoinguptosoftstop</td>
+<td>1</td>
+<td>System is inflating. Valve outputs increased from down-offset to up_offset value using the ValveOffsetRampTime parameters. During this state the control loop is off. When the valve outputs reach the up-offset the vertical status changes to VGoingup.</td>
+</tr>
+<tr>
+<td>VUpsoft</td>
+<td>2</td>
+<td>Not used any more</td>
+</tr>
+<tr>
+<td>VGoingup</td>
+<td>3</td>
+<td>VRef value increased using the Grad-Up value. The payload moves controlled up. When the Setpoint is reached the vertical status changes to VUp.</td>
+</tr>
+<tr>
+<td>VUp</td>
+<td>4</td>
+<td>System is inflated and the payload is at end position, but the payload position is outside the VTolerance window.</td>
+</tr>
+<tr>
+<td>VGoingdown</td>
+<td>5</td>
+<td>VRef value is decreased using the Grad-Down value. The payload moves controlled down. When all isolator heights are smaller than VRefDown+SoftupHeight, the vertical status changes to VDown.</td>
+</tr>
+<tr>
+<td>VPowerup</td>
+<td>6</td>
+<td>This is the state after switching the controller on and its duration is 500 samples of the sample frequency. In this phase the initial isolator heights are calculated.</td>
+</tr>
+<tr>
+<td>VOk</td>
+<td>7</td>
+<td>System is inflated and the payload height is inside the VTolerance window.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> The vertical status is not dependent from the payload height “position”. For example if the system is inflated “VUp” and the system loses pressure and the payload position fall down below the VRefDown+SoftupHeight the status of the vertical loop doesn’t change to VDown. Please see in the next sections the flow diagrams of the various pneumatic actions to get an overview about the pneumatic loop states.</p>
+<h2 id="pneumatic-loop-actions-and-its-startup-phase">Pneumatic Loop Actions and Its Startup Phase</h2>
+<p>There are two actions that a user can invoke: “Go Up” and “Go Down”. The next sections explain these actions. Next Table 6.2 explains various items that are used in the next sections.
+<span id="_Ref211240805" class="anchor"></span>Table 6.2: Explanation of notions and variables.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VRef</strong></td>
+<td>The vertical reference position that the system shall hold.</td>
+</tr>
+<tr>
+<td><strong>Offset</strong></td>
+<td>Valve offset, adjustable in the firmware.</td>
+</tr>
+<tr>
+<td><strong>Control (On/Off)</strong></td>
+<td>Specifies, whether the pneumatic logical axes output effect the valve outputs or not. If the Control is on then the logical axes affect the valve outputs otherwise the logical axes don’t affect the valve outputs when the Control is off.</td>
+</tr>
+<tr>
+<td><strong>Pneum. Loop On</strong></td>
+<td>Defines whether the pneumatic loop status is active. This variable is configurable in the firmware.</td>
+</tr>
+<tr>
+<td><strong>Pneum. Loop configured</strong></td>
+<td>When the pneumatic loop is processed by the firmware. This variable is in the firmware configurable.</td>
+</tr>
+<tr>
+<td><strong>VTolerance</strong></td>
+<td>This variable is basically used to determine if the status of the pneumatic loop is okay or not. It is in the firmware configurable.</td>
+</tr>
+<tr>
+<td><strong>VTolerance Window</strong></td>
+<td>Is equal to <strong>VRef</strong> <strong>± VTolerance</strong></td>
+</tr>
+<tr>
+<td><strong>VRefdown</strong></td>
+<td>Internal variable that is calculated by switching the controller on. It represents the initial height values of the isolators.</td>
+</tr>
+<tr>
+<td><strong>SoftupHeight</strong></td>
+<td>This variable is adjustable in the firmware. It is needed to determine the pneumatic loop status. Its value influences the startup phase flow.</td>
+</tr>
+<tr>
+<td><strong>down_offset</strong></td>
+<td>The valve offset value used by the move down action.</td>
+</tr>
+<tr>
+<td><strong>up_offset</strong></td>
+<td>Default valve offset value and for the move up action.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="start-up-phase">Start Up Phase</h3>
+<p>This is the process when the controller is switched on.</p>
+<p>The following figure shows the flow chart of the startup process.
+<span id="_Toc468369395" class="anchor"></span>Figure 6.2: The pneumatic startup phase flow chart</p>
+<p><img src="media/image24.jpeg" alt="PneumStartUp"></p>
+<h3 id="move-up-action">Move Up Action</h3>
+<p>The following chart flow shows the process of the move up action.</p>
+<p>For SAMBA19xUI users this action could be triggered on the “<em><strong>Pneumatic; Tuning”</strong></em> page.</p>
+<p>The action could be triggered using the <em><strong>PAMOV</strong></em> RCI-Command too.
+<span id="_Toc468369396" class="anchor"></span>Figure 6.3: Move up action flow chart.</p>
+<p><img src="media/image25.jpeg" alt="PneumMoveUp"></p>
+<h3 id="move-down-action">Move Down Action</h3>
+<p>The following chart flow shows the process of the move down process.</p>
+<p>For SAMBA19xUI users this action could be triggered on the “<em><strong>Pneumatic, Tuning”</strong></em> sheet.</p>
+<p>The action could be triggered using the <em><strong>PAMOV</strong></em> RCI-Command too.
+<span id="_Toc468369397" class="anchor"></span>Figure 6.4: Move down action flow chart.</p>
+<p><img src="media/image26.jpeg" alt="PneumMoveDown"></p>
+<h2 id="pneumatic-loop-parameters"><strong>Pneumatic</strong> Loop Parameters</h2>
+<h3 id="sensor-steering-matrix-coefficients-logical-axis-input-multipliers-2">Sensor steering Matrix Coefficients (Logical Axis Input Multipliers)</h3>
+<p>The logical axis of the pneumatic loop will be calculated through equation 10.</p>
+<p>(10)</p>
+<p>Each pneumatic logical axis contains 4 sensor multipliers (proximity sensors).</p>
+<p>Changing the sensor matrix coefficient influences the logical axis amount.</p>
+<p>For SAMBA19XUI users the sensor steering matrix is located on the “<em><strong>Pneumatic, Tuning”</strong></em> sheet.</p>
+<p>The sensor matrix coefficients of the pneumatic loop are accessible through the Two RCI-Commands <em><strong>PSPSM</strong></em> and <em><strong>PGPSM</strong></em>.</p>
+<h3 id="valve-steering-matrix-coefficients-logical-axis-output-multiplier">Valve Steering Matrix Coefficients (Logical Axis Output Multiplier)</h3>
+<p>The following equation calculates the valve outputs from the position logical axis output.</p>
+<p>(11)</p>
+<p>For each logical axis there are 6 coefficients “multipliers”. Each multiplier corresponds to a valve. Changing the multipliers affects the corresponding valve output.</p>
+<p>For SAMBA19xUI users the sensor steering matrix is located on the “<em><strong>Pneumatic; Tuning”</strong></em> sheet.</p>
+<p>The motor matrix coefficients of the pneumatic loop are accessible through the Two RCI-Commands <em><strong>PSPSM</strong></em> and <em><strong>PGPSM</strong></em>.</p>
+<h3 id="stage-filter-parameter-2">Stage Filter Parameter</h3>
+<p>The pneumatic loop contains 12 filters to filter and stabilize the 3 pneumatic logical axes. Each axis is filtered through 4 filters. The filters are configurable.</p>
+<p>For more information about the filters and to understand how to configure them see “<em>Digital filter in TC standard firmware</em>”. This PDF file is included in SAMBA installation folder.</p>
+<p>For SAMBA19xUI users the pneumatic loop filters could be found on the <em><strong>“Pneumatic; Tuning”</strong></em> sheet.</p>
+<p>The pneumatic loop filters are configurable through the two RCI-Commands <em><strong>PSPAF</strong></em> and <em><strong>PGPAF</strong></em></p>
+<h3 id="pneumatic-individual-loop-status">Pneumatic Individual Loop status</h3>
+<p>The individual loop status toggles the logical axis separately on/off. Each bit of the first 6 bits of this parameter corresponds to a logical axis.
+<span id="_Toc468369415" class="anchor"></span>Table 6.3: Pneumatic individual loop status bit-mask</p>
+<table>
+<thead>
+<tr>
+<th><strong>Bit</strong></th>
+<th><strong>Corresponding axis</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bit1</td>
+<td>Ztpneum</td>
+</tr>
+<tr>
+<td>Bit2</td>
+<td>Yrpneum</td>
+</tr>
+<tr>
+<td>Bit3</td>
+<td>Xrpneum</td>
+</tr>
+</tbody>
+</table>
+<p>For SAMBA19xUI users the pneumatic individual loop status could be found on the <em><strong>“Position, Tuning”</strong></em> or <em><strong>”Status”</strong></em> sheet.</p>
+<p>The individual loop status could be set or get using <em><strong>BSSST</strong></em> or <em><strong>BGSST</strong></em> RCI-Command.</p>
+<h3 id="other-parameters">Other parameters</h3>
+<p>All other adjustable parameters of the pneumatic loop and their description are listed in the next table.</p>
+<p>For SAMBA19xUI users all parameters in next table are accessible on the <em><strong>“Pneumatic; Tuning”</strong></em> sheet.</p>
+<p><span id="_Toc468369416" class="anchor"></span>Table 6.4: Parameters of the pneumatic loop</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>Valve offset for Down</p>
+<p>“down_offset”</p></td>
+<td><p>Valve offset variable used by the pneumatic loop action move down.</p>
+<p>Configurable using <em><strong>PSPVO</strong></em> and <em><strong>PGPVO</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: 5%</span></p></td>
+</tr>
+<tr class="odd">
+<td><p>Valve offset for Up</p>
+<p>“up_offset”</p></td>
+<td><p>Valve offset variable used by the pneumatic loop action move up.</p>
+<p>Configurable using <em><strong>PSPVO</strong></em> and <em><strong>PGPVO</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: dependent on the mass of the system</span></p></td>
+</tr>
+<tr class="even">
+<td>Vrefupadd</td>
+<td><p>This is a variable, where its value will be added to the proximity input signals used to build the pneumatic logical axes. There are three values for the first three proximity inputs. This variable allows adjusting the height of each isolator separately. The values are adjustable through using <em><strong>CSMOV</strong></em> and <em><strong>CGMOV</strong></em> RCI-Commands.</p>
+<p><span class="underline">Typical value: 0.0</span></p></td>
+</tr>
+<tr class="odd">
+<td>Move up</td>
+<td>See figure #6. It inflates the system. This action could be triggered by <em><strong>PAMOV</strong></em> RCI-Command.</td>
+</tr>
+<tr class="even">
+<td>Move down</td>
+<td>See figure #7. It deflates the system. This action could be triggered by <em><strong>PAMOV</strong></em> RCI-Command.</td>
+</tr>
+<tr class="odd">
+<td>Use current valve outputs as up_offset values</td>
+<td>This action sets the Up offset values to the current offset values. This action could be triggered by <em><strong>PAUCO</strong></em> RCI-Command.</td>
+</tr>
+<tr class="even">
+<td>Use current valve outputs as down_offset values</td>
+<td>This action sets the Down offset values to the current offset values. This action could be triggered by <em><strong>PAUCO</strong></em> RCI-Command.</td>
+</tr>
+<tr class="odd">
+<td>Softupheight</td>
+<td><p>This variable is used to determine the vertical status of the payload.</p>
+<p>Use <em><strong>PSPCP</strong></em> and <em><strong>PGPCP</strong></em> RCI-Commands to access this variable.</p>
+<p><span class="underline">Typical value: 2000 digits</span></p></td>
+</tr>
+<tr class="even">
+<td>Setpoint</td>
+<td><p>This variable is the desired height “absolute position” of the system. Its value influences the height of the payload. There is only one Setpoint for all isolator.</p>
+<p>Use <em><strong>PSPCP</strong></em> and <em><strong>PGPCP</strong></em> RCI-Commands to access this variable.</p>
+<p><span class="underline">Typical value: system dependent</span></p></td>
+</tr>
+<tr class="odd">
+<td><p>Setpoint status</p>
+<p>“Use setpoint for all axes” (USFA)</p></td>
+<td><p>This parameter forces subtracting the setpoint from all pneumatic axes inputs. This option allows controlling the payload isolator-wise like in the old firmware algorithm.</p>
+<p>Don’t change this variable during the system is inflated (pneumatic loop is on).</p>
+<p>Use <em><strong>PSPSS</strong></em> and <em><strong>PGPSS</strong></em> RCI-Commands to access this variable.</p>
+<p>0: setpoint is subtracted only from Ztpneu axis.</p>
+<p>1: setpoint is subtracted from all pneumatic axes.</p>
+<p><span class="underline">Typical value: system dependent</span></p></td>
+</tr>
+<tr class="even">
+<td>VTolerance</td>
+<td><p>This variable is used to make a decision whether the vertical status is VOk or VUp.</p>
+<p>Furthermore it is used by the reference metrology system auto switch routine to specify the position tolerance window to leave the inclinometer mode.</p>
+<p>Use <em><strong>PSPCP</strong></em> and <em><strong>PGPCP</strong></em> RCI-Commands to access this variable.</p>
+<p><span class="underline">Typical value: 20µm</span></p></td>
+</tr>
+<tr class="odd">
+<td>Dither</td>
+<td>Some pressure valve need a dither on the output to overcome the effect of mechanical friction inside the valve. The dither is a sine wave signal.</td>
+</tr>
+<tr class="even">
+<td>Dither amount</td>
+<td><p>This is the amplitude value of the dither signal.</p>
+<p>Use <em><strong>PSDIT</strong></em> and <em><strong>PGDIT</strong></em> RCI-Commands to access this variable.</p>
+<p><span class="underline">Typical value: dependent on the valve</span></p></td>
+</tr>
+<tr class="odd">
+<td>Dither Frequency</td>
+<td><p>This is the value of the dither signal frequency. Use <em><strong>PSDFR</strong></em> and <em><strong>PGDFR</strong></em> RCI-Commands to access this variable.</p>
+<p><span class="underline">Typical value: 35%</span></p></td>
+</tr>
+<tr class="even">
+<td>Adaptive constant “Alpha”</td>
+<td><p>This variable is used by the adaptive algorithm to eliminate the vibration, which is caused by the valve dithering and disturbs the vertical logical axis. It is value is the learning constant for the adaptive process.</p>
+<p>Use <em><strong>PSDCA</strong></em>, <em><strong>PGDCA</strong></em>, <em><strong>PSDCB</strong></em> and <em><strong>PGDCB</strong></em> RCI-Commands to access this variable.</p>
+<p><span class="underline">Typical value: 1e-3</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image17.emf" alt="img"></p>
+<p><img src="media/image17.emf" alt="img"></p>
+<p><img src="media/image17.emf" alt="img"></p>
+<p><img src="media/image17.emf" alt="img"></p>
+<h1 id="feed-forward-subsystem">Feed Forward Subsystem</h1>
+<h2 id="overview-1"><strong>Overview</strong></h2>
+<p>The FF subsystem consists basically of seven independent control channels. Their inputs (reference input) is selectable from the firmware input signals (geophones, floor geophones, proximity, stage, … signals). The error signal of the LMS-Algorithm are the velocity logical axes. Each control channel has a filter set for pre-filtering of reference input. The error inputs are pre-filtered by 2 filter set. The filtered error signal and the filtered second path signal are used by the adaptive algorithm to calculate the gains “coefficient” of the FIR filter.</p>
+<p>The output of the FIR filter is added to the velocity logical axis output see figures #1 and #2.</p>
+<p>The following flow chart shows the structure of such FF control channel. It also shows the filtering process of the reference signal and error signal.
+<span id="_Toc236133396" class="anchor"></span>Figure 7.1: Flow chart of FF control channel</p>
+<p><img src="media/image29.png" alt="img"></p>
+<p>Each FF-Control-Channel contains 6 FIR-Filters with a maximum coefficient “gains” number of 5, one FIR-Filter for each velocity axis.</p>
+<p>The reference input is configurable and could be set to one of the input signals provided by the firmware. The reference and second path filters are related to the reference input. The error filters are related to the velocity logical axis.</p>
+<p>There are two types of FF-Subsystems: floor feed forward “FFF” and stage feed forward “SFF”. The first 4 control channels treat the SFF and the last 3 channels treat the FFF.</p>
+<p>The LMS “Least Mean Square” adaptive algorithm is used for the SFF (for the first 4 FF-Control-Channels).</p>
+<p>For the FFF (The last three FF-Control-Channels) there are two types of adaptive algorithms implemented in the firmware the first algorithm is the LMS algorithm and the other one is the RLS “Recursive Least Square” algorithm.</p>
+<p>The FF-Subsystem is optional “configurable” in the firmware.</p>
+<h2 id="ff-parameters"><strong>FF parameters</strong></h2>
+<h3 id="ff-filters">FF Filters</h3>
+<p>The FF-Subsystem contains 54 filters to filter the reference input, the error input and to build the second path signal. Each reference input is filtered by 6 filters three in the reference path and another three in the secondary path. Each error signal is filtered by two filters and there is 6 possible error signals “the velocity logical axes”. All filters are in the firmware configurable.</p>
+<p><strong>The reference and secondary filters are based on the reference inputs 42 filters. The error filters are based on velocity axes 12 filters and they are identical for all reference inputs.</strong></p>
+<p>For more information about the filters and to know how to configure them see the reference document “<em>digital filter in TC standard firmware</em>”.</p>
+<p>This PDF file is included in the SAMBA software package.</p>
+<p>For SAMBA19xUI users the FF-Subsystem filters could be found and modified on the <em><strong>“ Feed Forward; FF Tuning”</strong></em> sheet.</p>
+<p>The filters are configurable using <em><strong>FSPFS</strong></em> and <em><strong>FGPFS</strong></em> RCI-Commands.</p>
+<h3 id="fir-gains">FIR Gains</h3>
+<p>Each reference input could be combined “configured” with max 6 logical axes “error signals”. This means there are 6 FIR Filter implemented per reference input “control channel”, one FIR for each error signal respectively output signal. The FIR filter gain number is adjustable and could be max five gains.</p>
+<p>The FF-Axis-Output will be calculated using equation 12.</p>
+<p>(12)</p>
+<p>Where</p>
+<p>: FF-Output of the n-th axis “Xtrans, Zrot …”</p>
+<p>: The j-th gain of the n-th FIR-Filter of the i-th control channel</p>
+<p>: Filtered reference input history</p>
+<p>: Gain index</p>
+<p>: Control channel index</p>
+<p>: The adjusted gains number.</p>
+<p>When the i-th FF control channel is not configured with the n-th axis, then the second summation in the above equation equals zero.</p>
+<p>There are 42 FIR-Filter with maximal 5 gains “coefficients”. The gains number of the FIR-Filters is adjustable.</p>
+<p>For SAMBA19xUI users the gains could be adjusted on the <em><strong>“Feed Forward; FF Gains”</strong></em> sheet.</p>
+<p>The gains of a specified FIR-filter could be configured through <em><strong>FSFFG</strong></em> and <em><strong>FGFFG</strong></em> RCI-Commands.</p>
+<h3 id="feed-forward-configuration">Feed-Forward Configuration</h3>
+<p>As mentioned above each reference input of the FF-Subsystem could be configured with up to 6 logical axes.</p>
+<p>The reference input is configured with the n-th axis means that the reference input influences “controls” the n-th Axis-Output. With other words the FF-Axis-Output produced by the reference input is added to the Axis-Output.</p>
+<p>For SAMBA19xUI users the Feed-Forward configuration could be done on the <em><strong>“Feed Forward; FF Tuning”</strong></em> sheet.</p>
+<p>To set or get the Feed-Forward configuration use <em><strong>FSFFC</strong></em> or <em><strong>FGFFC</strong></em> RCI-Command.</p>
+<h3 id="reference-input">Reference Input</h3>
+<p>The reference input is adjustable and could take any available input signal in the firmware.</p>
+<p>For SAMBA19XUI users the reference input could be configured on the “<em><strong>Feed Forward; FF Tuning”</strong></em> sheet.</p>
+<p>The reference inputs are configurable using <em><strong>FSFFI</strong></em> and <em><strong>FGFFI</strong></em> RCI-Commands.</p>
+<h3 id="initial-parameters-and-signal-multipliers-to-calculate-the-additional-sff-signals">Initial parameters and signal multipliers to calculate the additional SFF-Signals</h3>
+<p>The firmware supports 4 additional input signals basically used for tuning the stage FF-Subsystem. Those input signals are the result of a fixed calculation implemented in the firmware. The idea behind them is to generate SFF-Signals suitable for tuning Zrot-Axis and to generate position dependent acceleration signals that are more suitable than the standard acceleration signals to tune the SFF-Subsystem.</p>
+<p>The calculation uses four initial parameters related to the position signals. Those parameters are XposOffset, YposOffset, XposMax and YposMax. Furthermore there is a signal multiplier for each stage signals.
+<span id="_Toc236133382" class="anchor"></span>Table 7.1: Parameters used to calculate the additional stage input signals</p>
+<table>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Xacc_multiplier</strong></td>
+<td>This the multiplier value for the Xacc signal.</td>
+</tr>
+<tr>
+<td><strong>Yacc_multiplier</strong></td>
+<td>This the multiplier value for the Yacc signal.</td>
+</tr>
+<tr>
+<td><strong>Xpos_multiplier</strong></td>
+<td>This the multiplier value for the Xpos signal.</td>
+</tr>
+<tr>
+<td><strong>Ypos_multiplier</strong></td>
+<td>This the multiplier value for the Ypos signal.</td>
+</tr>
+<tr>
+<td><strong>XposOffset</strong></td>
+<td>This is the position deviation in the X-Direction between the stage home position “zero position” and the centre of gravity of the payload.</td>
+</tr>
+<tr>
+<td><strong>YposOffset</strong></td>
+<td>This is the position deviation in the Y-Direction between the stage home position and the centre of gravity of the payload.</td>
+</tr>
+<tr>
+<td><strong>XposMax</strong></td>
+<td>This is the max position; that the stage could reach in the X-Direction. The SI unit of this variable is digit.</td>
+</tr>
+<tr>
+<td><strong>YposMax</strong></td>
+<td>This is the max position; that the stage could reach in the Y-Direction. The SI unit of this variable is digit.</td>
+</tr>
+</tbody>
+</table>
+<p>For SAMBA19xUI users the parameters in table 5 could be accessed from the SAMBA UI “<em><strong>Feed Forward, FF Tuning”</strong></em> sheet.</p>
+<p>To configure the stage signal multipliers the RCI-Commands <em><strong>FSSFM</strong></em> and <em><strong>FGSFM</strong></em> could be used.</p>
+<p>The initial parameter values could be set or get using the RCI-Command <em><strong>FSZRP</strong></em> or <em><strong>FGZRP</strong></em>.</p>
+<p>The additional signals are calculated using the below equations.</p>
+<p>Where</p>
+<p>: The stage signal X-Acceleration.</p>
+<p>: The stage signal Y-Acceleration.</p>
+<p>: The stage X-Position signal added to the adjusted X-Position offset.</p>
+<p>: The stage X-Position signal added to the adjusted X-Position offset</p>
+<p>: The normalized stage signal X-Position.</p>
+<p>: The normalized stage signal Y-Position.</p>
+<p>: The calculated Xacc dependent on the stage Y-Position.</p>
+<p>: The calculated Yacc dependent on the stage X-Position.</p>
+<p>: The calculated Xacc dependent on the stage Y-Position for the Zrot axis, this signal should be used to compensate the Z-rotation disturbance.</p>
+<p>: The calculated Yacc depended on the stage X-Position for Zrot axis, this signal should be used to compensate the Z-Rotation disturbance.</p>
+<p><strong>Note</strong>: Both calculated signals “CalcXacc” and “CalcYacc” are not useable. It is not recommended to use them to compensate the stage forces.</p>
+<h3 id="various-ff-parameters">Various FF Parameters</h3>
+<p><span id="_Toc236133383" class="anchor"></span>Table 7.2: Various FF parameters</p>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FFThreshold</td>
+<td><p>This is the threshold variable for the FF-Axis-Output. In case of exceeding its value during adapting the gains of the selected FIR-Filter will be set to zero.</p>
+<p>In case exceeding during the adapting is off the FF-Axis-Output is limited to its value.</p>
+<p>Adjustable on SAMBA-UI sheet <em><strong>Feed-Forward</strong></em></p>
+<p>Configurable using <em><strong>BSFFL</strong></em> and <em><strong>BGFFL</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: dependent on stage</span></p></td>
+</tr>
+<tr class="even">
+<td>GainNum</td>
+<td><p>This is the used gains number of the FF-FIR-Filter.</p>
+<p>Adjustable on SAMBA-UI sheet <em><strong>Feed-Forward</strong></em></p>
+<p>Configurable using <em><strong>FSFFC</strong></em> and <em><strong>FSFFC</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: 3</span></p></td>
+</tr>
+<tr class="odd">
+<td>FFAlpha</td>
+<td><p>This is the learning constant “Adaption rate” for the adaptive algorithm to calculate the FIR-Filters Gains. Its value influences the convergence of the algorithm and its speed. For each control channel there is an individual learning constant.</p>
+<p>Adjustable on SAMBA-UI sheet <em><strong>Feed-Forward</strong></em></p>
+<p>Configurable using <em><strong>FSFFP</strong></em> and <em><strong>FGFFP</strong></em> RCI-Commands</p></td>
+</tr>
+<tr class="even">
+<td>FFF adaptive algorithm type</td>
+<td><p>This parameter specifies the type of the adaptive algorithm used for the floor feed forward control-channels “The last 3 FF-Control-Channels”.</p>
+<p>The algorithm type is adjustable on the SAMBA UI sheet <em><strong>Controller settings</strong></em> or using the RCI-Commads <em><strong>FSFAT</strong></em> and <em><strong>FGFAT</strong></em>.</p></td>
+</tr>
+<tr class="odd">
+<td>Use_FB_Raw</td>
+<td><p>This is a flag related to the error signal, if its value is set to one then the logical axis after stage 6 is used as error signal, otherwise the logical axis raw input will be used as error signal.</p>
+<p>Adjustable on SAMBA-UI sheet <em><strong>Feed-Forward</strong></em></p>
+<p>Adjustable using <em><strong>FSFFC</strong></em> and <em><strong>FGFFC</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: 1</span></p></td>
+</tr>
+<tr class="even">
+<td>Adaptive Status</td>
+<td><p>The adaptive status is including in the global LoopStatus variable. It switches On/Off the adapting of FF-Subsystem.</p>
+<p>The adaptive status could be toggled on SAMBA-UI sheet <em><strong>Feed-Forward.</strong></em> For accessing this status use <em><strong>FSFFS</strong></em>, <em><strong>FGFFS</strong></em>, <em><strong>FSFLS</strong></em>, <em><strong>FGFLS</strong></em>, <em><strong>FSFFP</strong></em> and <em><strong>FGFFP</strong></em>.</p></td>
+</tr>
+<tr class="odd">
+<td>Active Status</td>
+<td>The active status is including in the global LoopStatus variable and switches the FF-Subsystem On/Off. The adaptive status could be toggled on SAMBA-UI sheets <em><strong>Feed-Forward</strong></em> and <em><strong>Controller settings.</strong></em> For accessing this status use <em><strong>FSFFS</strong></em>, <em><strong>FGFFS</strong></em>, <em><strong>FSFLS</strong></em> and <em><strong>FGFLS</strong></em>.</td>
+</tr>
+</tbody>
+</table>
+<p>For SAMBA19xUI users the parameters in table 6 could be accessed from the SAMBA UI “<em><strong>Feed Forward, FF Tuning”</strong></em> sheet.</p>
+<h1 id="pneumatic-stage-feed-forward">Pneumatic Stage Feed Forward</h1>
+<p>The functionality of the pneumatic stage feed forward is like the standard stage feed forward. Only the FF-Axis-Outputs are not the velocity axes output, they are the three pneumatic axis outputs.</p>
+<p>The pneumatic FF subsystem consists basically of 4 independent control channels. Their reference input can be set to any input signals. The error signals for the adaptive algorithm are the pneumatic logical axes.</p>
+<p>The output of the FIR filter is added to the pneumatic logical axis output.</p>
+<p>The following flow chart shows the principal structure of such FF control channel. It also shows the filtering process of the reference signal and error signal.
+<span id="_Toc468369399" class="anchor"></span>Figure 8.1: Flow chart of FF control channel</p>
+<p><img src="media/image48.png" alt="img"></p>
+<p>The reference input is configurable and could be set to any one of the input signals supported by the firmware. The reference and second path filters are related to the reference input. The error filters are related to the pneumatic logical axis.</p>
+<h2 id="pneumatic-stage-ff-parameters"><strong>Pneumatic Stage FF parameters</strong></h2>
+<h3 id="ff-filters-1">FF Filters</h3>
+<p>The FF-Subsystem contains 30 filters to filter the reference input and error signal and to build the second path signal.</p>
+<p>For SAMBA19xUI users the pneumatic Stage-FF-Subsystem filters could be found and modified on the <em><strong>“Pneum. FF; PFF Tuning”</strong></em> sheet.</p>
+<p>For the RCI-Interface user the filters are configurable using <em><strong>FSFSP</strong></em> and <em><strong>FGFSP</strong></em> RCI-Commands.</p>
+<h3 id="fir-gains-1">FIR Gains</h3>
+<p>Each reference input could be combined “configured” with max 3 logical axes “error signals”. This means there are 3 FIR Filter implemented per reference input “control channel”, one FIR for each error signal. The FIR filter gain number is adjustable and could be max five gains.</p>
+<p>The FF-Axis-Output will be calculated using equation 23.</p>
+<p>(23)</p>
+<p>Where</p>
+<p>: The pneumatic ff output of the n-th axis “Ztpneu, Yrpneum, Xrpneum”</p>
+<p>: The j-th gain of the n-th FIR-Filter of the i-th reference input</p>
+<p>: Filtered reference input history</p>
+<p>: Gain index</p>
+<p>: Reference input index</p>
+<p>: The adjusted gain number.</p>
+<p>For SAMBA19xUI users the gains could be adjusted on the <em><strong>“Pneum. FF; PFF Gains”</strong></em> sheet.</p>
+<p>The gains of a specified FIR-filter could be configured through <em><strong>FSGPF</strong></em> and <em><strong>FGGPF</strong></em> RCI-Commands.</p>
+<h3 id="feed-forward-configuration-1">Feed-Forward Configuration</h3>
+<p>As mentioned above each reference input of the FF-Subsystem could be configured with up to 3 pneumatic logical axes.</p>
+<p>The reference input is configured with n-th axis means that the reference input influences “controls” the n-th axis output.</p>
+<p>For SAMBA19xUI users the Feed-Forward configuration could be done on the “<em><strong>Pneum. FF; PFF Tuning”</strong></em> sheet.</p>
+<p>To set or get the Feed-Forward configuration use <em><strong>FSPPF</strong></em> or <em><strong>FGPPF</strong></em> RCI-Commands.</p>
+<h3 id="reference-input-1">Reference Input</h3>
+<p>The reference input is adjustable and could take any available input signal in the firmware.</p>
+<p>For SAMBA19xUI users the reference input could be configured on the “<em><strong>Pneum. FF; PFF Tuning”</strong></em> sheet.</p>
+<p>The reference inputs are configurable using <em><strong>FSIPF</strong></em> and <em><strong>FGIPF</strong></em> RCI-Commands.</p>
+<h3 id="various-ff-parameters-1">Various FF Parameters</h3>
+<p><span id="_Toc468369419" class="anchor"></span>Table 8.1: Various pneumatic SFF parameters</p>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FFThreshold</td>
+<td><p>This is the threshold variable for the FF-Axis-Output. In case of exceeding its value during adapting the gains of the selected FIR-Filter will be set to zero.</p>
+<p>In case exceeding during the adapting is off the FF-Axis-Output is limited to its value.</p>
+<p>Configurable using <em><strong>FSCPF</strong></em> and <em><strong>FGCPF</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: dependent on stage</span></p></td>
+</tr>
+<tr class="even">
+<td>GainNum</td>
+<td><p>This is the used gains number of the FF-FIR-Filter.</p>
+<p>Configurable using <em><strong>FSCPF</strong></em> and <em><strong>FGCPF</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: 3</span></p></td>
+</tr>
+<tr class="odd">
+<td>FFAlpha</td>
+<td><p>This is the learning constant “Adaption rate” for the adaptive algorithm to calculate the FIR-Filters Gains. Its value influences the convergence of the algorithm and its speed. For each control channel there is an individual learning constant.</p>
+<p>Configurable using <em><strong>FSPPF</strong></em> and <em><strong>FGPPF</strong></em> RCI-Commands</p></td>
+</tr>
+<tr class="even">
+<td>Adaptive Status</td>
+<td><p>The adaptive status is including in the global LoopStatus variable. It switches On/Off the adapting of FF-Subsystem.</p>
+<p><em><strong>SFF.</strong></em> For accessing this status use <em><strong>BSSTS</strong></em>, <em><strong>BGSTS.</strong></em></p></td>
+</tr>
+<tr class="odd">
+<td>Active Status</td>
+<td>The active status is including in the global LoopStatus variable and switches On/Off the FF-Subsystem. For accessing this status use <em><strong>BSSTS</strong></em>, <em><strong>BGSTS</strong></em>.</td>
+</tr>
+</tbody>
+</table>
+<p>For SAMBA19xUI users all parameters in table 7 could be configured on the “<em><strong>Pneum. FF; PFF Tuning”</strong></em> sheet.</p>
+<h1 id="motor-overcurrentoverheating-routine">Motor Overcurrent/Overheating Routine</h1>
+<h2 id="overview-2"><strong>Overview</strong></h2>
+<p>The motor overcurrent routine is a safety measure. It is intended to protect the linear motor of the AVIS from overheating and also from damaging.</p>
+<p>Furthermore it is a kind of failsafe routine. It realizes a failed operation “motor over-powering” of the system and consequently it disables either only the affected motor or all motors dependent on the used configuration.</p>
+<p>The motor overcurrent routine is implemented in the firmware and it has several con-figuration parameters.</p>
+<p>Either the temperature sensors or from the motor outputs modeled temperature values are used to detect overheating/overpowering of the motors.</p>
+<p>To toggle using the temperature sensors on/off, use <em><strong>BGSTS</strong></em> and <em><strong>BSSTS</strong></em>. In case of using the temperature sensors please ensure that AD-Channel set number is equal or greater 6. Furthermore ensure that the AD-Mapping of the temperature sensors is correct.</p>
+<p>The following flow chart demonstrates the functionality of the overcurrent routine in case of not using the temperature sensor.
+<span id="_Toc468369400" class="anchor"></span>Figure 9.1: Flowchart of the motor overcurrent routine</p>
+<p><img src="media/image50.jpeg" alt="MotorOvercurrent"></p>
+<p>The motor-overcurrent will be calculated using the following equitation.</p>
+<p>(24)</p>
+<p>Where:</p>
+<p>: Actual Motor overcurrent-value</p>
+<p>: Previous Motor overcurrent-value</p>
+<p>: Actual Motor output</p>
+<p>: Motor overcurrent cooling constant “smoothing factor of the EWMA”.</p>
+<p>The motor overcurrent routine tries modeling the temperature of the linear motors. It calculates the EWMA-Value of the motor output with the “coolingconst” as weighting factor. As known the temperature development depends on the maximal current flowing through the linear motor coil and the current depends on the used controller and the resistance of the linear motor coil. Therefore the weighting factor of the EWMA has been made adjustable “coolingconst”.</p>
+<p>The following flow chart demonstrates the functionality of the overcurrent routine in case of using the temperature sensor.
+<span id="_Toc468369401" class="anchor"></span>Figure 9.2: Flowchart of the motor overcurrent routine</p>
+<p><img src="media/image56.jpeg" alt="MotorOvercurrent"></p>
+<p>The motor-temperature will be calculated using the following equitation.</p>
+<p>(23)</p>
+<p>Where:</p>
+<p>: averaged Motor temperature</p>
+<p>: Previous averaged Motor temperature</p>
+<p>: Actual Motor Temperature</p>
+<p>: Weighting factor of the EWMA “CoolingConst”.</p>
+<p>The reason of averaging the temperature input values is to clean the noisy temperature sensor input.</p>
+<h2 id="parameters"><strong>Parameters</strong></h2>
+<p>The next table contains all the configuration parameters related to the motor overcurrent routine.
+<span id="_Toc236133384" class="anchor"></span>Table 9.1: Parameters of the motor overcurrent routine</p>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>threshold</td>
+<td><p>For each linear motor there is an individual threshold variable. Its value shouldn’t be exceeded in normal operation. In case of not using temperature sensors Its value is not related to the pure motor output but it is related to the power of the motor “averaged output square”. In case of using temperature sensors this value is temperature value in grad Celsius.</p>
+<p>Adjustable using <em><strong>BSOCV</strong></em> and <em><strong>BGOCV</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: system dependent</span></p></td>
+</tr>
+<tr class="even">
+<td>DelayTime</td>
+<td><p>This is the delay time after overpowering process. During this time period the overpowered or all motors are disabled.</p>
+<p>Adjustable using <em><strong>BSOCV</strong></em> and <em><strong>BGOCV</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: higher than 10 sec.</span></p></td>
+</tr>
+<tr class="odd">
+<td>CoolingConst</td>
+<td><p>This is the weighting factor for the EWMA.</p>
+<p>Adjustable using <em><strong>BSMCC</strong></em> and <em><strong>BGMCC</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: system dependent, the default value is 1e-4</span></p></td>
+</tr>
+<tr class="even">
+<td>DisableAllFlag</td>
+<td><p>Disable all motors flag when one motor is overpowered.</p>
+<p>Adjustable using <em><strong>BSOCV</strong></em> and <em><strong>BGOCV</strong></em> RCI-Commands.</p></td>
+</tr>
+</tbody>
+</table>
+<p>For SAMBA19xUI users all parameters in table 8 could be configured on the “<em><strong>Controller; Motor Protection”</strong></em> sheet.</p>
+<p><img src="media/image17.emf" alt="img"></p>
+<p><img src="media/image17.emf" alt="img"></p>
+<h1 id="automatic-loop-switch">Automatic Loop Switch</h1>
+<p>The automatic loop switch routine serves as a safety routine and to stabilize the AVIS by specific situation (large disturbance).</p>
+<p>In case of fulfilling the loop switch criterion and the automatic loop switch is active then the velocity loop will be switched off and the position loop will be switched on for a specified time period “hold time”.</p>
+<p><strong>Note:</strong> <strong>In case that the automatic loop is switched off and the switch criterion is fulfilled then all motors will be switched off until the hold time is elapsed.</strong></p>
+<p>The loop switch routine consists of a specified signal “input, output, axis … “, threshold value, trigger time and hold time. All four variables are configurable.</p>
+<p>The loop switch criterion is fulfilled when the signal level exceeds the threshold for a time period equals to the trigger time.</p>
+<p>The parameters of the automatic loop switch could be configured on SAMBA19xUI page <em><strong>Controller; System Settings.</strong></em>
+<span id="_Toc468369421" class="anchor"></span>Table 10.1: Parameters of automatic loop switch</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SwitchSignal</strong></td>
+<td><p><strong>This is the specified signal for the auto loop switch criterion. This signal could be adjusted to any in the firmware supported signal.</strong></p>
+<p><strong>Use <em>BSSWS</em> and <em>BGSWS</em> RCI-Commands to configure to specify this signal.</strong></p></td>
+</tr>
+<tr class="even">
+<td><strong>Threshold</strong></td>
+<td><p><strong>This is the threshold variable using by the auto loop switch criterion.</strong></p>
+<p><strong>Its value could be accessed using the RCI-Commands <em>BSOCD</em> and <em>BGOCD</em>.</strong></p></td>
+</tr>
+<tr class="odd">
+<td><strong>TriggerTime</strong></td>
+<td><strong>This is the trigger time variable and adjustable using the <em>BSOCD</em> and <em>BGOCD</em> RCI-Commands.</strong></td>
+</tr>
+<tr class="even">
+<td><strong>HoldTime</strong></td>
+<td><strong>This is the hold time variable and adjustable using the <em>BSOCD</em> and <em>BGOCD</em> RCI-Commands.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc468369402" class="anchor"></span>Figure 10.1: Flowchart for the automatic loop switch</p>
+<p><img src="media/image58.jpeg" alt="AutoLoopSwitch"></p>
+<p><img src="media/image17.emf" alt="img"></p>
+<p><img src="media/image17.emf" alt="img"></p>
+<h1 id="excitation-routine">Excitation Routine</h1>
+<p>The firmware offers the possibility to excite the AVIS system on a various signal nodes with various types of excitation signals (sine wave, white noise, duty cycle, and chirp sine). The excitation signal has a couple of parameters which are adjustable.</p>
+<p>The next figures demonstrate the velocity, position and pneumatic loop nodes that can be excited, additionally all actuators supported in the firmware are excitable.</p>
+<p>Sensors and FF-Subsystem signals are not excitable.</p>
+<p>The excitation signal could be optional filtered through 4 filter stages. The filters are adjustable like the filters of the control loops.</p>
+<p>The following figures show all possible injection nodes of the excitation signal.
+<span id="_Toc468369403" class="anchor"></span>Figure 11.1: Excitation nodes of the velocity loop</p>
+<p><img src="media/image59.png" alt="img"></p>
+<p><span id="_Toc468369404" class="anchor"></span>Figure 11.2: Excitation nodes of the position loop</p>
+<p><img src="media/image60.png" alt="img"></p>
+<p><span id="_Toc468369405" class="anchor"></span>Figure 11.3: Excitation nodes of the pneumatic loop</p>
+<p><img src="media/image61.png" alt="img"></p>
+<p><span id="_Toc468369422" class="anchor"></span>Table 11.1: Parameters of the noise excitation</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NoiseType</td>
+<td><p>This is the noise type variable. There are two adjustable types of noise sine wave and white noise.</p>
+<p>Adjustable using <em><strong>DSESP</strong></em> and <em><strong>DGESP</strong></em> RCI-Commands</p></td>
+</tr>
+<tr class="even">
+<td>Noise Parameters</td>
+<td>The noise has four parameters to adjust dependent on the noise type gain, frequencies or time period. The parameters are adjustable using <em><strong>DSESP</strong></em> and <em><strong>DGESP</strong></em> RCI-Commands.</td>
+</tr>
+<tr class="odd">
+<td>NoiseInjectionPoint</td>
+<td><p>This is the noise injection signal, It specifies the node to be excited.</p>
+<p>Adjustable through <em><strong>DSNIP</strong></em> and <em><strong>DGNIP</strong></em> RCI-Commands.</p></td>
+</tr>
+<tr class="even">
+<td>ExcitationFilterUsageFlag</td>
+<td><p>This is the flag determines, whether the white noise excitation signal has to be filtered or not.</p>
+<p>Adjustable through <em><strong>DSNFU</strong></em> and <em><strong>DGNFU</strong></em> RCI-Commands.</p></td>
+</tr>
+<tr class="odd">
+<td>ExcitationFilter</td>
+<td><p>There are four filters to prepare the white noise signal. The usage of those filters is in the firmware optional.</p>
+<p>Use the <em><strong>DSNFS</strong></em> and <em><strong>DGNFS</strong></em> RCI-Commands to configure the excitation filters.</p></td>
+</tr>
+</tbody>
+</table>
+<p>For SAMBA19xUI users all parameters in table 10 could be configured on the ”<em><strong>Velocity; Velocity Filters”</strong></em> and <em><strong>”Position; Tuning”</strong></em> sheet.</p>
+<h1 id="diagnostic-signals">Diagnostic Signals</h1>
+<p>The opticon-controller contains two BNC-Connectors. They are used as diagnostic outputs for measuring and monitoring various signals supported in the firmware. Sensors, actuators, velocity loop, position loop and pneumatic loop signals could be selected as diagnostic-signal.</p>
+<p>FF-Subsystem doesn’t contain any diagnostic node.</p>
+<p>For SAMBA19xUI users the two diagnostic-signals could be adjusted on sheets <em><strong>”Velocity; Velocity Filters”</strong></em> and <em><strong>”Position; Tuning”</strong></em></p>
+<p>They are also adjustable through using the RCI-Commands <em><strong>DSDOS</strong></em> and <em><strong>DGDOS</strong></em>.</p>
+<p>The following figures show the signal nodes of velocity, position and pneumatic loop, which could be selected as a diagnostic-signal.
+<span id="_Toc468369406" class="anchor"></span>Figure 12.1: Diagnostic nodes of the velocity loop
+<img src="media/image62.png" alt="img"></p>
+<p><span id="_Toc468369407" class="anchor"></span>Figure 12.2: Diagnostic nodes of the position loop
+<img src="media/image63.png" alt="img"></p>
+<p><span id="_Toc468369408" class="anchor"></span>Figure 12.3: Diagnostic nodes of the pneumatic loop
+<img src="media/image64.png" alt="img"></p>
+<h1 id="adda-channels">AD/DA Channels</h1>
+<p>The opticon controller is a digital embedded controller equipped with a DSP (Digital Signal Processor). The DSP processes the control algorithm and all other features implemented in the firmware. To handle the analog sensor signals by the DSP, they will be digitalized through AD-Converters and to drive the actuators the output signals prepared into the DSP are converted to analog signals using DA-Converters.</p>
+<p>The opticon controller is equipped with 6 AD-Converters to read up to 40 multiplexed analog inputs. The analog signals number which should be converted is adjustable per RCI-Commands <em><strong>NSASN</strong></em> and <em><strong>NGASN</strong></em>.</p>
+<p>For each actuator there is a DA-Converter available.</p>
+<p>The AD/DA channel mapping serves to assign each input signal used in the firmware to its physically AD-Channel “sensor”, respectively each output signal to its physically DA-Channel “actuator”.</p>
+<p>The ordering of inputs and outputs could be carried out on the SAMBA19xUI sheet <em><strong>”Controller; AD/AD-Mapping”.</strong></em></p>
+<p>The AD-Mapping is adjustable using the <em><strong>BSADC</strong></em> and <em><strong>BGADC</strong></em> RCI-Commands.</p>
+<p>The DA-Mapping is adjustable using the <em><strong>BSDAS</strong></em> and <em><strong>BGDAS</strong></em> RCI-Commands</p>
+<p>The AD-Mapping for the temperature sensors is adjustable using the <em><strong>BSTSA</strong></em> and <em><strong>BGTSA</strong></em> RCI-Commands.
+<span id="_Toc468369409" class="anchor"></span>Figure 13.1: Flowchart of the input signals
+<img src="media/image65.png" alt="img"></p>
+<p>The stage FF-Signals “Xpos, Xacc, Ypos and Yacc” could be provided by different ways “analog or digital”.</p>
+<p>Adjust the AD-Mapping of the stage FF-Signals to numbers between 40 and 43 to provide the signals by the opticon Digital FF connector.</p>
+<p>Adjust the right AD-Mapping “&lt;40” of the stage FF-Signals to provide the signals by the opticon Analog FF connector.</p>
+<p>All Input values mapped to AD-Channel’s number higher than 44 will be zeroed in the firmware.</p>
+<p>All output signals mapped to DA-Channel with a number higher than 19 will be zeroed.</p>
+<p><img src="media/image17.emf" alt="img"></p>
+<h1 id="outputs-ramp-driving-at-startup-phase">Outputs Ramp driving at startup phase</h1>
+<p>The main intention of the ramp driving is the avoiding a suddenly jerk-forces caused by the motors at a start-up phase. There are two types of ramp driving, the first one is based on the actuator output “Motor output ramp” and the second is based on the logical velocity axes “logical axes ramp”.</p>
+<p>During the start-up phase the motor outputs respectively the velocity axes outputs values start by zero. They are increased incrementally until the ramp time is expired. The actuators reach their full output value when the ramp time is expired.</p>
+<p>The ramp time and the ramp type are through the RCI-Commands <em><strong>BSSUT</strong></em> and <em><strong>BGSUT</strong></em> adjustable.</p>
+<p>For SAMBA19xUI users their values are adjustable on sheet <em><strong>”Controller, System Setting”</strong></em>.</p>
+<p>We get a ramp start-up phase by following cases:</p>
+<ul>
+<li><p>Turning the controller on</p>
+</li>
+<li><p>Turning the overall loop on</p>
+</li>
+<li><p>After motor over-current state and the overall loop is on</p>
+</li>
+<li><p>After occurrence of the automatic loop switching and the overall loop is on.</p>
+</li>
+</ul>
+<h2 id="velocity-logical-axes-ramp-driving">Velocity Logical axes ramp driving</h2>
+<p>In case of logical axes ramp driving the velocity axes output are limited at the ramp start-up phase.</p>
+<p>The Axes-Output-limiter value starts with zero and ends after expiring the start-up time with the adjusted limiter value of the velocity axes output.</p>
+<h2 id="motor-output-ramp-driving">Motor output ramp driving</h2>
+<p>In this case the linear motor outputs values are limited at the start-up phase.</p>
+<p>The motor output-limiter value starts with zero and ends after the start-up time with the adjusted output-limiter value.</p>
+<p>The following flow diagram gives an overview about the process of the ramp driving.
+<span id="_Toc468369410" class="anchor"></span>Figure 14.1: Ramp driving flow diagram.</p>
+<p><img src="media/image66.jpeg" alt="RampDrive"></p>
+<h1 id="monitor-reset-led-and-key-functionality">Monitor, Reset LED and Key Functionality</h1>
+<p>The opticon-controller is equipped on the front panel with two LEDs and Keys. They are labeled as <em>Monitor</em> and <em>Reset</em>. The Following table contains an overview about the functionality of the reset and monitor keys.
+<span id="_Toc468369423" class="anchor"></span>Table 15.1: Monitor and Reset Keys functionality.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Operation</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Monitor Key</p>
+<p>“ActiveOn/Off”</p></td>
+<td>Press the Monitor Key for approx. <strong>2 seconds</strong> to toggle the active loop On/Off.</td>
+</tr>
+<tr class="even">
+<td><p>Reset Key</p>
+<p>“Reset”</p></td>
+<td>Pressing the reset key for at least <strong>4 seconds</strong> forces a software reset. During pressing the Reset key the reset and monitor LEDs are not lighting.</td>
+</tr>
+<tr class="odd">
+<td><p>Run the monitor program</p>
+<p>“Monitor Mode”</p></td>
+<td><ul>
+<li><p>Press the monitor key and keep it pressed then power cycle the controller, unhand the monitor key when the two LEDs monitor and reset are lighting.</p></li>
+<li><p>Press the monitor and reset key for 4 second. When the reset and monitor LEDs are lighting unhand the reset key firstly and then unhand the monitor key.</p></li>
+</ul>
+<p>If the monitor program is running the two LEDs are lighting.</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc468369424" class="anchor"></span>Table 15.2: Monitor and Reset LEDs functionality</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Operation</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monitor LED</td>
+<td><p><strong>Flashing</strong>: Normal mode the firmware is running.</p>
+<p><strong>Lighting</strong>: firmware hangs up or controller running in monitor mode.</p>
+<p><strong>Not lighting</strong>: firmware hangs up or controller running in monitor mode.</p></td>
+</tr>
+<tr class="even">
+<td>Reset LED</td>
+<td><p><strong>Lighting</strong>: Overall Active Control-loop is on.</p>
+<p><strong>Not lighting</strong>: Overall Active Control-loop is off.</p></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="amplifier-operation-monitoring-and-malfunction">Amplifier operation monitoring and malfunction</h1>
+<p>The controller is equipped with a current amplifier board to provide the needed power for the linear motors. Some controller are equipped with two amplifier boards. The amplifiers could be enabled/disabled by the firmware. The amplifiers provide digital status signals to the firmware.</p>
+<p>The amplifier boards status signals are listed in next table.
+<span id="_Toc468369425" class="anchor"></span>Table 16.1: Amplifier digital signals.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Signal</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amplifier1-Plugged-In</td>
+<td>This signal detects whether the amplifier board number 1 is plugged in.</td>
+</tr>
+<tr>
+<td>Amplifier1-Power-Failure</td>
+<td>This signal detects a power supply failure of the amplifier board number 1.</td>
+</tr>
+<tr>
+<td>Amplifier1-Temp-Failure</td>
+<td>This signal detects a temperature failure of the amplifier board number 1.</td>
+</tr>
+<tr>
+<td>Amplifier2-Plugged-In</td>
+<td>This signal detects whether the amplifier board number 2 is plugged in.</td>
+</tr>
+<tr>
+<td>Amplifier2-Power- Failure</td>
+<td>This signal detects a power supply failure of the amplifier board number 2.</td>
+</tr>
+<tr>
+<td>Amplifier2-Temp- Failure</td>
+<td>This signal detects a temperature failure of the amplifier board number 2.</td>
+</tr>
+</tbody>
+</table>
+<p>In normal operation the amplifier board is enabled in case it is plugged in.</p>
+<p>If of amplifier board is plugged in and it has power supply failure or temperature failure, then the amplifier will be disabled and the SYS_ERR on the front panel will be switched on.</p>
+<p>In this case the digital input word is traced in a circular buffer. The circular buffer consists of the 10 elements.</p>
+<p>The circular buffer could be read by the RCI-Command <em><strong>DGADE</strong></em>.</p>
+<p>For the SAMBA19xUI users the buffer elements are displayed on the “<em><strong>Status</strong></em>” page.</p>
+<h1 id="digital-io-signals-functionality">Digital I/O-Signals functionality</h1>
+<p>The Digital I/O-Signals functionality is supported in standard firmware version V3.3.09 and higher. For more information see the <em>Opticon_Digital_IO_Specification</em> document.</p>
+<h2 id="digital-input-functionality">Digital input functionality</h2>
+<p>The two digital input signals have the same functionality like the Monitor- and Reset-Key signals on the front panel of the opticon controller. The DISABLE_IN signal is equal to the monitor key signal and the RESET_IN signal is equal to the reset key signal.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Signal</strong></th>
+<th><strong>Active state</strong></th>
+<th><strong>Functionality</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>DISABLE_IN</td>
+<td>High</td>
+<td><p>Activate it (set to high) for &gt;2 seconds to toggles the control-loops on/off. Assuming RESET_IN is low.</p>
+<p>If RESET_IN is high no effect.</p></td>
+</tr>
+<tr class="odd">
+<td>RESET_IN</td>
+<td>High</td>
+<td>Activate it (set to high) for &gt; 4 seconds to force software reset.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="digital-output-functionality">Digital output functionality</h2>
+<p>The READY_OUT signal behaves like the RESET led on the opticon controller’s front panel. It shows the status of the vibration isolation system’s control loop.</p>
+<p>The ERROR_OUT shows system’s malfunction.</p>
+<p>The following table gives an overview about the functionality of the digital output.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Signal</strong></th>
+<th><strong>State/Meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>READY_OUT</td>
+<td><p><strong>High</strong>: when the system is active (Control loop is on)</p>
+<p><strong>Low</strong>: when the system is passive (Control loop is OFF)</p></td>
+</tr>
+<tr class="even">
+<td>ERROR_OUT</td>
+<td><p><strong>High</strong>: when the linear motors are overheated or overpowered.</p>
+<p><strong>Low</strong>: Normal operation, No malfunction</p></td>
+</tr>
+</tbody>
+</table>
+<h1 id="various-parameters">Various Parameters</h1>
+<p>The next table contains all remaining parameters that haven’t been explained in the above chapters.
+<span id="_Toc468369428" class="anchor"></span>Table 19.1: Various parameters</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OutputLimiter</td>
+<td><p>This variable limits all linear motor outputs. If a motor exceeds the value of this variable, then the motor output value is set to this value.</p>
+<p>For SAMBA19xUI users its value is adjustable on sheet <em><strong>” Controller; Motor Protection”</strong></em>.</p>
+<p>Adjustable using <em><strong>BSOPL</strong></em> and <em><strong>BGOPL</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: system dependent, default value 30%</span></p></td>
+</tr>
+<tr class="even">
+<td>ControllerConfiguration</td>
+<td><p>This variable determines whether the various loops are configured (will be processed by the firmware) or not. The position loop, Pneumatic loop and the FF-Subsystem are as mentioned optional. The velocity loop is always processed by the firmware “configured”.</p>
+<p>For SAMBA19xUI users its value is adjustable on sheet <em><strong>”Controller; System Settings”</strong></em>.</p>
+<p>Its value is adjustable using <em><strong>NSEXL</strong></em> and <em><strong>NGEXL</strong></em> RCI-Commands</p>
+<p><span class="underline">Typical value: system dependent</span></p></td>
+</tr>
+<tr class="odd">
+<td>SampleFrequency</td>
+<td><p>This is the sample frequency of the interrupt routine processing the control loops and the other firmware features.</p>
+<p>For SAMBA19xUI users its value is adjustable on sheet <em><strong>”Controller; System Settings”</strong></em>.</p>
+<p>Adjustable using <em><strong>NSSFR</strong></em> and <em><strong>NGSFR</strong></em> RCI-Commands</p>
+<p>This value should be changed only by experienced service engineer because a too high sample frequency causes a crashing the firmware.</p>
+<p><span class="underline">Typical value: 9 KHz</span></p></td>
+</tr>
+<tr class="even">
+<td>LinearMotorOffset</td>
+<td><p>This variable contains 8 values to be added to the horizontal motor outputs “X1,Y1, X2, Y2, X3, Y3, X4 and Y4” as offset. Those values serve to centre the payload.</p>
+<p>The values are for each motor individual adjustable.</p>
+<p>For SAMBA19xUI users motor offset values are adjustable on sheet <em><strong>”Controller; Motor Protection”</strong></em>.</p>
+<p>Adjustable using <em><strong>CSMOV</strong></em> and <em><strong>CGMOV</strong></em> RCI-Commands</p></td>
+</tr>
+<tr class="odd">
+<td><strong>Performance monitor</strong></td>
+<td><p>This routine monitors a specified signal -called monitor signal- to verify the performance of the system. When the signal level exceeds the threshold for a specified time period “trigger time” then the performance status toggled to <em><strong>failed</strong></em> and this state holds for the hold time, otherwise the performance status is <em><strong>okay</strong></em>. The monitor signal is configurable and could be sensor, actuator, velocity and position loop signal.</p>
+<p>Adjustable using <em><strong>DSPMV</strong></em> , <em><strong>DGPMS</strong></em>, and <em><strong>DGPMV</strong></em> RCI-Commands</p></td>
+</tr>
+<tr class="even">
+<td>Signal</td>
+<td>This is the performance monitor signal, adjustable on the SAMBA-UI sheets <em><strong>”Controller Settings”</strong></em>.</td>
+</tr>
+<tr class="odd">
+<td>Threshold</td>
+<td><p>This is the threshold variable.</p>
+<p>For SAMBA19xUI users its value is adjustable on sheet <em><strong>”Controller; System Settings”</strong></em>.</p></td>
+</tr>
+<tr class="even">
+<td>Trigger time</td>
+<td><p>This is the trigger time variable.</p>
+<p>For SAMBA19xUI users its value is adjustable on sheet <em><strong>”Controller; System Settings”</strong></em>.</p></td>
+</tr>
+<tr class="odd">
+<td>Hold time</td>
+<td><p>This is the hold time variable.</p>
+<p>For SAMBA19xUI users its value is adjustable on sheet <em><strong>”Controller; System Settings”</strong></em>.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The next table shows all the read only parameters.
+<span id="_Toc468369429" class="anchor"></span>Table 19.2: Read-Only Parameters.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Parameters “Read only”</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System Load</td>
+<td><p>This variable is not editable it is read only. Its value demonstrates how busy the interrupt routine is. In case of creasing the sample frequency take care that the system load value doesn’t exceed 85%.</p>
+<p>For SAMBA-UI users its value is displayed on sheet <em><strong>”Controller Settings”</strong></em>.</p>
+<p>For SAMBA19xUI users its value is displayed on sheet <em><strong>”Controller; System Settings”</strong></em>.</p>
+<p>Use <em><strong>DGSLO</strong></em> RCI-Command to get the actual value of System load.</p></td>
+</tr>
+<tr class="even">
+<td>Motor Overcurrent “overheating” Status</td>
+<td><p>This parameter gives information about the system status normal operation or overpowered.</p>
+<p>For SAMBA-UI users its value is displayed on sheet <em><strong>”Motor Overcurrent”</strong></em>.</p>
+<p>For SAMBA19xUI users its value is displayed on sheet <em><strong>”Controller; Motor Protection”</strong></em>.</p>
+<p>To get the status use <em><strong>BGMPS</strong></em> RCI-Command.</p></td>
+</tr>
+<tr class="odd">
+<td>Motor power</td>
+<td><p>For SAMBA-UI users the motor powers respectively temperature values are displayed on sheet <em><strong>”Motor Overcurrent”</strong></em>.</p>
+<p>For SAMBA19xUI users the motor powers respectively temperature values are displayed on sheet <em><strong>”Controller; Motor Ptotection”</strong></em>.</p>
+<p>To get the motors power values use <em><strong>BGMPV</strong></em> RCI-Command.</p></td>
+</tr>
+<tr class="even">
+<td>Pneumatic Loop parameters</td>
+<td><p>The pneumatic loop status, the reference point, the actual axes inputs and the actual axes outputs the actual isolator heights and the actual valve outputs are included in this parameter packet.</p>
+<p>For SAMBA-UI users the above parameter values are displayed on sheet <em><strong>”Pneumatic Loop”</strong></em>.</p>
+<p>For SAMBA19xUI users their values are displayed on sheet <em><strong>”Pneumatic, Tuning”</strong></em>.</p>
+<p>To get those values use <em><strong>PGPAS</strong></em> RCI-Command.</p></td>
+</tr>
+<tr class="odd">
+<td>Pneumatic Loop parameters</td>
+<td><p>The actual isolator heights and the actual valve outputs are included in this parameter packet.</p>
+<p>For SAMBA-UI users the above parameter values are displayed on sheet <em><strong>”Pneumatic Loop”</strong></em>.</p>
+<p>For SAMBA19xUI users their values are displayed on sheet <em><strong>”Pneumatic, Tuning”</strong></em>.</p>
+<p>To get those values use <em><strong>PGPHV</strong></em> RCI-Command.</p></td>
+</tr>
+<tr class="even">
+<td>Performance monitor status and counter of trigger and hold time</td>
+<td><p>This parameter presents the status of performance “<em><strong>failed</strong></em> or <em><strong>okay</strong></em>”. By SAMBA-UI it is displayed on <em><strong>”Controller Settings”</strong></em> and <em><strong>Status</strong></em> sheets. Furthermore the counter for the trigger and hold time is displayed on the SAMBA-UI sheet <em><strong>”Controller Settings”</strong></em>.</p>
+<p>For SAMBA19xUI users it is displayed on sheet <em><strong>”Controller, System Settings”</strong></em>.</p>
+<p>Use the RCI-Command <em><strong>DGPMS</strong></em> to get those values.</p></td>
+</tr>
+<tr class="odd">
+<td>Auto loop switch status and the counter for trigger and hold time</td>
+<td><p>The status of the velocity and position loop and the counter of trigger and hold time are displayed on the <em><strong>”Controller Settings”</strong></em> sheet of the SAMBA-UI and on the <em><strong>”Controller, System Settings”</strong></em> sheet by SAMBA19xUI.</p>
+<p>Use the RCI-Command <em><strong>DGCSS</strong></em> to get those values.</p></td>
+</tr>
+</tbody>
+</table>
+<h1 id="summary">Summary</h1>
+<p>This document describes all parameters supported by firmware. Furthermore all features and functionality implemented in the firmware have been explained.</p>
+<p>This document is a useful reference document for all users working with an AVIS.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

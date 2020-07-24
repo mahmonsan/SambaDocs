@@ -1,0 +1,1174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Common | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Common | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="../../images/IDELogo.gif" alt="img"> Integraded Dynamics Engineering</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td><span id="_Toc500853553" class="anchor"></span><strong>SiDiMaT19xA User Manual</strong></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>SiDiMaT19xA</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AUTHOR(S):</strong></td>
+<td>Moneer Shatat-Herres</td>
+</tr>
+<tr>
+<td><strong>REVISION:</strong></td>
+<td>00</td>
+</tr>
+<tr>
+<td><strong>DATE OF PRINT:</strong></td>
+<td>December 12, 2017</td>
+</tr>
+</tbody>
+</table>
+<p>DOCUMENT CHANGE &amp; HISTORY RECORD</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Last Update</th>
+<th>Status</th>
+<th>Version</th>
+<th>ECR/PR/IP</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MSHAT</td>
+<td>12.12.2017</td>
+<td>Released</td>
+<td>00</td>
+<td></td>
+<td>Modification related to SiDiMaT19xA RC02 1.0.0.0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="common">Common</h1>
+<p>The SiDiMaT19xA tool allows user to take auto measurements to check the system functionality.
+The new auto-measurement functionality is intended to:</p>
+<ul>
+<li>take auto-measurements of the system.</li>
+<li>check measurement specification and save check results.</li>
+<li>generate a report including measurement graphs, specification check results.</li>
+</ul>
+<p>The sidimat19xa uses a kind of script file &quot;sam-file&quot; consists of a collection of actions &quot;<strong>sam-operations</strong>&quot;, which are sequencly sent to the controller to be executed.
+The sam-file supports two file formats a xml-format with the extension &quot;<strong>.SiDiMaTAMF</strong>&quot; and a json-format with the extension &quot;<strong>.SiDiMaTAMFjson</strong>&quot;.
+The xml-format sam-file doesn't support definition of derictives &quot;global variables&quot; and will not be supported in the future.</p>
+<blockquote>
+<p>[!Info]
+It is recommended to use the json file format, because it is extendable.</p>
+</blockquote>
+<p>sam-file consists of:</p>
+<ul>
+<li>FileVersion: the sam-file version number.</li>
+<li><em>AutoMeasurementOperations</em>: solid auto-measurement structure it could be ignored.</li>
+<li><em>AutoMeasurementAndSpecificationList</em>: a collection of auto-measurements where its operation-list could contains a specification-checks.</li>
+<li><em>AutoMeasurementList</em>: a collection of auto-measurements where its operation-list shoudn't contains a specification-checks.</li>
+<li>diectives: collection of global variable could be used in the same sam-file and the other called sam-files inside the main sam-file (not supported by &quot;<strong>.SiDiMaTAMF</strong>&quot; files).</li>
+</ul>
+<p><a href="#appendix"><em>sam-file</em>-example</a>.</p>
+<h1 id="sam-operations">sam-operations</h1>
+<p>This section describes all auto measurement operation <a href="#sam-operation">&quot;sam-operation&quot;</a>, which could be included in the sidimat19xa auto measurement file <a href="#sam-file">&quot;sam-file&quot;</a>.</p>
+<p>The next table lists all sam-operations.</p>
+<p>An operation consists of a operation name and a value. The value is a collection of one or many command strings, which triggers an action.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>sam-operations <em>CheckSpec</em>- and <em>Report</em>-Name has to be uniq in the hole auto measurement procedure.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><em>sam-operation name</em></th>
+<th><em>Value (sam-cmd)</em></th>
+<th><em>Description</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Execute-Sam-File</em></td>
+<td>{<a href="#filepath"><em>filepath</em></a>}</td>
+<td>Opens the auto measurement file <em>filepath</em> and excutes it. The <em>filepath</em> has the extension <em>.SiDiMaTAMF</em>.</td>
+</tr>
+<tr>
+<td><em>SamCommands</em></td>
+<td>See <a href="#SamCommands-sam-operation">SamCommands</a></td>
+<td></td>
+</tr>
+<tr>
+<td><em>CheckSpec_#{uniq-name}</em></td>
+<td>See <a href="#checkspec-sam-operation">CheckSpec</a></td>
+<td>Checks the specification of one or many curves of an IDEFigure figure.</td>
+</tr>
+<tr>
+<td><em>Report_#{uniq-name}</em></td>
+<td>see <a href="#report-sam-operation">Report</a></td>
+<td>Writes an entry to the auto measurement report. Its value contains a collection of actions (operations).</td>
+</tr>
+</tbody>
+</table>
+<h1 id="samcommands-sam-operation"><em>SamCommands</em> sam-operation</h1>
+<p>The <strong>SamCommands</strong> <a href="#sam-operation">sam-operation</a> contains a varios auto measurement actions. It's value consists of a collection of auto measurement commands <a href="#sam-cmd">sam-cmd</a>.<br>
+A &quot;<strong>sam-cmd</strong>&quot; consists of  <strong><em>cmd-name</em></strong>  &quot;<em>italic</em>, <strong>polt</strong> &quot; and list of <a href="#cmd-config"><strong>cmd-config</strong></a> seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.<br>
+A <strong>cmd-config</strong> consists of a keyword &quot;<strong>polt</strong>&quot; and a value, they are seperated by a colon &quot;:&quot; or by a colon+space &quot;: &quot;. Some <strong>cmd_configs</strong> are valueless.
+The following table describes all possible <a href="#sam-cmd">sam-cmds</a> of the <strong>SamCommands</strong> <a href="#sam-operation">sam-operation</a>.</p>
+<h2 id="samcommands-sam-operation-sam-cmds"><em>SamCommands</em> sam-operation sam-cmds</h2>
+<table>
+<thead>
+<tr>
+<th><strong>sam-cmd</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <em><strong>measure</strong></em>}</td>
+<td>start sidimat measurement.</td>
+</tr>
+<tr>
+<td>{ <em><strong>rci-command</strong></em>; <strong>command</strong>: rci1-cmd }</td>
+<td>send rci1-cmd to controller as ASCII rci-command.</td>
+</tr>
+<tr>
+<td>{<em><strong>cache-figure-signals-to-dic</strong></em>;<strong>file1</strong>:<a href="#filepath"><em>filepath</em></a>; <strong>file2</strong>:<a href="#filepath"><em>filepath</em></a>; ... }</td>
+<td>load measurements curves (series) from a .IDEFigure files {file1:first file, file2: second file, ...}. The curves are added &quot;saved&quot; into a dictionary. The curves in the dictionary are identified by their label which is consisting of three letters and three numbers sample (F1P2S2: this is signal#2 of plot#2 of file#1). path1, path2 ... are optional.</td>
+</tr>
+<tr>
+<td>{<em><strong>sig-man</strong></em>; <strong>loggmanxml-file</strong>:[filepath]path}</td>
+<td>manipolate dictionary signals and replot them using <em>.LoggManXml</em> file.</td>
+</tr>
+<tr>
+<td>{<em><strong>pneum-system</strong></em>; <strong>move</strong>:{up|down}; <strong>setpoint</strong>:val; <strong>tolerance</strong>:val; <strong>softupheight</strong>: val; <strong>timeout</strong>: val; <strong>wait-for</strong>:{ok|down|up|oktime#TimeInSeconds}; <strong>cache</strong>:{setpoint|softupheigh|tolerance}; <strong>restore</strong>:{setpoint|softupheigh|tolerance} }</td>
+<td>excute a pneumatic system actions <a href="#pneum-system-sam-configs">see description</a>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>trace-setting</strong></em>; <strong>samples</strong>:samplesnum; <strong>undersample</strong>:undersamplingnum; <strong>average</strong>:averagenum; <strong>anti-aliasing</strong>:(on/off) }</td>
+<td>set the trace settings.</td>
+</tr>
+<tr>
+<td>{ <em><strong>trace-sig</strong></em>; <strong>signum</strong>:x; <strong>type</strong>:x; <strong>mainindex</strong>:x; <strong>subindex</strong>:x }</td>
+<td>config a trace signal, x starts by zero.</td>
+</tr>
+<tr>
+<td>{ <em><strong>excit-sig</strong></em>; <strong>type</strong>:x; <strong>mainindex</strong>:x; <strong>subindex</strong>:x }</td>
+<td>config injection point signal, x starts by zero.</td>
+</tr>
+<tr>
+<td>{ <em><strong>excit-filter</strong></em>; <strong>filnum</strong>:FilterNumber; <strong>type</strong>:FilterType; <strong>par1</strong>:FilterParameter1; <strong>par2</strong>:FilterParameter2; <strong>par3</strong>:FilterParameter3; <strong>par4</strong>:FilterParameter4; <strong>par5</strong>:FilterParameter5 }</td>
+<td>configures an excitation filter.</td>
+</tr>
+<tr>
+<td>{ <em><strong>excit-setting</strong></em>; <strong>type</strong>:ExcitationType; <strong>par1</strong>:ExcitationParameter1; <strong>par2</strong>:ExcitationParameter2; <strong>par3</strong>:ExcitationParameter3; <strong>par4</strong>:ExcitationParameter4; <strong>filterusage</strong>:{on|off} }</td>
+<td>config the excitation signal setting.</td>
+</tr>
+<tr>
+<td>{ <em><strong>system-loopstatus</strong></em>; <strong>status</strong>: S1 S2 ... Sn}</td>
+<td>toggles a control loop on/off. <strong>status</strong> parameters should be one or many by a space seperated <a href="#system-loop-status-actions">sytem-loop-status-actions</a>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>individual-loopstatus</strong></em>; <strong>velocity</strong>:x; <strong>position</strong>:x; <strong>pneumatic</strong>:x }</td>
+<td>set the individual loop status of one or many control loops. x is a binary value.</td>
+</tr>
+<tr>
+<td>{ <em><strong>prompt-message</strong></em>; <strong>message</strong>:messsage}</td>
+<td>prompt a message box with gives message, this stops auto measurement until the user click the message box.</td>
+</tr>
+<tr>
+<td>{ <em><strong>cache-measurement</strong></em>;}</td>
+<td>cache the actual sidimat measurement.</td>
+</tr>
+<tr>
+<td>{ <em><strong>clear-measurement</strong></em>; x }</td>
+<td>clear the chached sidimat measurement, x is one of {measurements1,  measurement2, ... }. If x is omitted the last cached measurement will be cleared.</td>
+</tr>
+<tr>
+<td>{ <em><strong>clear-cached-measurements</strong></em>; }</td>
+<td>clear all chached sidimat measurements .</td>
+</tr>
+<tr>
+<td>{ <em><strong>waitms</strong></em>; <strong>time</strong>:ms}</td>
+<td>wait the time period ms. ms is millisecond.</td>
+</tr>
+<tr>
+<td>{ <em><strong>directory</strong></em>; <strong>reset</strong>:dummy; <strong>file</strong>: path}</td>
+<td>changes the working directory to <strong>file</strong> or reset the working directory to original-directory. the value of reset is ignored.</td>
+</tr>
+<tr>
+<td>{ <em><strong>rescale-measurement-plot</strong></em>; <strong>plot1</strong>: plotname; <strong>plot2</strong>:plotname; ...}</td>
+<td>rescale the listed sidimat19xa <strong>plots</strong> with the given plotnames. plotname is one of {Amplitude, Phase, Coherence, Time1, Time2, Spectrum1, Spectrum2}.</td>
+</tr>
+<tr>
+<td>{ <em><strong>rescale-measurement</strong></em>; <strong>measurement</strong>: measurementname; }</td>
+<td>rescale the sidimat19xa <strong>measurement</strong> with the given measurementname. measurementname is one of {frf, time}.</td>
+</tr>
+<tr>
+<td>{ <em><strong>restyle-measurement</strong></em>; <strong>measurement</strong>: measurementname; loggmanxml-file: <a href="#filepath">filepath</a>}</td>
+<td>restyle and manipulate the sidimat19xa <strong>measurement</strong> with the given measurementname using a <em>.loggmanxml</em>. measurementname is one of {frf, time}.</td>
+</tr>
+<tr>
+<td>{ <em><strong>add-from-csv</strong></em>; <strong>file</strong>: <a href="#filepath">filepath</a>; <strong>title</strong>:; <strong>plot1</strong>: plotname; <strong>plot2</strong>:plotname; ...}</td>
+<td>Adds curve x/y-pairs from a simicolon seperated .csv file (filepath) to a sidimat plot listed here. The plotname is one of {Amplitude, Phase, Coherence, Time1, Time2, Spectrum1, Spectrum2}. <strong>title</strong> is optional and specifies the curve name.</td>
+</tr>
+<tr>
+<td>{ <em><strong>spec-failed-action</strong></em>; <strong>action</strong>: x}</td>
+<td>sets the action which should be triggered by failed specification check. x is one of {<strong>inform-user</strong>, <strong>user-confirmation-to-continue</strong>, <strong>stop-auto-measurement</strong>, <strong>none</strong>}</td>
+</tr>
+<tr>
+<td>{ <em><strong>open-measurement</strong></em>; <strong>file</strong>:<a href="#filepath">filepath</a>}</td>
+<td>open a .sidimat19x raw measurement.</td>
+</tr>
+<tr>
+<td>{ <em><strong>add-measurement</strong></em>; <strong>file</strong>:<a href="#filepath">filepath</a>}</td>
+<td>add a .sidimat19x raw measurement.</td>
+</tr>
+<tr>
+<td>{<em><strong>save</strong></em>; <strong>type</strong>: <a href="#save-types">savetype</a>; [<strong>fignum</strong>: NumberOfFigure;] [<strong>plotnum</strong>: NumberOfPlot;] <strong>file</strong>: <a href="#filepath">filepath</a>}</td>
+<td>saves figure, figure-plot or sidimat measurement to <em>.idefigure</em> or <em>picture</em> file.</td>
+</tr>
+<tr>
+<td>{<em><strong>logg-par</strong></em>; <strong>signum</strong>: MonitorSignalNumber;{<strong>type</strong>: TBD}}</td>
+<td>configures the logging parameter.EventType {0:OverCurrentEvent | 1:EventSignalLogging | 2:standard logging}</td>
+</tr>
+<tr>
+<td>{<em><strong>monitor-sig</strong></em>; <strong>signum</strong>: num; <strong>type</strong>: x; <strong>mainindex</strong>: x; <em>subindex</em>: x}}</td>
+<td>configures a monitor signal.</td>
+</tr>
+<tr>
+<td>{<em><strong>load-logg-setting-file</strong></em>; <strong>file</strong>: path}</td>
+<td>Opens logging setting file and send it to controller. Path has the extension <em>.Logg19xConfig</em>.</td>
+</tr>
+<tr>
+<td>{<em><strong>start-logging</strong></em>; <strong>file</strong>: path}</td>
+<td>Starts the logging.</td>
+</tr>
+<tr>
+<td>{<em><strong>stop-logging</strong></em>; <strong>file</strong>: path}</td>
+<td>Stops the logging.</td>
+</tr>
+<tr>
+<td>{<em><strong>wait-to-finish-logging</strong></em>; <strong>timeout</strong>: TimeInSecond}</td>
+<td>waits to finish the logging but not more than timeout.</td>
+</tr>
+<tr>
+<td>{<em><strong>wait-for-event-trace</strong></em>; <strong>tracenum</strong>:num; <strong>timeout</strong>: TimeInSecond}</td>
+<td>waits to finish the event logging but not more than timeout.</td>
+</tr>
+<tr>
+<td>{<em><strong>get-logg-data</strong></em>; <strong>file</strong>: path; <strong>loggmanxml-file</strong>: plotfile}</td>
+<td>loads logg data from controller, saves to <strong>file</strong> and optionally plots the data using <strong>loggmanxml</strong>.</td>
+</tr>
+<tr>
+<td>{<em><strong>plot-logg-data</strong></em>; <strong>file</strong>: path; <strong>loggmanxml-file</strong>: plotfile}</td>
+<td>loads logg data from <strong>file</strong> and plots the data using <strong>loggmanxml</strong>.</td>
+</tr>
+<tr>
+<td>{<em><strong>close-loggfig</strong></em>; <strong>fignum</strong>: NumberOfFigure; }</td>
+<td>closes a figure.</td>
+</tr>
+<tr>
+<td>{<em><strong>rescale-loggfig</strong></em>; <strong>fignum</strong>: NumberOfFigure; }</td>
+<td>rescales the plots of a figure.</td>
+</tr>
+<tr>
+<td>{<em><strong>restyle-loggfig</strong></em>; <strong>fignum</strong>: NumberOfFigure; <strong>loggmanxml-file</strong>: plotfile}</td>
+<td>restyle the plots of a figure using the <strong>loggmanxml-file</strong>.</td>
+</tr>
+<tr>
+<td>{<em><strong>event</strong></em>; {<strong>threshold</strong>: ThresholdValue; <strong>trig-samples</strong>: TriggerSamplesNumber; <strong>type</strong>: x; <strong>mainindex</strong>: x; <em>subindex</em>: x; }</td>
+<td>configures the event for the event logging.</td>
+</tr>
+<tr>
+<td>{<em><strong>system-setting</strong></em>; <strong>command</strong>: x; <strong>file</strong>: path}</td>
+<td>loads/saves/save to nvram/delete nvram/restore nvram. <strong>command</strong> is one of {<em><strong>loadfile</strong></em>: load a samba19xui_config file &quot;<strong>file</strong>&quot; to controller; <em><strong>savefile</strong></em>: loads the setting from controller and saves it to a samba19x_config file &quot;<strong>file</strong>&quot;; <em><strong>savenvram</strong></em>: save parameters to nvram; <em><strong>restorenvram</strong></em>: restores paraneters from nvram; <em><strong>clearnvram</strong></em>: clear parameters from nvram }</td>
+</tr>
+<tr>
+<td>{<em><strong>add-2-val</strong></em>; <strong>value1</strong>: value_name; <strong>value2</strong>: value_name; <strong>result</strong>: result_name; <strong>mainindex</strong>: x; <em>subindex</em>: x; }</td>
+<td>adds value1 and value2 from the directive dictionary and save the result back to the directive dictionary. value_name and result_name has to start with dollar mark &quot;$&quot;.</td>
+</tr>
+<tr>
+<td>{<em><strong>mult-2-val</strong></em>; <strong>value1</strong>: value_name; <strong>value2</strong>: value_name; <strong>result</strong>: result_name; <strong>mainindex</strong>: x; <em>subindex</em>: x; }</td>
+<td>multiplies value1 and value2 from the directive dictionary and save the result back to the directive dictionary. value_name and result_name has to start with dollar mark &quot;$&quot;.</td>
+</tr>
+<tr>
+<td>{<em><strong>sub-2-val</strong></em>; <strong>value1</strong>: value_name; <strong>value2</strong>: value_name; <strong>result</strong>: result_name; <strong>mainindex</strong>: x; <em>subindex</em>: x; }</td>
+<td>subtracts value2 from value1 from the directive dictionary and save the result back to the directive dictionary. value_name and result_name has to start with dollar mark &quot;$&quot;.</td>
+</tr>
+<tr>
+<td>{<em><strong>divide-2-val</strong></em>; <strong>value1</strong>: value_name; <strong>value2</strong>: value_name; <strong>result</strong>: result_name; <strong>mainindex</strong>: x; <em>subindex</em>: x; }</td>
+<td>divides value1 through value2 from the directive dictionary and save the result back to the directive dictionary. value_name and result_name has to start with dollar mark &quot;$&quot;.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="save-types">Save Types</h2>
+<table>
+<thead>
+<tr>
+<th><em>Save Type</em></th>
+<th><em>description</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>frf2pic</em></td>
+<td>saves the SiDiMaT19xA frequency response measurement to .png file.</td>
+</tr>
+<tr>
+<td><em>time2pic</em></td>
+<td>saves the SiDiMaT19xA time/spectrum measurement to .png file.</td>
+</tr>
+<tr>
+<td><em>frfmag2pic</em></td>
+<td>saves the SiDiMaT19xA frequency response magnitude to .png file.</td>
+</tr>
+<tr>
+<td><em>frfphase2pic</em></td>
+<td>saves the SiDiMaT19xA frequency response phase to .png file.</td>
+</tr>
+<tr>
+<td><em>frfcoherence2pic</em></td>
+<td>saves the SiDiMaT19xA frequency response coherence to .png file.</td>
+</tr>
+<tr>
+<td><em>sig1time2pic</em></td>
+<td>saves the SiDiMaT19xA time measurement of signal1 to .png file.</td>
+</tr>
+<tr>
+<td><em>sig2time2pic</em></td>
+<td>saves the SiDiMaT19xA time measurement of signal2 to .png file.</td>
+</tr>
+<tr>
+<td><em>sig1spec2pic</em></td>
+<td>saves the SiDiMaT19xA spectrum measurement of signal1 to .png file.</td>
+</tr>
+<tr>
+<td><em>sig2spec2pic</em></td>
+<td>saves the SiDiMaT19xA spectrum measurement of signal2 to .png file.</td>
+</tr>
+<tr>
+<td><em>frf2fig</em></td>
+<td>saves the SiDiMaT19xA frequency response measurement to .IDEFigure file.</td>
+</tr>
+<tr>
+<td><em>time2fig</em></td>
+<td>saves the SiDiMaT19xA time/spectrum measurement to .IDEFigure file.</td>
+</tr>
+<tr>
+<td><em>raw</em></td>
+<td>saves the SiDiMaT19xA complete measurement to .sidimat19x file. The .sidimat19x format is a kind of matlab format.</td>
+</tr>
+<tr>
+<td><em>loggfig2fig</em></td>
+<td>saves the logging measurement figure with the number (fignum) to .IDEFigure file. If fignum is omitted the first figure is saved.</td>
+</tr>
+<tr>
+<td><em>loggfig2pic</em></td>
+<td>saves the logging measurement figure with the number (fignum) to .png file. If fignum is omitted, the first figure is saved.</td>
+</tr>
+<tr>
+<td><em>loggplot2pic</em></td>
+<td>saves the logging measurement plot number (plotnum) of figure number (fignum) to .png file. If fignum is omitted, the first figure is taken and if the plotnum is omitted then the first plot of the figure is saved.</td>
+</tr>
+<tr>
+<td><em>sam-results</em></td>
+<td>saves the actual SiDiMaT19xA auto measurement specification results to the specific &quot;SpecCheckResult.SAMResultjson&quot; file.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pneum-system-sam-configs">pneum-system sam-configs</h2>
+<table>
+<thead>
+<tr>
+<th>sam-config</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>move</em></td>
+<td>moves the pneumatic system up, down, possible sam-config's value [up,down]</td>
+</tr>
+<tr>
+<td><em>cache-par</em></td>
+<td>caches the space seperated listed parameters, possibles parameters [<em>setpoint</em>: pneumatic setpoint, <em>tolerance</em>: mode tolerance, <em>softupheight</em>: pneumatic softupheight, <em>isooffset</em>: isolator height's offset &quot;vrefup&quot;]</td>
+</tr>
+<tr>
+<td><em>restore-par</em></td>
+<td>caches the space seperated listed parameters, possibles parameters [<em>setpoint</em>: pneumatic setpoint, <em>tolerance</em>: mode tolerance, <em>softupheight</em>: pneumatic softupheight, <em>isooffset</em>: isolator height's offset &quot;vrefup&quot;]</td>
+</tr>
+<tr>
+<td><em>change-par</em></td>
+<td>changes the space seperated listed parameters, the parameter and its value are seperated by the number sign '#'.  Possibles parameters [<em>setpoint</em>: pneumatic setpoint, <em>tolerance</em>: mode tolerance, <em>softupheight</em>: pneumatic softupheight, <em>isooffset</em>: isolator height's offset, values are seperated with number sign '#' ]</td>
+</tr>
+<tr>
+<td><em>timeout</em></td>
+<td>sets the time out for the pneumatic actions this is needed for wait actions. the value is gives in seconds.</td>
+</tr>
+<tr>
+<td><em>waitfor</em></td>
+<td>waits to finish pneumatic actions. possible actions to wait for are [<em>up</em>: wait for pneumatic up status, <em>down</em>: wait for pneumatic down status, <em>ok</em>: wait for pneumatic ok status, *oktime#*val: wait for ok time to reach its val, oktime and its value are seperated by number sign '#'].</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<h3 id="example1">Example1</h3>
+<p>The following operation actions listed below measures the open/closed force mobilty transfer function of the Yrot axis.</p>
+<pre><code class="lang-json"> {
+    &quot;Name&quot;: &quot;Operation&quot;,
+    &quot;Value&quot;: [
+        &quot;individual-loopstatus; velocity:110111&quot;,
+        &quot;excit-setting;type:$WhiteNoise; par1:$ZtExcitGain; filterusage:on&quot;,
+        &quot;clear-cached-measurements;&quot;,
+        &quot;trace-sig;signum:2; type:$Velocity; mainindex:$VelZtrans; subindex:$MeasureAfterStage&quot;,
+        &quot;excit-sig;type:$VelAxesOutput; mainindex:$VelZtrans;&quot;,
+        &quot;waitms; time:$WaitTimeAfterExcit;&quot;,
+        //measure is a sam-config-less sam-cmd
+        &quot;measure;&quot;,
+        &quot;cache-measurement;&quot;,
+        &quot;individual-loopstatus; velocity:111111&quot;,
+        &quot;waitms; time:$WaitTimeBetweenOpenClosed;&quot;,
+        &quot;measure;&quot;,
+        //Add amplitude, phase and coherence help curve
+        &quot;add-from-csv; file: ForceMobility\\coherence-help-curve.csv; plot: Coherence ; title: Coherence-Limit;&quot;,
+        &quot;add-from-csv; file: ForceMobility\\phase-help-curve.csv; plot: Phase ; title: Phase-Limit;&quot;,
+        &quot;add-from-csv; file: ForceMobility\\amplitude-help-curve.csv; plot: Amplitude ; title: Amplitude-Limit;&quot;,
+        //wait time to give the gui chance to render the added graphs, otherwise the curves disappeared in the picture.
+        &quot;waitms; time: 2000&quot;
+    ]
+}
+</code></pre>
+<h3 id="example2">Example2</h3>
+<pre><code class="lang-json">{
+    &quot;Name&quot;: &quot;FMXtransStage7OCL&quot;,
+    &quot;IsEnabled&quot;: true,
+    &quot;OperationList&quot;: [
+        {
+            &quot;Name&quot;: &quot;SamCommands&quot;,
+            &quot;Value&quot;: [
+                &quot;individual-loopstatus; velocity:111110&quot;,
+                &quot;excit-setting;type:$WhiteNoise; par1:$XtExcitGain; filterusage:on&quot;,
+                &quot;clear-cached-measurements;&quot;,
+                &quot;trace-sig;signum:2; type:$Velocity; mainindex:$VelXtrans; subindex:$MeasureAfterStage&quot;,
+                &quot;excit-sig;type:$VelAxesOutput; mainindex:$VelXtrans; &quot;,
+                &quot;waitms; time:$WaitTimeAfterExcit;&quot;,
+                &quot;measure;&quot;,
+                &quot;cache-measurement;&quot;,
+                &quot;individual-loopstatus; velocity:111111&quot;,
+                &quot;waitms; time:$WaitTimeBetweenOpenClosed;&quot;,
+                &quot;measure;&quot;,
+                //Add amplitude, phase and coherence help curve
+                &quot;add-from-csv; file: ForceMobility\\coherence-help-curve.csv; plot: Coherence ; title: Coherence-Limit;&quot;,
+                &quot;add-from-csv; file: ForceMobility\\phase-help-curve.csv; plot: Phase ; title: Phase-Limit;&quot;,
+                &quot;add-from-csv; file: ForceMobility\\amplitude-help-curve.csv; plot: Amplitude ; title: Amplitude-Limit;&quot;,
+                //wait time to give the gui chance to render the added graphs, otherwise the curves disappeared in the picture.
+                &quot;waitms; time: 2000&quot;,
+                &quot;save; type: frf2fig; file: Measurements\\ForceMobility\\Stage7_OCL_AW\\Xtrans_Stage7_OCL_AW_FRF.idefigure&quot;,
+                &quot;save; type: time2fig; file: Measurements\\ForceMobility\\Stage7_OCL_AW\\Xtrans_Stage7_OCL_AW_TimeSpec.idefigure&quot;,
+                &quot;save; type: frf2pic; file: Measurements\\ForceMobility\\Stage7_OCL_AW\\Xtrans_Stage7_OCL_AW_FRF.png&quot;,
+                &quot;save; type: time2pic; file: Measurements\\ForceMobility\\Stage7_OCL_AW\\Xtrans_Stage7_OCL_AW_TimeSpec.png&quot;,
+                &quot;save; type: raw; file: Measurements\\ForceMobility\\Stage7_OCL_AW\\Xtrans_Stage7_OCL_AW.sidimat19x&quot;
+            ]
+        },
+        {
+            //the name of CheckSpec sam-operation has to be unique  
+            //each check sam-cmd keyword has to be unique inside one CheckSpec sam-operation
+            &quot;Name&quot;: &quot;CheckSpec_#FMXt7OCLAW&quot;,
+            &quot;Value&quot;: [
+                &quot;cache;file: Measurements\\ForceMobility\\Stage7_OCL_AW\\Xtrans_Stage7_OCL_AW_FRF.idefigure&quot;,
+                &quot;max_#1; sig:F1P1S2; specmin:$XtResonanceMagSpecmin; specmax:$XtResonanceMagSpecmax;rmin:$ResonanceRmin;rmax:$ResonanceRmax&quot;,
+                &quot;max_#2; sig:F1P1S2; specmin:$XtResonanceMagSpecmin; specmax:$XtResonanceMagSpecmax;rmin:$ResonanceRmin;rmax:$ResonanceRmax&quot;,
+                &quot;max-pos; sig:F1P1S2; specmin:$XtResonanceFreqSpecmin; specmax:$XtResonanceFreqSpecmax; rmin:$ResonanceRmin; rmax:$ResonanceRmax&quot;,
+                &quot;ocl-lbw; olsig:F1P1S2; clsig:F1P1S1; specmax:$XtLowBandWidthSpecmax; rmin:$LowBandWidthRmin; rmax:$LowBandWidthRmax&quot;,
+                &quot;ocl-hbw;olsig:F1P1S2; clsig:F1P1S1; specmin:$XtHighBandWidthSpecmin; rmin:$HighBandWidthRmin; rmax:$HighBandWidthRmax;&quot;,
+                &quot;ocl-damp;olsig:F1P1S2; clsig:F1P1S1; specmin:$XtResonanceMagDampSpecmin; rmin:$ResonanceRmin; rmax:$ResonanceRmax&quot;,
+                //Coherence Check
+                &quot;avg; sig:F1P3S1; specmin:$CoherenceSpecmin; rmin:$CoherenceRmin;rmax:$CoherenceRmax&quot;,
+            ]
+        },
+        {
+            //the name of Report sam-operation has to be unique if it contains add-setting-table sam-cmd 
+            //the add-setting-table sam-cmd keyword has to be unique inside one Report sam-operation
+            // add-setting-table example
+            // &quot;add-setting-table; excitation-setting; excitation-filter; velocity-sensor; velocity-motor; velocity-filter; position-sensor; position-motor; position-filter; pneumatic-sensor; pneumatic-motor; pneumatic-filter;system-status;velocity-axes-status;position-axes-status,pneumatic-axes-status&quot;,
+            &quot;Name&quot;: &quot;Report_#FMXt7OCLAW&quot;,
+            &quot;Value&quot;: [
+                &quot;para1;Force Mobility Axis Wise Open/Closed Loop Measurements after Stage7 &quot;,
+                &quot;para2;Force mobility loop settings&quot;,
+                &quot;add-setting-table#1; velocity-sensor; velocity-motor; velocity-filter; &quot;,
+                &quot;para2;Force Mobility Measurements&quot;,
+                &quot;add-setting-table#2; excitation-setting; excitation-filter; system-status;velocity-axes-status;&quot;,
+                &quot;para3;Xtrans &quot;,
+                &quot;pic;Measurements\\ForceMobility\\Stage7_OCL_AW\\Xtrans_Stage7_OCL_AW_FRF.png&quot;,
+            ]
+        }
+    ]
+}
+</code></pre>
+<h1 id="report-sam-operation"><em>Report</em> sam-operation</h1>
+<p>The <em>Report</em> operation basically services to generate a report containing SiDiMaT19xA measurement or a logging measurement graphs. It also supports adding measurement specification result tables. The value of this operation is a collection of the values in the following table (values have to be used without brackets).  The value first word &quot;<em>italic</em>&quot; is a keyword and has to be written correct.</p>
+<table>
+<thead>
+<tr>
+<th><em>Value</em></th>
+<th><em>Description</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{<em><strong>par1</strong></em>;text}</td>
+<td>add the text to the markdown string as paragraph1 (header1).</td>
+</tr>
+<tr>
+<td>{<em><strong>par2</strong></em>;text}</td>
+<td>add the text to the markdown string as paragraph2.</td>
+</tr>
+<tr>
+<td>{<em><strong>par3</strong></em>;text}</td>
+<td>add the text to the markdown string as paragraph3.</td>
+</tr>
+<tr>
+<td>{<em><strong>par4</strong></em>;text}</td>
+<td>add the text to the markdown string as paragraph4.</td>
+</tr>
+<tr>
+<td>{<em><strong>par5</strong></em>;text}</td>
+<td>add the text to the markdown string as paragraph5.</td>
+</tr>
+<tr>
+<td>{<em><strong>par6</strong></em>;text}</td>
+<td>add the text to the markdown string as paragraph6.</td>
+</tr>
+<tr>
+<td>{<em><strong>text</strong></em>;text}</td>
+<td>add the text to the markdown string.</td>
+</tr>
+<tr>
+<td>{<em><strong>pic</strong></em>;path}</td>
+<td>add a picture to the markdown string. when Path is not absolute then it is relative to the first evaluated auto measurement file path (original-path).</td>
+</tr>
+<tr>
+<td>{<em><strong>tableheader</strong></em>;colh1;colh2; ...}</td>
+<td>add a table header with the headers {colh1, colh2, ...}.</td>
+</tr>
+<tr>
+<td>{<em><strong>tablerow</strong></em>;cell1;cell2; ...}</td>
+<td>add a new row to the table with the cells content {result1, result2, ....}. Cells content is a text or a <strong>specification result</strong> (see description below). The table rows have to directly follow the table header.</td>
+</tr>
+<tr>
+<td>{<em><strong>save</strong></em>;path}</td>
+<td>save the mardown string to .md file (filename) and convert the markdown string to a html. furthermore it convert the html file to a pdf file.</td>
+</tr>
+<tr>
+<td>{<em><strong>excute</strong></em>;cmd}</td>
+<td>excutes the command line cmd. The excuting path is the original-path. If cmd is a .bat file then the file will be executed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="report-operation-examples"><em>Report</em> operation examples</h2>
+<h3 id="1-example">1 Example</h3>
+<pre><code class="lang-json"> {
+    &quot;Name&quot;: &quot;Report&quot;,
+    &quot;Value&quot;: [
+        &quot;para1;Force Mobility Axis Wise Open/Closed Loop Measurements after Stage7 &quot;,
+        &quot;para2;Force mobility loop settings&quot;,
+        &quot;add-setting-table; velocity-sensor; velocity-motor; velocity-filter; &quot;,
+        &quot;para2;Force Mobility Measurements&quot;,
+        &quot;add-setting-table; excitation-setting; excitation-filter; system-status;velocity-axes-status;&quot;,
+        &quot;para3;Xtrans &quot;,
+        &quot;pic;Measurements\\ForceMobility\\Stage7_OCL_AW\\Xtrans_Stage7_OCL_AW_FRF.png&quot;,
+    ]
+}
+</code></pre>
+<h3 id="2-example">2 Example</h3>
+<pre><code class="lang-json">{
+  &quot;Name&quot;: &quot;Report&quot;,
+  &quot;Value&quot;: [
+      &quot;para2;Force mobility specification result tables&quot;,
+      &quot;para3;System eigen-frequency&quot;,
+      &quot;tableheader;Axis;Min;Max;Unit;Measured Value;Result&quot;,
+      &quot;tablerow;Xtrans;CheckSpec_#FMXt7OCLAW.max-pos.specmin;CheckSpec_#FMXt7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMXt7OCLAW.max-pos.measured;CheckSpec_#FMXt7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Ytrans;CheckSpec_#FMYt7OCLAW.max-pos.specmin;CheckSpec_#FMYt7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMYt7OCLAW.max-pos.measured;CheckSpec_#FMYt7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Ztrans;CheckSpec_#FMZt7OCLAW.max-pos.specmin;CheckSpec_#FMZt7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMZt7OCLAW.max-pos.measured;CheckSpec_#FMZt7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Xrot;CheckSpec_#FMXr7OCLAW.max-pos.specmin;CheckSpec_#FMXr7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMXr7OCLAW.max-pos.measured;CheckSpec_#FMXr7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Yrot;CheckSpec_#FMYr7OCLAW.max-pos.specmin;CheckSpec_#FMYr7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMYr7OCLAW.max-pos.measured;CheckSpec_#FMYr7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Zrot;CheckSpec_#FMZr7OCLAW.max-pos.specmin;CheckSpec_#FMZr7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMZr7OCLAW.max-pos.measured;CheckSpec_#FMZr7OCLAW.max-pos.result&quot;,
+  ]
+},
+{
+  &quot;Name&quot;: &quot;Report_#Add2Summary&quot;,
+  &quot;Value&quot;: [
+      &quot;para2;Force mobility specification result tables&quot;,
+      &quot;para3;System eigen-frequency&quot;,
+      &quot;tableheader;Axis;Min;Max;Unit;Measured Value;Result&quot;,
+      &quot;tablerow;Xtrans;CheckSpec_#FMXt7OCLAW.max-pos.specmin;CheckSpec_#FMXt7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMXt7OCLAW.max-pos.measured;CheckSpec_#FMXt7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Ytrans;CheckSpec_#FMYt7OCLAW.max-pos.specmin;CheckSpec_#FMYt7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMYt7OCLAW.max-pos.measured;CheckSpec_#FMYt7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Ztrans;CheckSpec_#FMZt7OCLAW.max-pos.specmin;CheckSpec_#FMZt7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMZt7OCLAW.max-pos.measured;CheckSpec_#FMZt7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Xrot;CheckSpec_#FMXr7OCLAW.max-pos.specmin;CheckSpec_#FMXr7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMXr7OCLAW.max-pos.measured;CheckSpec_#FMXr7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Yrot;CheckSpec_#FMYr7OCLAW.max-pos.specmin;CheckSpec_#FMYr7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMYr7OCLAW.max-pos.measured;CheckSpec_#FMYr7OCLAW.max-pos.result&quot;,
+      &quot;tablerow;Zrot;CheckSpec_#FMZr7OCLAW.max-pos.specmin;CheckSpec_#FMZr7OCLAW.max-pos.specmax;Hz;CheckSpec_#FMZr7OCLAW.max-pos.measured;CheckSpec_#FMZr7OCLAW.max-pos.result&quot;,
+  ]
+}
+</code></pre>
+<h1 id="checkspec-sam-operation"><em>CheckSpec</em> sam-operation</h1>
+<p>The <strong>CheckSpec</strong> <a href="#sam-operation">sam-operation</a> basically services to check a specification of a SiDiMaT19xA measurement or a logging measurement which is saved in .IDEFigure file.</p>
+<p><strong>CheckSpec</strong> sam-operation contains a varios auto measurement actions. It's value consists of a collection of auto measurement commands <a href="#sam-cmd">sam-cmd</a>.<br>
+An &quot;<strong>sam-cmd</strong>&quot; consists of  <strong><em>cmd-name</em></strong>  &quot;<em>italic</em>, <strong>polt</strong> &quot; and list of <strong>cmd-config</strong> seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.<br>
+A <strong>cmd-config</strong> consists of a keyword &quot;<strong>polt</strong>&quot; and a value, they are seperated by a colon &quot;:&quot; or by a colon+space &quot;: &quot;. Some <strong>cmd_configs</strong> are valueless.
+The following table describes all possible <a href="#sam-cmd">sam-cmds</a> of the <strong>CheckSpec</strong> <a href="#sam-operation">sam-operation</a>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>sam-cmd</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{<em><strong>cache</strong></em>;<strong>file1</strong>:<a href="#filepath"><em>filepath</em></a>; <strong>file2</strong>:<a href="#filepath"><em>filepath</em></a>; ... }</td>
+<td>load measurements curves (series) from a .IDEFigure files {file1:first file, file2: second file, ...}. The curves are added &quot;saved&quot; into a dictionary. The curves in the dictionary are identified by their label which is consisting of three letters and three number sample (F1P2S2: this signal#2 of plot#2 of file#1). path1, path2 ... are optional.</td>
+</tr>
+<tr>
+<td>{<em><strong>check-point</strong></em>; <strong>sig</strong>: sig; <strong>point</strong>: point; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax; <strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>checks whether the y-value at x-axis-point <strong>point</strong> meets the specification range [specmin specmax].Only values inside x-axis range [rmin - rmax] are considered.</td>
+</tr>
+<tr>
+<td>{<em><strong>check-value</strong></em>; <strong>value</strong>: $Param; <strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>checks whether the value of the parameter $Param meets the specification range [specmin specmax]. $Param is one of the parameter in the directive dictionary.</td>
+</tr>
+<tr>
+<td>{<em><strong>check-upper-spec-curve</strong></em>; <strong>sig</strong>: sig; <strong>specsig</strong>: specsig; <strong>specfile</strong>: filepath; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;}</td>
+<td>check if the curve sig is lower than specsig curve or the curve loaded from csv file filepath.Only values inside x-axis range [rmin - rmax] are considered.</td>
+</tr>
+<tr>
+<td>{<em><strong>check-lower-spec-curve</strong></em>; <strong>sig</strong>: sig; <strong>specsig</strong>: specsig; <strong>specfile</strong>: filepath; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;}</td>
+<td>check if the curve sig is higher than specsig curve or the curve loaded from csv file filepath.Only values inside x-axis range [rmin - rmax] are considered.</td>
+</tr>
+<tr>
+<td>{<em><strong>check-envelope-spec-curve</strong></em>; <strong>sig</strong>: sig; {<strong>specsig</strong>: specsig|<strong>specfile</strong>: filepath}; <strong>envelope</strong>: envelopewidth; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;}</td>
+<td>check if the curve sig lies inside the envelope of specsig curve or the curve loaded from csv file filepath.Only values inside x-axis range [rmin - rmax] are considered.</td>
+</tr>
+<tr>
+<td>{<em><strong>max</strong></em>; <strong>sig</strong>: sig; <strong>mult</strong>: mult; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;<strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>builds the average of the <strong>sig</strong> y-values inside x-axis range [rmin rmax] and checks whether the average value meets the specification range [specmin specmax]. checks if the sig maximum y-value lies in the range [ss - se].Only values inside x-axis range [rs - re] are used. rs and re are optional.</td>
+</tr>
+<tr>
+<td>{<em><strong>min</strong></em>; <strong>sig</strong>: sig; <strong>mult</strong>: mult; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;<strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>builds the average of the <strong>sig</strong> y-values inside x-axis range [rmin rmax] and checks whether the average value meets the specification range [specmin specmax].</td>
+</tr>
+<tr>
+<td>{<em><strong>avg</strong></em>; <strong>sig</strong>: sig; <strong>mult</strong>: mult; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;<strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>builds the average of the <strong>sig</strong> y-values inside x-axis range [rmin rmax] and checks whether the average value meets the specification range [specmin specmax]. <strong>mult</strong> gives opportunity to multiply the y-value with a factor bevore building the average value.</td>
+</tr>
+<tr>
+<td>{<em><strong>abs-avg</strong></em>; <strong>sig</strong>: sig; <strong>mult</strong>: mult; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;<strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>builds the absolute average of the <strong>sig</strong> y-values inside x-axis range [rmin rmax] and checks whether the average value meets the specification range [specmin specmax]. <strong>mult</strong> gives opportunity to multiply the y-value with a factor bevore building the average value.</td>
+</tr>
+<tr>
+<td>{<em><strong>std</strong></em>; <strong>sig</strong>: sig; <strong>mult</strong>: mult; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;<strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>builds the standard deviation value of the <strong>sig</strong> y-values lay inside x-axis range [rmin rmax] and checks whether the value meets the specification range [specmin specmax]. <strong>mult</strong> gives opportunity to multiply the y-value with a factor bevore building the average value.</td>
+</tr>
+<tr>
+<td>{<em><strong>pkpk</strong></em>; <strong>sig</strong>: sig; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;<strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>builds the peak-to-peak value of the <strong>sig</strong> y-values inside x-axis range [rmin rmax] and checks whether the average value meets the specification range [specmin specmax].</td>
+</tr>
+<tr>
+<td>{<em><strong>max-pos</strong></em>; <strong>sig</strong>: sig; <strong>mult</strong>: mult; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;<strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>builds the average of the <strong>sig</strong> y-values inside x-axis range [rmin rmax] and checks whether the average value meets the specification range [specmin specmax].checks the x-axis position of the y-maximum value.Only values inside x-axis range [rs - re] are used. rs and re are optional.</td>
+</tr>
+<tr>
+<td>{<em><strong>ocl-lbw</strong></em>; <strong>olsig</strong>:sig;<strong>clsig</strong>:sig ;<strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax;<strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>finds the open/closed-loop active bandwidth lower point and checks if it's value lies inside the specification range [specmin specmax]. <strong>olsig</strong>:open-loop curve; <strong>clsig</strong>: closed-loop curve; Only values inside x-axis range [rmin - rmax] are considered.</td>
+</tr>
+<tr>
+<td>{<em><strong>ocl-hbw</strong></em>; <strong>olsig</strong>:sig; <strong>clsig</strong>:sig ; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax; <strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>finds the open/closed-loop active bandwidth higher point and checks if it's value lies inside the specification range [specmin specmax]. <strong>olsig</strong>:open-loop curve; <strong>clsig</strong>: closed-loop curve;  Only values inside x-axis range [rmin - rmax] are considered.</td>
+</tr>
+<tr>
+<td>{<em><strong>ocl-damp</strong></em>; <strong>olsig</strong>:sig; <strong>clsig</strong>:sig ; <strong>rmin</strong>: rmin; <strong>rmax</strong>: rmax; <strong>specmin</strong>: specmin; <strong>specmax</strong>: specmax}</td>
+<td>Checks the open/closed-loop active damping lies in [specmin - specmax]. <strong>olsig</strong>: open loop curve; <strong>clsig2</strong>: closed loop curve. Only values inside x-axis range [rmin - rmax] are considered.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="specification-results">Specification results</h2>
+<p>Here is a list with possible specification result could be used as table cell content.  Specification result starts with a specification opeartion name (spec-op-name) followed by dot (.) followed by specicfication operation value keyword (spec-op-key) followed by dot (.) followed by specification parameter (spec-par) which will be the cell content.</p>
+<blockquote>
+<p>Syntax: {<strong>cmd-name</strong>.<strong>spec-op-key</strong>.<strong>spec-par</strong>}</p>
+</blockquote>
+<ul>
+<li><strong>spec_name</strong>: the name of the SpeckCheck operation example (CheckSpec_#VelXtrasOl).</li>
+<li><strong>spec-op-key</strong>: one of the following specification check operations:
+<ol>
+<li><strong>max</strong>: the maximum y-value.</li>
+<li><strong>max-pos</strong>: the x-position of the maximum y-value.</li>
+<li><strong>ocl-lbw</strong>: the isolation lower active band width value.</li>
+<li><strong>ocl-hbw</strong>: the isolation lower active band width value.</li>
+<li><strong>ocl-damp</strong>: the isolation active damping.</li>
+<li><strong>check-point</strong>: the y-value at a specific point at the x-axis.</li>
+<li><strong>min</strong>: the minimum y-value.</li>
+<li><strong>pk-pk</strong>: the peak to peak y-value.</li>
+<li><strong>check-upper-spec-curve</strong>: check if a curve &quot;signal&quot; lies under a spec-curve.</li>
+</ol>
+</li>
+<li><strong>spec-par</strong>: one of the following parameter:
+<ol>
+<li><strong>rmin</strong>, <strong>rmax</strong>: the specification range [rmin rmax].</li>
+<li><strong>measured</strong>: measured value.</li>
+<li><strong>result</strong>: specification check status of the spec-op-key the result is one from {Passed, Failed}.</li>
+</ol>
+</li>
+</ul>
+<h1 id="logg-operation">&quot;<em>Logg</em>&quot; operation</h1>
+<p>The <strong>Logg</strong> <a href="#sam-operation">sam-operation</a> basically services to log data from the controller using the logging functionality. Furthermore, it prepares the logged data and plots it.<br>
+It's value consists of a collection of auto measurement commands <a href="#sam-cmd">sam-cmd</a>.<br>
+An &quot;<strong>sam-cmd</strong>&quot; consists of  <strong><em>cmd-name</em></strong>  &quot;<em>italic</em>, <strong>polt</strong> &quot; and list of <strong>cmd-config</strong> seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.<br>
+A <strong>cmd-config</strong> consists of a keyword &quot;<strong>polt</strong>&quot; and a value, they are seperated by a colon &quot;:&quot; or by a colon+space &quot;: &quot;. Some <strong>cmd_configs</strong> are valueless.</p>
+<p>The following table describes all possible <a href="#sam-cmd">sam-cmds</a> of the <strong>Logg</strong> <a href="#sam-operation">sam-operation</a>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>sam-cmd</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{<em><strong>load-logg-setting-file</strong></em>; <strong>file</strong>: path}</td>
+<td>Opens logging setting file and send it to controller. Path has the extension <em>.Logg19xConfig</em>.</td>
+</tr>
+<tr>
+<td>{<em><strong>start-logging</strong></em>; <strong>file</strong>: path}</td>
+<td>Starts the logging.</td>
+</tr>
+<tr>
+<td>{<em><strong>stop-logging</strong></em>; <strong>file</strong>: path}</td>
+<td>Stops the logging.</td>
+</tr>
+<tr>
+<td>{<em><strong>waitms</strong></em>; <strong>time</strong>: TimeInMilliSecond;}</td>
+<td>waits the time of milli second.</td>
+</tr>
+<tr>
+<td>{<em><strong>wait-to-finish-logging</strong></em>; <strong>timeout</strong>: TimeInSecond}</td>
+<td>waits to finish the logging but not more than timeout.</td>
+</tr>
+<tr>
+<td>{<em><strong>wait-for-event-trace</strong></em>; <strong>tracenum</strong>:num; <strong>timeout</strong>: TimeInSecond}</td>
+<td>waits to finish the event logging but not more than timeout.</td>
+</tr>
+<tr>
+<td>{<em><strong>system-loopstatus</strong></em>}</td>
+<td>see description of <a href="#system-loopstatus"><em><strong>system-loopstatus</strong></em></a> by Operation sam-operation.</td>
+</tr>
+<tr>
+<td>{ <em><strong>individual-loopstatus</strong></em>; <strong>velocity</strong>:x; <strong>position</strong>:x; <strong>pneumatic</strong>:x }</td>
+<td>set the individual loop status of one or many control loops.</td>
+</tr>
+<tr>
+<td>{<em><strong>get-logg-data</strong></em>; <strong>file</strong>: path; <strong>loggmanxml-file</strong>: plotfile}</td>
+<td>loads logg data from controller, saves to <strong>file</strong> and optionally plots the data using <strong>loggmanxml</strong>.</td>
+</tr>
+<tr>
+<td>{<em><strong>plot-logg-data</strong></em>; <strong>file</strong>: path; <strong>loggmanxml-file</strong>: plotfile}</td>
+<td>loads logg data from <strong>file</strong> and plots the data using <strong>loggmanxml</strong>.</td>
+</tr>
+<tr>
+<td>{<em><strong>loggfig2fig</strong></em>; <strong>fignum</strong>: NumberOfFigure; <strong>file</strong>: filename}</td>
+<td>saves figure to <em>.idefigure</em> file.</td>
+</tr>
+<tr>
+<td>{<strong>loggfig2pic</strong>_; <strong>fignum</strong>: NumberOfFigure; <strong>file</strong>: filename}</td>
+<td>saves figure to <em>.png</em> file.</td>
+</tr>
+<tr>
+<td>{<strong>loggplot2pic</strong>_; <strong>fignum</strong>: NumberOfFigure; <strong>plotnum</strong>: NumberOfPlot; <strong>file</strong>: filename}</td>
+<td>saves plot to <em>.png</em> file.</td>
+</tr>
+<tr>
+<td>{<em><strong>close-loggfig</strong></em>; <strong>fignum</strong>: NumberOfFigure; }</td>
+<td>closes a figure.</td>
+</tr>
+<tr>
+<td>{<em><strong>rescale-loggfig</strong></em>; <strong>fignum</strong>: NumberOfFigure; }</td>
+<td>rescales the plots of a figure.</td>
+</tr>
+<tr>
+<td>{<em><strong>restyle-loggfig</strong></em>; <strong>fignum</strong>: NumberOfFigure; <strong>loggmanxml-file</strong>: plotfile}</td>
+<td>restyle the plots of a figure using the <strong>loggmanxml-file</strong>.</td>
+</tr>
+<tr>
+<td>{<em><strong>event</strong></em>; {<strong>threshold</strong>: ThresholdValue; <strong>trig-samples</strong>: TriggerSamplesNumber; <strong>type</strong>: x; <strong>mainindex</strong>: x; <em>subindex</em>: x; }</td>
+<td>configures the event for the event logging.</td>
+</tr>
+<tr>
+<td>{<em><strong>monitor-sig</strong></em>; <strong>signum</strong>: num; <strong>type</strong>: x; <strong>mainindex</strong>: x; <em>subindex</em>: x}}</td>
+<td>configures a monitor signal.</td>
+</tr>
+<tr>
+<td>{<em><strong>logg-par</strong></em>; <strong>signum</strong>: MonitorSignalNumber;{<strong>type</strong>: TBD}}</td>
+<td>configures the logging parameter.EventType {0:OverCurrentEvent|1:}</td>
+</tr>
+<tr>
+<td>{<em><strong>directory</strong></em>}</td>
+<td>see description of <a href="#directory"><em><strong>directory</strong></em></a> by Operation sam-operation.</td>
+</tr>
+<tr>
+<td>{<em><strong>pneum-system</strong></em>}</td>
+<td>see description of <a href="#pneum-system"><em><strong>pneum-system</strong></em></a> by Operation sam-operation.</td>
+</tr>
+<tr>
+<td>{<em><strong>excit-sig</strong></em>}</td>
+<td>see description of <a href="#excit-sig"><em><strong>excit-sig</strong></em></a> by Operation sam-operation.</td>
+</tr>
+<tr>
+<td>{<em><strong>excit-filter</strong></em>}</td>
+<td>see description of <a href="#excit-filter"><em><strong>excit-filter</strong></em></a> by Operation sam-operation.</td>
+</tr>
+<tr>
+<td>{<em><strong>excit-setting</strong></em>}</td>
+<td>see description of <a href="#excit-setting"><em><strong>excit-setting</strong></em></a> by Operation sam-operation.</td>
+</tr>
+<tr>
+<td>{<em><strong>spec-failed-action</strong></em>}</td>
+<td>see description of <a href="#spec-failed-action"><em><strong>spec-failed-action</strong></em></a> by Operation sam-operation.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="save-sam-cmd-types"><em>save</em> sam-cmd types</h1>
+<p>The <em>save</em> sam-cmd basically services to save a SiDiMaT19xA measurement or a logging measurement to a file or a picture. The value of this operation is a collection of the values in the following table (values have to be used without brackets).  The value first word &quot;<em>italic</em>&quot; is keyword and has to be written correct.</p>
+<table>
+<thead>
+<tr>
+<th><em>Value</em></th>
+<th><em>Description</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{<em><strong>frf2pic</strong></em>; <strong>file</strong>:path}</td>
+<td>saves the SiDiMaT19xA frequency response measurement to .png file (path). Path has the extension .png.</td>
+</tr>
+<tr>
+<td>{<em><strong>frf2fig</strong></em>;<strong>file</strong>:path}</td>
+<td>saves the SiDiMaT19xA frequency response measurement to .IDEFigure file(path). The .IDEFigure format is a kind of matlab format. Path has the extension .IDEFigure.</td>
+</tr>
+<tr>
+<td>{<em><strong>time2pic</strong></em>; <strong>file</strong>:path}</td>
+<td>saves the SiDiMaT19xA time/spectrum measurement to .png file(path). Path has the extension .png.</td>
+</tr>
+<tr>
+<td>{<em><strong>time2fig</strong></em>; <strong>file</strong>:path}</td>
+<td>saves the frequency response measurement to .png file(path). Path should have the extension .png.</td>
+</tr>
+<tr>
+<td>{<em><strong>raw</strong></em>; <strong>file</strong>:path}</td>
+<td>saves the SiDiMaT19xA complete measurement to .sidimat19x file (path). The .IDEFigure format is a kind of matlab format. Path has the extension .sidimat19x.</td>
+</tr>
+<tr>
+<td>{<em><strong>logg2fig</strong></em>;<strong>file</strong>:path,<strong>fignum</strong>:x}</td>
+<td>saves the logging measurement figure with the number (fignum) to .IDEFigure file (path). If fignum is omitted the first figure is saved. Path has the extension .IDEFigure.</td>
+</tr>
+<tr>
+<td>{<em><strong>logg2pic</strong></em>;<strong>file</strong>:path,<strong>fignum</strong>:x}</td>
+<td>saves the logging measurement figure with the number (fignum) to .png file. If fignum is omitted, the first figure is saved. Path has the extension .IDEFigure.</td>
+</tr>
+<tr>
+<td>{<em><strong>frfmag2pic</strong></em>; <strong>file</strong>:path; <strong>width</strong>:x; <strong>height</strong>:x; <strong>resol</strong>:x}</td>
+<td>saves the SiDiMaT19xA frequency response magnitude graph to .png file (path). Path has the extension .png. Optionaly picture width, height and resolution could be set.</td>
+</tr>
+<tr>
+<td>{<em><strong>frfphase2pic</strong></em>; <strong>file</strong>:path; <strong>width</strong>:x; <strong>height</strong>:x; <strong>resol</strong>:x}</td>
+<td>saves the SiDiMaT19xA frequency response phase graph to .png file (path). Path has the extension .png. Optionaly picture width, height and resolution could be set.</td>
+</tr>
+<tr>
+<td>{<em><strong>frfcoherence2pic</strong></em>; <strong>file</strong>:path; <strong>width</strong>:x; <strong>height</strong>:x; <strong>resol</strong>:x}</td>
+<td>saves the SiDiMaT19xA frequency response coherence graph to .png file (path). Path has the extension .png. Optionaly picture width, height and resolution could be set.</td>
+</tr>
+<tr>
+<td>{<em><strong>sig1time2pic</strong></em>; <strong>file</strong>:path; <strong>width</strong>:x; <strong>height</strong>:x; <strong>resol</strong>:x}</td>
+<td>saves the SiDiMaT19xA trace signal1 time graph to .png file (path). Path has the extension .png. Optionaly picture width, height and resolution could be set.</td>
+</tr>
+<tr>
+<td>{<em><strong>sig2time2pic</strong></em>; <strong>file</strong>:path; <strong>width</strong>:x; <strong>height</strong>:x; <strong>resol</strong>:x}</td>
+<td>saves the SiDiMaT19xA trace signal2 time graph to .png file (path). Path has the extension .png. Optionaly picture width, height and resolution could be set.</td>
+</tr>
+<tr>
+<td>{<em><strong>sig1spec2pic</strong></em>; <strong>file</strong>:path; <strong>width</strong>:x; <strong>height</strong>:x; <strong>resol</strong>:x}</td>
+<td>saves the SiDiMaT19xA trace signal1 spectrum graph to .png file (path). Path has the extension .png. Optionaly picture width, height and resolution could be set.</td>
+</tr>
+<tr>
+<td>{<em><strong>sig2spec2pic</strong></em>; <strong>file</strong>:path; <strong>width</strong>:x; <strong>height</strong>:x; <strong>resol</strong>:x}</td>
+<td>saves the SiDiMaT19xA trace signal2 spectrum graph to .png file (path). Path has the extension .png. Optionaly picture width, height and resolution could be set.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="definitions">Definitions</h1>
+<p>Here are some definitions and abbreviations related to the sidimat auto measurement.</p>
+<h2 id="sam">sam</h2>
+<blockquote>
+<p>[!Info]
+<strong><em>sam</em></strong>: sidimat19xA auto measurement.</p>
+</blockquote>
+<h2 id="sam-file">sam-file</h2>
+<blockquote>
+<p>[!Info]
+<strong><em>sam-file</em></strong>: this is a sidimat19xA auto measurement file with the file extension <em>.SiDiMaTAMF</em>. Basically it consists of a collection of AutoMeasurement-Objects <em>Automeasurement</em>.<br>
+Each AutoMeasurement-object consists of a collections of operations the so called <a href="#sam-operation">&quot;sam-operation&quot;</a>.</p>
+</blockquote>
+<h2 id="sam-operation">sam-operation</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>sam-operation</em></strong>:  contains different auto measurement actions. It basically  consists of a collection of <strong>operation-name</strong> and optionally a value. It's value contains a list of <em>sam</em> commands &quot;<strong>sam-cmd</strong>&quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some <strong>sam-operation</strong> are valueless.</p>
+</div>
+</div>
+<h2 id="sam-cmd">sam-cmd</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>sam-cmd</em></strong>: consists of  <strong>cmd-name</strong> &quot;<em>italic</em>, <strong>polt</strong> &quot; and optionally a list of <strong>cmd-config</strong> objects seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;. <strong>cmd-name</strong> and <strong>cmd_config</strong> objects are seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.</p>
+<blockquote>
+<p>Some <strong>sam-cmd</strong> are cmd-config-less.</p>
+</blockquote>
+</div>
+<h2 id="cmd-config">cmd-config</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>cmd-config</em></strong>: consists of config-keyword &quot;<strong>polt</strong>&quot; and its config-value the config-keyword and its value are seperated by colon &quot;:&quot; or colon+space &quot;: &quot;.</p>
+<blockquote>
+<p>Some cmd_configs are valueless. They don't have a value.</p>
+</blockquote>
+</div>
+<h2 id="filepath">filepath</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>filepath</em></strong>: If <em>filepath</em> string contains a colon ':' or start with backslash &quot;\&quot; , then absolute path is assummed, otherwise the path is assumed to be relative to the <a href="#workingdirectory"><em>working-directory</em></a>. Relative paths shouldn't start with dot, slash or backslash.</p>
+</div>
+<h2 id="path">path</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>path</em></strong>: If <em>path</em> string contains a colon ':' or start with backslash &quot;\&quot; , then absolute path is assummed, otherwise the path is assumed to be relative to the <a href="#workingdirectory"><em>working-directory</em></a>. Relative paths shouldn't start with dot, slash or backslash.</p>
+</div>
+<h2 id="original-directory">original-directory</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>original-directory</em></strong>: the directory from where the first <strong>sam-file</strong> is opened and executed.</p>
+</div>
+<h2 id="working-directory">working-directory</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>working-directory</em></strong>: the working directory for <strong>sam-operation</strong>. By starting the a <strong>sam</strong> file the <strong>working-directory</strong> is set to the <strong>original-directory</strong>. <strong>working-directory</strong> is per sam-operation changeable.</p>
+</div>
+<h2 id="system-loop-status-actions">system-loop-status-actions</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>sytem-loop-status-actions</em></strong>: READ, CACHE, RESTORE, OVERALLON, OVFFON, PFFON, PNEUMON, OVERALLOFF, OVFFOFF, PFFOFF, PNEUMOFF, TEMPSENSORON, TEMPSENSOROFF, ETHERCATSFFON, ETHERCATSFFOFF, ETHERCATMOTON, ETHERCATMOTOFF.</p>
+</div>
+<h2 id="spfm-operation">spfm-operation</h2>
+<p>spfm: &quot;<strong>S</strong>ignals <strong>P</strong>lots and <strong>F</strong>igures <strong>M</strong>anipulation&quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>spfm-operation</em></strong>:  contains different auto measurement actions. It basically  consists of a collection of <strong>operation-name</strong> and optionally a value. It's value contains a list of <em>spfm</em> commands &quot;<strong>spfm-cmd</strong>&quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some <strong>spfm-operation</strong> are valueless.</p>
+</div>
+</div>
+<h2 id="spfm-cmd">spfm-cmd</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>spfm-cmd</em></strong>: consists of  <strong>cmd-name</strong> &quot;<em>italic</em>, <strong>polt</strong> &quot; and optionally a list of <strong>cmd-config</strong> objects seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;. <strong>cmd-name</strong> and <strong>cmd_config</strong> objects are seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some <strong>spfm-cmd</strong> are cmd-config-less.</p>
+</div>
+</div>
+<h1 id="appendix">Appendix</h1>
+<pre><code class="lang-json">{
+    &quot;AutoMeasurementAndSpecificationList&quot;: [ ],
+    &quot;directives&quot;: null,
+    &quot;FileVersion&quot;: 1
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

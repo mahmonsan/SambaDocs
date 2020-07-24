@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Plot manipulation Annotation operation | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Plot manipulation Annotation operation | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="plot-manipulation-annotation-operation">Plot manipulation <em>Annotation</em> operation</h1>
+
+<p>The <strong>Annotation</strong> <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-operation">lmpo-operation</a> contains a varios actions. It's value consists of a collection of signal manipulation commands <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-cmd">lmpo-cmd</a>.<br>
+A &quot;<strong>lmpo-cmd</strong>&quot; consists of  <strong><em>cmd-name</em></strong>  &quot;<em>italic</em>, <strong>polt</strong> &quot; and list of <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#cmd-config"><strong>cmd-config</strong></a> seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.<br>
+A <strong>cmd-config</strong> consists of a keyword &quot;<strong>polt</strong>&quot; and a value, they are seperated by a colon &quot;:&quot; or by a colon+space &quot;: &quot;. Some <strong>cmd_configs</strong> are valueless.
+The following table describes all possible <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#sam-cmd">lmpo-cmds</a> of the <strong>Operation</strong> <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-operation">lmpo-operation</a>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>lmpo-cmd</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <em><strong>add</strong></em>; <a href="#anotation-types">Annotation types</a> }</td>
+<td>add annotation to the plot.</td>
+</tr>
+<tr>
+<td>{ <strong>textann</strong>; <strong>ann#1</strong>:x; <a href="#text-annotation-properties">Text annotation properties</a> }</td>
+<td>set the properties of the x-th text annotation.</td>
+</tr>
+<tr>
+<td>{ <strong>pointann</strong>; <strong>ann#1</strong>:x; <a href="#point-annotation-properties">Text annotation properties</a> }</td>
+<td>set the properties of the x-th point annotation.</td>
+</tr>
+<tr>
+<td>{ <strong>lineann</strong>;  <strong>ann#1</strong>:x; <a href="#point-annotation-properties">Line annotation properties</a> }</td>
+<td>set the properties of the x-th line annotation.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="anotation-types">Anotation types</h2>
+<p>using the <strong>add</strong> cmd one could set annotation listed in the following table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Anotation type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <strong>type:</strong>:<strong>text</strong>; <strong>xpos</strong>:x; <strong>ypos</strong>:x; <strong>text-content</strong>:x  }</td>
+<td>add a text annotation at (<strong>xpos</strong>, <strong>ypos</strong>)-position to the plot title.</td>
+</tr>
+<tr>
+<td>{ <strong>type:</strong>:<strong>point</strong>; <strong>xpos</strong>:x; <strong>text-content</strong>:x  }</td>
+<td>add a point annotation at <strong>xpos</strong>-position to the plot title.</td>
+</tr>
+<tr>
+<td>{ <strong>type:</strong>:<strong>hline</strong>; <strong>ypos</strong>:x  }</td>
+<td>add a horizontal line annotation at <strong>ypos</strong>-position to the plot title.</td>
+</tr>
+<tr>
+<td>{ <strong>type:</strong>:<strong>vline</strong>; <strong>xpos</strong>:x  }</td>
+<td>add a horizontal line annotation at <strong>xpos</strong>-position to the plot title.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="text-annotation-properties">Text annotation properties</h2>
+<p>Text annotation properties are listed in the following table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <strong>text-color</strong>:x  }</td>
+<td>set text color of the text annotation. Color has the hex format #ffffff00.</td>
+</tr>
+<tr>
+<td>{ <strong>background</strong>:x  }</td>
+<td>set background of the text annotation. Color has the hex format #ffffff00.</td>
+</tr>
+<tr>
+<td>{ <strong>text-fontsize</strong>:x  }</td>
+<td>set text fontsize of the text annotation.</td>
+</tr>
+<tr>
+<td>{ <strong>text-content</strong>:x  }</td>
+<td>set text of the text annotation.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="point-annotation-properties">Point annotation properties</h2>
+<p>Point annotation properties are listed in the following table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <strong>text-color</strong>:x  }</td>
+<td>set text color of the point annotation. Color has the hex format #ffffff00.</td>
+</tr>
+<tr>
+<td>{ <strong>color</strong>:x  }</td>
+<td>set color of the point annotation. Color has the hex format #ffffff00.</td>
+</tr>
+<tr>
+<td>{ <strong>text-fontsize</strong>:x  }</td>
+<td>set text font size of the point annotation.</td>
+</tr>
+<tr>
+<td>{ <strong>text-content</strong>:x  }</td>
+<td>set text of the point annotation.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="line-annotation-properties">Line annotation properties</h2>
+<p>Line annotation properties are listed in the following table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <strong>text-color</strong>:x  }</td>
+<td>set text color of the line annotation. Color has the hex format #ffffff00.</td>
+</tr>
+<tr>
+<td>{ <strong>color</strong>:x  }</td>
+<td>set color of the line. Color has the hex format #ffffff00.</td>
+</tr>
+<tr>
+<td>{ <strong>text-fontsize</strong>:x  }</td>
+<td>set text font size of the line annotation.</td>
+</tr>
+<tr>
+<td>{ <strong>text-orientation</strong>:{horizontal,vertical}  }</td>
+<td>set the text orientation of the line annotation.</td>
+</tr>
+<tr>
+<td>{ <strong>line-style</strong>:x  }</td>
+<td>set text of the line annotation.</td>
+</tr>
+<tr>
+<td>{ <strong>line-thickness</strong>:x  }</td>
+<td>set line thickniss of the line annotation.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-xml">&lt;Operation Name=&quot;Annotation&quot;&gt;
+    &lt;Value&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:text;xpos:5;text-content:Centered Text&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:text;xpos:7;text-content:topleft Text&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:point;xpos1:3;xpos2:7&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:hline;ypos1:-1000;ypos2:1000&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type:vline;xpos1:2;xpos2:6&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#:1; text-color:#ff0000ff; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#:2; text-color:#ff00ff00; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#:3; text-color:#ffff0000; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#:4; text-color:#ff800000; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;lineann; ann#:1; color:#ff0000ff; text-color:#ff0000ff; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;lineann; ann#:2; color:#ff00ff00; text-color:#ff00ff00; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;lineann; ann#:3; color:#ffff0000; text-color:#ffff0000; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;lineann; ann#:4; color:#ff800000; text-color:#ff800000; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pointann; ann#:1; color:#ff0000ff; text-color:#ff0000ff; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pointann; ann#:2; color:#ff00ff00; text-color:#ff00ff00; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pointann; ann#:3; color:#ffff0000; text-color:#ffff0000; text-fontsize:12 &lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pointann; ann#:4; color:#ff800000; text-color:#ff800000; text-fontsize:12 &lt;/anyType&gt;
+    &lt;/Value&gt;
+&lt;/Operation&gt;
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

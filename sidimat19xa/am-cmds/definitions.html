@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Definitions and abbreviations | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Definitions and abbreviations | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="definitions">
+<h1 id="definitions-and-abbreviations">Definitions and abbreviations</h1>
+
+<p>Here are some definitions and abbreviations related to the sidimat auto measurement.</p>
+<p><a id="sam"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>sam</em></strong>: sidimat19xA auto measurement.</p>
+</div>
+<p><a id="sam-file"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>sam-file</em></strong>: this is a sidimat19xA auto measurement file with the file extension <em>.SiDiMaTAMF</em>. Basically it consists of a collection of AutoMeasurement-Objects <em>Automeasurement</em>.<br>
+Each AutoMeasurement-object consists of a collections of operations the so called <a href="#sam-operation">&quot;sam-operation&quot;</a>.</p>
+</div>
+<p><a id="sam-operation"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>sam-operation</em></strong>:  contains different auto measurement actions. It basically  consists of a collection of <strong>operation-name</strong> and optionally a value. It's value contains a list of <em>sam</em> commands &quot;<strong>sam-cmd</strong>&quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some <strong>sam-operation</strong> are valueless.</p>
+</div>
+</div>
+<p><a id="sam-cmd"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>sam-cmd</em></strong>: consists of  <strong>cmd-name</strong> &quot;<em>italic</em>, <strong>polt</strong> &quot; and optionally a list of <strong>cmd-config</strong> objects seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;. <strong>cmd-name</strong> and <strong>cmd_config</strong> objects are seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.</p>
+<blockquote>
+<p>Some <strong>sam-cmd</strong> are cmd-config-less.</p>
+</blockquote>
+</div>
+<p><a id="cmd-config"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>cmd-config</em></strong>: consists of cmd-keyword &quot;<strong>polt</strong>&quot; and value the cmd-keyword and its value are seperated by colon &quot;:&quot; or colon+space &quot;: &quot;.</p>
+<blockquote>
+<p>Some cmd_configs consist only of a keyword (valueless).</p>
+</blockquote>
+</div>
+<p><a id="filepath"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>filepath</em></strong>: If <em>filepath</em> string contains a colon ':' or start with double backslash &quot;\\&quot;, then absolute path is assummed, otherwise the path is assumed to be relative to the <a href="#workingdirectory"><em>working-directory</em></a>.</p>
+</div>
+<p><a id="path"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>path</em></strong>: If <em>path</em> string contains a colon ':' or start with double backslash &quot;\\&quot;, then absolute path is assummed, otherwise the path is assumed to be relative to the <a href="#workingdirectory"><em>working-directory</em></a>.</p>
+</div>
+<p><a id="original-directory"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>original-directory</em></strong>: the directory where the first <strong>sam</strong> file is opened and executed.</p>
+</div>
+<p><a id="working-directory"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>working-directory</em></strong>: the working directory for <strong>sam-operation</strong>. By starting the a <strong>sam</strong> file the <strong>working-directory</strong> is set to the <strong>original-directory</strong>.</p>
+</div>
+<p><a id="system-loop-status-actions"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>sytem-loop-status-actions</em></strong>: READ, CACHE, RESTORE, OVERALLON, OVFFON, PFFON, PNEUMON, OVERALLOFF, OVFFOFF, PFFOFF, PNEUMOFF, TEMPSENSORON, TEMPSENSOROFF, ETHERCATSFFON, ETHERCATSFFOFF, ETHERCATMOTON, ETHERCATMOTOFF.</p>
+</div>
+<p><a id="lmpo-operation"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>lmpo-operation</em></strong>:  contains different auto measurement actions. It basically  consists of a collection of <strong>operation-name</strong> and optionally a value. It's value contains a list of <em>sam</em> commands &quot;<strong>lmpo-cmd</strong>&quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some <strong>lmpo-operation</strong> are valueless.</p>
+</div>
+</div>
+<p><a id="lmpo-cmd"></a></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong><em>lmpo-cmd</em></strong>: consists of  <strong>cmd-name</strong> &quot;<em>italic</em>, <strong>polt</strong> &quot; and optionally a list of <strong>cmd-config</strong> objects seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;. <strong>cmd-name</strong> and <strong>cmd_config</strong> objects are seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Some <strong>lmpo-cmd</strong> are cmd-config-less.</p>
+</div>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

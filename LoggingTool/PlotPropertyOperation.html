@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Plot manipulation PlotProperty operation | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Plot manipulation PlotProperty operation | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="plot-manipulation-plotproperty-operation">Plot manipulation <em>PlotProperty</em> operation</h1>
+
+<p>The <strong>PlotProperty</strong> <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-operation">lmpo-operation</a> contains a varios actions. It's value consists of a collection of signal manipulation commands <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-cmd">lmpo-cmd</a>.<br>
+A &quot;<strong>lmpo-cmd</strong>&quot; consists of  <strong><em>cmd-name</em></strong>  &quot;<em>italic</em>, <strong>polt</strong> &quot; and list of <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#cmd-config"><strong>cmd-config</strong></a> seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.<br>
+A <strong>cmd-config</strong> consists of a keyword &quot;<strong>polt</strong>&quot; and a value, they are seperated by a colon &quot;:&quot; or by a colon+space &quot;: &quot;. Some <strong>cmd_configs</strong> are valueless.
+The following table describes all possible <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#sam-cmd">lmpo-cmds</a> of the <strong>Operation</strong> <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-operation">lmpo-operation</a>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>lmpo-cmd</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <em><strong>curves</strong></em>; <strong>curve#1</strong>:x; <strong>curve#2</strong>:x; ... ; <strong>curve#n</strong>:x }</td>
+<td>add the listed signals &quot;curves&quot; from the signals dictionary to the plot.</td>
+</tr>
+<tr>
+<td>{ <em><strong>plot</strong></em>; <a href="#Plot-properties">plot properties</a> }</td>
+<td>set the plot's properties.</td>
+</tr>
+<tr>
+<td>{ <em><strong>tracker-string-format</strong></em>; <strong>format</strong>:x; }</td>
+<td>set the format of the plot's tracker.</td>
+</tr>
+<tr>
+<td>{ <em><strong>add-curve-from-csv</strong></em>; <strong>file</strong>:x; }</td>
+<td>add a signal from csv file to the signals dictionary.</td>
+</tr>
+<tr>
+<td>{ <em><strong>default-curves-color</strong></em>; <strong>curve#1</strong>:x; <strong>curve#1</strong>:x; ...; <strong>curve#x</strong>:x }</td>
+<td>specifies the default curves colors of the plot.</td>
+</tr>
+<tr>
+<td>{ <em><strong>curves-remove</strong></em>; <strong>curve#1</strong>:; <strong>curve#1</strong>:; ...; <strong>curve#x</strong>:  }</td>
+<td>chnages the curves colors of listed curves.</td>
+</tr>
+<tr>
+<td>{ <em><strong>curves-line-color</strong></em> or <em><strong>curves-color</strong></em>; <strong>curve#1</strong>:color; <strong>curve#2</strong>:color; ... ; <strong>curve#n</strong>:color }</td>
+<td>sets the curve line color of the listed curves. Color's value format is ARGB (#FFFFFFFF)}</td>
+</tr>
+<tr>
+<td>{ <em><strong>curves-line-style</strong></em>; <strong>curve#1</strong>:style; <strong>curve#2</strong>:style; ... ; <strong>curve#n</strong>:style }</td>
+<td>sets the curve line style, style values are {&quot;automatic&quot;,&quot;dash&quot;,&quot;dashdashdot&quot;,&quot;dashdashdotdot&quot;,&quot;dashdot&quot;,&quot;dashdotdot&quot;,&quot;dot&quot;,&quot;longdash&quot;,&quot;longdashdot&quot;,&quot;longdashdotdot&quot;}.</td>
+</tr>
+<tr>
+<td>{ <em><strong>curves-line-thickness</strong></em>; <strong>curve#1</strong>:thick; <strong>curve#2</strong>:thick; ... ; <strong>curve#n</strong>:thick }</td>
+<td>sets the curve line thickness of the listed curves.}</td>
+</tr>
+<tr>
+<td>{ <em><strong>curves-title</strong></em>; <strong>curve#1</strong>:title; <strong>curve#2</strong>:title; ...; <strong>curve#n</strong>:title }</td>
+<td>sets the curve title of the listed curves.}</td>
+</tr>
+</tbody>
+</table>
+<p>{ <em><strong>xaxis</strong></em>; <a href="#X-Axis-properties">x-axis properties</a> } | set the x-axis properties.
+{ <em><strong>yaxis</strong></em>; <a href="#Y-Axis-properties">y-axis properties</a> } | set the y-axis properties.</p>
+<h2 id="plot-lmpo-cmd-configuration-cmd-config">plot lmpo-cmd configuration cmd-config</h2>
+<p>using the <strong>plot</strong> cmd one could set the plot properties listed in the following table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>plot property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <strong>title</strong>:x }</td>
+<td>changes the plot title.</td>
+</tr>
+<tr>
+<td>{ <strong>title-color</strong>:x }</td>
+<td>changes the title's color of the plot. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>title-fontsize</strong>:x }</td>
+<td>set the title font size.</td>
+</tr>
+<tr>
+<td>{ <strong>title-font</strong>:x }</td>
+<td>set the title font type. possible font types ()</td>
+</tr>
+<tr>
+<td>{ <strong>title-fontweight</strong>:x }</td>
+<td>set the title font weight. possible font weights ()</td>
+</tr>
+<tr>
+<td>{ <strong>legend-style</strong>:x }</td>
+<td>set the legend style x{inside,outside}.</td>
+</tr>
+<tr>
+<td>{ <strong>legend</strong>: x</td>
+<td>switch legend on off x{on,off}</td>
+</tr>
+<tr>
+<td>{ <strong>grid</strong>: x</td>
+<td>switch grid on off x{on,off}</td>
+</tr>
+<tr>
+<td>{ <strong>background</strong>:x }</td>
+<td>set the background color of the plot. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>legend-text-color</strong>:x }</td>
+<td>set the legend text color . Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>legend-background</strong>:x }</td>
+<td>set the legend text color . Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>legend-text-fontsize</strong>:x }</td>
+<td>set the legend text font size.</td>
+</tr>
+<tr>
+<td>{ <strong>border-thickness</strong>:x }</td>
+<td>set the thickniss of the plot's border. the thickniss is given in pixel.</td>
+</tr>
+<tr>
+<td>{ <strong>border-color</strong>:x }</td>
+<td>set the color of the plot's border. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>rescale</strong>:x }</td>
+<td>rescale the plot.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="x-axis-properties">X-Axis properties</h2>
+<p>using the <strong>plot</strong> cmd one could set some plot properties listed in the following table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>x-axis property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <strong>log</strong>: {on|off} }</td>
+<td>set the y-axis label.</td>
+</tr>
+<tr>
+<td>{ <strong>label</strong>:x }</td>
+<td>set the x-axis label.</td>
+</tr>
+<tr>
+<td>{ <strong>label-fontsize</strong>:x }</td>
+<td>set the x-axis label font size.</td>
+</tr>
+<tr>
+<td>{ <strong>label-color</strong>:x }</td>
+<td>set the x-axis label color. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>fontsize</strong>:x }</td>
+<td>set the x-axis font size. possible font x{&quot;Arial&quot;, &quot;Calibri&quot;, ...}</td>
+</tr>
+<tr>
+<td>{ <strong>min</strong>:x }</td>
+<td>set the x-axis minimum.</td>
+</tr>
+<tr>
+<td>{ <strong>max</strong>:x }</td>
+<td>set the x-axis maximim.</td>
+</tr>
+<tr>
+<td>{ <strong>text-color</strong>:x }</td>
+<td>set the x-axis text color . Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>major-grid-width</strong>:x }</td>
+<td>set the x-axis major grid width.</td>
+</tr>
+<tr>
+<td>{ <strong>minor-grid-width</strong>:x }</td>
+<td>set the x-axis minor grid width.</td>
+</tr>
+<tr>
+<td>{ <strong>major-grid-color</strong>:x }</td>
+<td>set the x-axis major grid color. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>minor-grid-color</strong>:x }</td>
+<td>set the x-axis minor grid color.color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>tick-color</strong>:x }</td>
+<td>set the x-axis tick color.color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>line-color</strong>:x }</td>
+<td>set the x-axis line color.color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="y-axis-properties">Y-Axis properties</h2>
+<p>using the <strong>plot</strong> cmd one could set some plot properties listed in the following table.</p>
+<table>
+<thead>
+<tr>
+<th><strong>y-axis property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <strong>log</strong>: {on|off} }</td>
+<td>set the y-axis label.</td>
+</tr>
+<tr>
+<td>{ <strong>label</strong>:x }</td>
+<td>set the y-axis label.</td>
+</tr>
+<tr>
+<td>{ <strong>label-fontsize</strong>:x }</td>
+<td>set the y-axis label font size.</td>
+</tr>
+<tr>
+<td>{ <strong>label-color</strong>:x }</td>
+<td>set the y-axis label color. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>fontsize</strong>:x }</td>
+<td>set the y-axis font size. possible font types ()</td>
+</tr>
+<tr>
+<td>{ <strong>min</strong>:x }</td>
+<td>set the y-axis minimum.</td>
+</tr>
+<tr>
+<td>{ <strong>max</strong>:x }</td>
+<td>set the y-axis maximim.</td>
+</tr>
+<tr>
+<td>{ <strong>text-color</strong>:x }</td>
+<td>set the x-axis text color . Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>major-grid-width</strong>:x }</td>
+<td>set the y-axis major grid width.</td>
+</tr>
+<tr>
+<td>{ <strong>minor-grid-width</strong>:x }</td>
+<td>set the y-axis minor grid width.</td>
+</tr>
+<tr>
+<td>{ <strong>major-grid-color</strong>:x }</td>
+<td>set the y-axis major grid color. Color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>minor-grid-color</strong>:x }</td>
+<td>set the y-axis minor grid color.color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>tick-color</strong>:x }</td>
+<td>set the y-axis tick color.color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+<tr>
+<td>{ <strong>line-color</strong>:x }</td>
+<td>set the y-axis line color.color's value format is ARGB (#FFFFFFFF).</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-xml">&lt;Operation Name=&quot;PlotProperty&quot;&gt;
+    &lt;Value&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:ProxV2[um]; major-grid-width:5; minor-grid-width:1;&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xaxis; label:Time[sec]; major-grid-width:10; minor-grid-width:5;&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S2&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;plot; grid:on; title:PlotTitle; title-font-size:14; title-font-color: #FFFF0000; legend: on; legend-style: inside&lt;/anyType&gt;
+    &lt;/Value&gt;
+&lt;/Operation&gt;
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

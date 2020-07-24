@@ -1,0 +1,8687 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>INTRODUCTION | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="INTRODUCTION | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="../../images/IDELogo.gif" alt="img">  <strong>Integrated Dynamics Engineering</strong></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td><strong>Remote command Interface (RCI1) Description</strong></td>
+</tr>
+<tr>
+<td>This document describes the remote commands interface “RCI” used to communicate with the firmware running on the IDE embedded controller “OPTICON”. The OPTICON controller is usually using to control the IDE active isolation vibration system. Through the remote commands interface the user can control the AVIS and to ask its status. Furthermore, all in the firmware supported parameters are accessible through the RCI.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AUTHOR(S):</strong></td>
+<td>Moneer Shatat-Herres</td>
+</tr>
+<tr>
+<td><strong>REVISION:</strong></td>
+<td>01</td>
+</tr>
+<tr>
+<td><strong>DATE OF PRINT:</strong></td>
+<td>December 12, 2020</td>
+</tr>
+</tbody>
+</table>
+</br>
+<p><strong>DOCUMENT CHANGE &amp; HISTORY RECORD</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Last Update</th>
+<th>Status</th>
+<th>Version</th>
+<th>ECR/PR/IP</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MSHAT</td>
+<td>28.01.2016</td>
+<td>Draft</td>
+<td>00</td>
+<td></td>
+<td>First version</td>
+</tr>
+<tr>
+<td>MSHAT</td>
+<td>14.09.2016</td>
+<td>Draft</td>
+<td>01</td>
+<td></td>
+<td>Modification related to SAMBA19xUI 1.9.0.5, which is a part of the SAMBA1.9.x installation package.</td>
+</tr>
+<tr>
+<td>MSHAT</td>
+<td>02.11.2016</td>
+<td>Released</td>
+<td>02</td>
+<td></td>
+<td>Modification related to SAMBA19xUI 1.9.0.6.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Although this document has been prepared with the utmost care, errors of any kind cannot be totally discounted. The contents of this document may be periodically revised, amended or changed otherwise by the originator without notice. You are invited to report any deficiencies / recommendations to IDE.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Windows 7 ®, Windows 8 ® are registered trademarks of the Microsoft Corporation, USA. © Copyright 2020, Integrated Dynamics Engineering GmbH</p>
+</div>
+<p>Applicable documents</p>
+<p>Controlling documents</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ref.</td>
+<td>Title, author</td>
+<td>Doc. Id/Version</td>
+<td>Filename</td>
+<td>Last update</td>
+<td>Status</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Subsidiary documents</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ref.</td>
+<td>Title, author</td>
+<td>Doc. Id/Version</td>
+<td>Filename</td>
+<td>Last update</td>
+<td>Status</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Reference documents</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ref.</td>
+<td>Title, author</td>
+<td>Description</td>
+</tr>
+<tr>
+<td></td>
+<td><em>Digital Filter in TC standard Firmware Rev 2.4.pdf</em></td>
+<td>This document describes the digital filters implemented in the firmware.</td>
+</tr>
+<tr>
+<td></td>
+<td><em>Firmware’s functionality parameter description.pdf</em></td>
+<td>It describes the firmware algorithm and parameters</td>
+</tr>
+<tr>
+<td></td>
+<td><em>C67monitor tool user manual.pdf</em></td>
+<td>This document contains a description of the monitor tool to upload the firmware on the opticon controller.</td>
+</tr>
+</tbody>
+</table>
+<p>Abbreviations</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECR</td>
+<td>Engineering Change Request</td>
+</tr>
+<tr>
+<td>IP</td>
+<td>Improvement Proposal</td>
+</tr>
+<tr>
+<td>AVIS</td>
+<td>Active Vibration Isolation System</td>
+</tr>
+<tr>
+<td>Opticon</td>
+<td>The standard embedded controller used to control the AVIS</td>
+</tr>
+<tr>
+<td>Firmware</td>
+<td>The software running on the embedded controller that consists the implementation of all control-algorithm needed for the controlling the AVIS</td>
+</tr>
+<tr>
+<td>CRC</td>
+<td>Check sum</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="introduction">INTRODUCTION</h1>
+<p>This document describes how the IDE active Vibration Isolation System “AVIS”, which is equipped with an OPTICON controller, could be controlled by a remote host.</p>
+<p>While the AVIS is designed to be a standalone system, it is also designed to be flexible with regard to its operating parameters. This allows the AVIS to be fully field tunable. As a standalone system these parameters are programmed via a menu-driven user interface “SAMBA-UI” over a com port Interface to an ANSI CRT terminal or PC running a terminal program. As an embedded subsystem, however, it is necessary to provide a machine interface for a remote system controller to get and set these parameters. Furthermore, the AVIS is capable of detecting and reporting its operating status. This information is vital for a system controller that needs to know the state of all of its subsystems.</p>
+<p>The general method of communication is based on a master/slave relationship between a host and a device. The method utilizes a message protocol which provides an “envelope” by which messages are passed to and from the controlled device. With the exception of some basic command requirements, the content of the command set is specific to the controlled device.</p>
+<p>The main purpose of this document is to specify the commands land resulting responses that can be sent to and received by the isolation system over this protocol.</p>
+<h1 id="communications-hardware">COMMUNICATIONS HARDWARE</h1>
+<p>The OPTICON controller contents two connectors for the communication with a host program a RS232- and a USB-connector. Those two connectors are a standard connectors and they are always present. Furthermore the Opticon controller could be equipped optional with a Communication-Module “OCM”. The OCM is able to support Ethernet, USB, RS232 and CAM-Bus interface.</p>
+<p>The controller operates as a slave, the controller only responses the received commands from the host, and the host program operates as a master.</p>
+<h2 id="rs232-port">RS232 Port</h2>
+<h3 id="physical-connection">Physical Connection</h3>
+<p>The RS232 serial interface connector is a male DSub-9 connector that is wired in DTE (Data Terminal Equipment) configuration. The pin-out for the connector is shown below:
+<span id="_Toc468451035" class="anchor"></span>Table 2.1: RS232-Connector pin-out.</p>
+<table>
+<thead>
+<tr>
+<th>PIN number</th>
+<th>PIN label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Tx</td>
+<td>Transmit Data</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Rx</td>
+<td>Receive Data</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GND</td>
+<td>Ground</td>
+</tr>
+</tbody>
+</table>
+<p>Default Parameters</p>
+<p>At reset, the serial port is initialized for 57600 baud, whereas the baud rate is configurable, 8bits, no parity, 1 stop bit.</p>
+<h3 id="line-control">Line Control</h3>
+<p>Line control protocols such as XON/XOFF (software) or CTS/RTS (hardware) are not supported.</p>
+<h2 id="usb-port">USB PORT</h2>
+<p>The controller contents a standard DFT device for supporting the communication using the USB connector. The DFT device is an USB-&gt;COM converter, the host still communicates to the USB-Connector using a virtual COM-PORT. It is necessary to install the DFT-Device driver before using the USB-Connector.</p>
+<h3 id="physical-connection-1">Physical connection</h3>
+<p>The USB interface connector is a standard female USB connector type B “see picture bellow”. The pin-out of this connector is shown in the next table.
+<span id="_Toc468451036" class="anchor"></span>Table 2.2: USB-Connector pinning.</p>
+<table>
+<thead>
+<tr>
+<th>PIN number</th>
+<th>PIN label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>VCC</td>
+<td>+5 VDC</td>
+</tr>
+<tr>
+<td>2</td>
+<td>D-</td>
+<td>Data-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>D+</td>
+<td>Data+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>GND</td>
+<td>Ground</td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image2.png" alt=""></p>
+<h1 id="command-protocol-and-format">COMMAND PROTOCOL AND FORMAT</h1>
+<h2 id="protocol-overview">Protocol Overview</h2>
+<p>The remote command interface for the OPTICON controller adheres to the com port control protocol for &quot;simple&quot; devices. The definition for a simple device is defined as follows:</p>
+<p><em>A “simple” device only performs a limited number of actions. All actions can be performed independently. Each action is initiated by a single command. The duration of an action is relatively short related to its environment. A failure, either functional or caused by communication has only limited impact and recovery is done by just retrying. No harm is done if the device executes the command twice in a row, due to this retry. Communication is straight forward, a command is confirmed, by the device after the completion of the requested action by a reply.</em></p>
+<p>The OPTICON will accept commands from the host. Each command from the host will elicit a response from the OPTICON. The OPTICON will never send an unsolicited message to the host. Any message from the OPTICON to the host is the result of a command that has been sent from the host to the OPTICON.</p>
+<p>The next two sub-sections summarize the defined syntax of the message protocol and the OPTICON command and response data format.</p>
+<h2 id="message-layouts">Message Layouts</h2>
+<p>Command messages are sent in the following telegram format:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Field:</strong></td>
+<td><strong>prefix</strong></td>
+<td><strong>length</strong></td>
+<td><strong>msg_id</strong></td>
+<td><strong>data</strong></td>
+<td><strong>CRC</strong></td>
+<td><strong>terminator</strong></td>
+</tr>
+<tr>
+<td><strong># Chars:</strong></td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>length-3</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Where:</p>
+<p><strong>prefix</strong> is the colon character (‘:’, ASCII 58d). It indicates the start byte of the telegram.</p>
+<p><strong>length</strong> is the two byte hexadecimal representation of the number of 1 byte characters in the command string between the <strong>prefix</strong> (excluding) and the <strong>CRC</strong> (excluding). The value must be &lt; F8h. Note that the specification of <strong>length</strong> as a hexadecimal representation has been inferred by IDE. Due to the 255d byte total message length limitation a two byte hexadecimal representation is assumed. The two <strong>length</strong> bytes could be replaced with “##”, in this case transmission error based on checking this value is bypassed. In other words the firmware doesn’t check the length of the telegram.</p>
+<p><strong>msg_id</strong> and <strong>data</strong> must be readable ASCII character bytes such that they fall between (including) the space (‘ ‘) and tilde (‘~’) characters in the ASCII table (20h .. 7Eh). In fact, this is true of the entire command message with the exception of the <strong>terminator</strong>.</p>
+<p><strong>CRC</strong> is the XOR sum of the bytes between the <strong>prefix</strong> and the <strong>CRC</strong> fields. Note that the <strong>prefix</strong> and <strong>CRC</strong> fields are not including in the calculation of CRC. As like the <strong>length</strong> the two bytes of <strong>CRC</strong> fields could be replaced with “##”, what forces the controller to ignore checking the <strong>CRC</strong> of this telegram.</p>
+<p><strong>terminator</strong> is the carriage return character (CR, ASCII 13d).</p>
+<p>The response message format is similar to the command message format except that it includes a status field to indicate command transmission success or failure.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Field:</strong></td>
+<td><strong>prefix</strong></td>
+<td><strong>length</strong></td>
+<td><strong>msg_id</strong></td>
+<td><strong>status</strong></td>
+<td><strong>data</strong></td>
+<td><strong>CRC</strong></td>
+<td><strong>terminator</strong></td>
+</tr>
+<tr>
+<td><strong># Chars:</strong></td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>length-4</td>
+<td>2</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Where all fields are the same as the command format except:</p>
+<p>Status can be either ‘0’ for accept (No Error), ‘1’ for reject response message or equal to status-code (see 3.4). Reject response means that some aspect of the command string violated a protocol requirement. The data portion of a reject response message contains a brief textual description of the violation. These are listed in the next section.</p>
+<p>Status values greater than 0x9 are displayed in alphabetic format. ( for example: 10= ‘A’ , 11=’B’, 17=’H’ etc.).</p>
+<p><strong>Terminator</strong> the terminator of the controller response differs from the terminator of command message. It consists of the character sequence <strong>&lt;\r\n\r\r&gt;.</strong> The last 3 characters are redundant and could be ignored. The last 3 characters are needed just for the SAMBA-Communication.</p>
+<h2 id="reject-response-messages">Reject Response Messages</h2>
+<p>A reject response message is one in which the status field is ‘1'. The occur in response to a command that is illformed and, as a result, violates a requirement of the protocol. All reject response messages include a brief textual reason string that explains the condition that caused the rejection. These reason strings are listed below in the order in which they are detected. In other words, if “CRC ERROR” and ”BAD DATA” are both applicable, “CRC ERROR” would be reported because it is detected first.</p>
+<p><strong>BAD MESSAGE</strong> - indicates that the command message was not long enough to meet the minimum message field requirements. A message that includes a null data field will be 5 characters long (not including the prefix and the terminator).</p>
+<p><strong>BUFFER OVERFLOW</strong> - indicates that the command message exceeded the maximum allowable message buffer length of 255d bytes (prefix and terminator included).</p>
+<p><strong>CRC ERROR</strong> - The data field will contain this string “CRC ERROR” when the received CRC does not match the one that is calculated from the message content.</p>
+<p><strong>BAD DATA</strong> - This response will occur if non-printable bytes (&lt;20h or &gt; 7Eh …see above) are received between and not including the prefix and the terminator. The TC will use the data field to distinguish between these two conditions. If the CRC does match but non-printable bytes were detected the data field will contain this string.</p>
+<p><strong>LENGTH NOT HEX</strong> - The data field of the reject message will contain this string when the length bytes of the command message being rejected are not valid characters for hexadecimal representation (‘0'..’9', ‘A’..’F’, ‘a’..’f’).</p>
+<p><strong>LENGTH MISMATCH</strong> - This response will occur when the length specified in the command message being rejected does not match the actual length of the message received.</p>
+<p><strong>RESPONSE TOO LONG</strong> - This response will only occur as a result of an internal error in the OPTICON that is caused by an attempt to output a response that will exceed the 255d byte message length (including prefix and terminator) limitation. This message is generated as the result of a sanity check built into the TC remote interface software and should never occur.</p>
+<p><strong>TIMEOUT</strong> - This response will be return if a command starts but does complete. A per character timeout is 1000 milliseconds by default. This response will also be returned if a timeout has occurred during the processing of a command that was successfully received.</p>
+<p><strong>NOTE:</strong> The Firmware supports RCI-Commands and controller responses with a length up to 600 bytes. In this case the command respectively response length contains only the first byte of the real length and therefore it is wrong and should be ignored. There are no RCI-Commands longer then 0xF8. But there are a couple of responses that their length could exceed the 0xF8 like <strong>DGLDV</strong>, <strong>DGTBV</strong> and <strong>DGMSV</strong>.</p>
+<h2 id="tc-command-format-and-conventions">TC Command Format and Conventions</h2>
+<p>This subsection describes the format of the <strong>data</strong> field within the message layout described above. For a command message from the host, the data field breaks out into three main parts, each separated by a space (SP, ASCII 20h). Leading separators are valid.</p>
+<p><strong>&lt;crl&gt; &lt;command-string&gt; &lt;command-parameters&gt;</strong></p>
+<p>Where:</p>
+<p><strong>&lt;crl&gt;</strong> is an unsigned hexadecimal (2 bytes max) command response link. It is used to ensure command and response synchronization. This code will be returned within the response to the command.</p>
+<p><strong>&lt;command-mnemonic&gt;</strong> is a 5 byte string which uniquely defines the command function to the TC controller. Counting left to right:</p>
+<p>Byte 1 is the command group.</p>
+<p>Byte 2 is the command type where S=set, G=get, and A=action.</p>
+<p>Bytes 3-5 is command mnemonic. This only has to be unique within a command group.</p>
+<p><strong>&lt;command-parameters&gt;</strong> is the command specific parameter string. Any required parameters for the command are given in this string. If there is more than one, they are separated by a space character (SP. ASCII 20h).</p>
+<p>For a response from the controller, the data field has four parts, each separated by a space (SP, ASCII 20h).</p>
+<p><strong>&lt;crl&gt; &lt;status-code&gt; &lt;command-string&gt; &lt;response-data&gt;</strong></p>
+<p>Where:</p>
+<p><strong>&lt;crl&gt;</strong> is the unsigned hexadecimal (2 bytes max) command response link code that was specified with the command that solicited the response.</p>
+<p><strong>&lt;status-code&gt;</strong> is an unsigned hex response code (4 bytes max). If the command was completed successfully, TC_SUCCESS (=0) is returned. Note that all status codes are referred to in this document by their mnemonic names. A list of all response code mnemonics and their specific values are given at the end of the document.</p>
+<p><strong>&lt;command-mnemonic&gt;</strong> is the 5 byte command string that solicited the response.</p>
+<p><strong>&lt;response-data&gt;</strong> is the result string. If the command is defined to return data, this is where it will be.</p>
+<h3 id="overview-of-command-groups">Overview of Command Groups</h3>
+<p>There are seven command groups which organize and characterize the command set. They are listed below with the letter that has been designated for that command group:
+<span id="_Toc468451037" class="anchor"></span>Table 3.1: Command groups.</p>
+<table>
+<thead>
+<tr>
+<th><em>Command Group</em></th>
+<th><em>Designated Letter Code</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Control</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Velocity</td>
+<td>V</td>
+</tr>
+<tr>
+<td>Pneumatic</td>
+<td>P</td>
+</tr>
+<tr>
+<td>Feedforward</td>
+<td>F</td>
+</tr>
+<tr>
+<td>Diagnostics</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Nonvolatile Memory + New commands</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Performance monitoring and earth quake detection</td>
+<td>L</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-types">Data Types</h3>
+<p>The command descriptions in the subsequent sections of this document reference some constants and common data types that are defined as follows:</p>
+<p><span id="_Toc468451038" class="anchor"></span>Table 3.2: Data types used by the rci-commands.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><strong><span class="underline">DataType</span></strong></td>
+<td><strong><span class="underline">“sprintf” format</span></strong></td>
+<td><strong><span class="underline">Definition and Content Restrictions</span></strong></td>
+</tr>
+<tr class="even">
+<td><em>int</em></td>
+<td>“%d”</td>
+<td>A decimal value.</td>
+</tr>
+<tr class="odd">
+<td><em>hex</em></td>
+<td>“%x“</td>
+<td>An unsigned decimal value in hexadecimal notation</td>
+</tr>
+<tr class="even">
+<td><em>float</em></td>
+<td>“%e”</td>
+<td>A floating point value in E notation.</td>
+</tr>
+<tr class="odd">
+<td><em>char</em></td>
+<td>“%c”</td>
+<td>A printable ASCII character (‘ ’..’~’)</td>
+</tr>
+<tr class="even">
+<td><em>string</em></td>
+<td>“\”%s\””</td>
+<td>An aggregate of chars delimited by quotes</td>
+</tr>
+<tr class="odd">
+<td><em>OnOff</em></td>
+<td>“%c”</td>
+<td>One of two possible characters. ‘N’ for on and ‘F’ for off. ‘n’ resp. (‘f’ also accepted.)</td>
+</tr>
+<tr class="even">
+<td>IOSignal [IOType MainIndex SubIndex]</td>
+<td><p>%u</p>
+<p>%d</p>
+<p>%d”</p></td>
+<td><p>IOType</p>
+<p>dependent on IOType</p>
+<p>dependent on IOType</p></td>
+</tr>
+<tr class="odd">
+<td>ftype</td>
+<td>“%u”</td>
+<td>This type is a subrange of unsigned. It is used to identify a type of filter.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ranges-and-enumerations">Ranges and Enumerations</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td><em><strong>Range specifier</strong></em></td>
+<td><em><strong>possible values</strong></em></td>
+<td><em><strong>symbolic enumeration</strong></em></td>
+</tr>
+<tr class="even">
+<td>OnOff Chars</td>
+<td>'N' 'n'<br>
+'F' 'f'</td>
+<td>On<br>
+Off</td>
+</tr>
+<tr class="odd">
+<td>NumVelAxes</td>
+<td>0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5</td>
+<td>X trans<br>
+Z rot<br>
+Y trans<br>
+Z trans<br>
+Y rot<br>
+X rot</td>
+</tr>
+<tr class="even">
+<td>LastInput</td>
+<td><p>0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
+9<br>
+10<br>
+11<br>
+12<br>
+13<br>
+14<br>
+15<br>
+16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p>
+<p>21</p>
+<p>22</p>
+<p>23</p>
+<p>24</p>
+<p>25</p>
+<p>26</p>
+<p>27</p>
+<p>28</p>
+<p>29</p>
+<p>30</p>
+<p>31</p>
+<p>32</p>
+<p>33</p>
+<p>34</p>
+<p>35</p>
+<p>36</p></td>
+<td><p>InpX1FB (Not used)</p>
+<p>InpY1FB (horizontal geophone of Isolator#1)</p>
+<p>InpZ1FB (vertical geophone of Isolator#1)</p>
+<p>InpX2FB (horizontal geophone of Isolator#2)</p>
+<p>InpZ2FB (vertical geophone of Isolator#2)</p>
+<p>InpY3FB (horizontal geophone of Isolator#3)</p>
+<p>InpZ3FB (vertical geophone of Isolator#3)</p>
+<p>InpXFF (floor feedforward geophone in x-direction)</p>
+<p>InpYFF (floor feedforward geophone in y-direction)</p>
+<p>InpZFF (floor feedforward geophone in z-direction)</p>
+<p>InpProx1 (vert. Proximity signal of isolator#1)</p>
+<p>InpProx2 (vert. Proximity signal of isolator#2)</p>
+<p>InpProx3 (vert. Proximity signal of isolator#3)</p>
+<p>InpHProx1 (horiz. Proximity signal of isolator#1)</p>
+<p>InpHProx2 (horiz. Proximity signal of isolator#2)</p>
+<p>InpHProx3 (horiz. Proximity signal of isolator#3)</p>
+<p>InpXPOS (stage x-position signal multiplied with the Xpos-multiplier and added to Xpos-offset)</p>
+<p>InpXACC (acceleration in x-direction)</p>
+<p>InpYPOS (stage y-position signal multiplied with the Ypos-multiplier and added to Ypos-offset)</p>
+<p>InpYACC (acceleration in y-direction)</p>
+<p>InpY2FB (not used)</p>
+<p>InpX3FB (not used)</p>
+<p>InpX4FB (not used)</p>
+<p>InpY4FB (not used)</p>
+<p>InpZ4FB (not used)</p>
+<p>Prox1_NO (vert. Proximity of isolator#1 without offset)</p>
+<p>Prox2_NO (vert. Proximity of isolator#2 without offset)</p>
+<p>Prox3_NO (vert. Proximity of isolator#3 without offset)</p>
+<p>ProxH1_NO (horiz. Proximity of isolator#1 without offset)</p>
+<p>ProxH2_NO (horiz. Proximity of isolator#2 without offset)</p>
+<p>ProxH3_NO (horiz. Proximity of isolator#3 without offset)</p>
+<p>Zrff_XACC (calculated Xacc for Zrot axis)</p>
+<p>Zrff_YACC (calculated Yacc for Zrot axis)</p>
+<p>Calc_XACC (calculated Xacc dependent on Ypos)</p>
+<p>Calc_YACC (calculated Yacc dependent on Xpos)</p>
+<p>InpXPOSraw (stage x-position signal multiplied with the Xpos-multiplier)</p>
+<p>InpYPOSraw (stage x-position signal multiplied with the Ypos-multiplier)</p></td>
+</tr>
+<tr class="odd">
+<td>LastOutput</td>
+<td><p>0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
+9<br>
+10<br>
+11<br>
+12<br>
+13<br>
+14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p></td>
+<td><p>OutX1 (horiz. motor of Isolator#1 in x-direction)</p>
+<p>OutY1 (horiz. motor of Isolator#1 in y-direction)</p>
+<p>OutZ1 (vert. motor of Isolator#1)</p>
+<p>OutX2 (horiz. motor of Isolator#2 in x-direction)</p>
+<p>OutY2 (horiz. motor of Isolator#2 in y-direction)</p>
+<p>OutZ2 (vert. motor of Isolator#2)</p>
+<p>OutX3 (horiz. motor of Isolator#3 in x-direction)</p>
+<p>OutY3 (horiz. motor of Isolator#3 in y-direction)</p>
+<p>OutZ3 (vert. motor of Isolator#3)</p>
+<p>OutX4 (horiz. motor of Isolator#4 in x-direction)</p>
+<p>OutY4 (horiz. motor of Isolator#4 in y-direction)</p>
+<p>OutZ4 (vert. motor of Isolator#4)</p>
+<p>OutV1 (vert. valve of Isolator#1)</p>
+<p>OutV2 (vert. valve of Isolator#2)</p>
+<p>OutV3 (vert. valve of Isolator#3)</p>
+<p>OutVH1 (horiz. valve of Isolator#1)</p>
+<p>OutVH2 (horiz. valve of Isolator#2)</p>
+<p>OutVH3 (horiz. valve of Isolator#3)</p></td>
+</tr>
+<tr class="even">
+<td>NumVelStages</td>
+<td>0..6</td>
+<td>Stage1 to Stage7</td>
+</tr>
+<tr class="odd">
+<td>NumPneumStages</td>
+<td>0..3</td>
+<td>Stage1 to Stage4</td>
+</tr>
+<tr class="even">
+<td>AnalysisSigNum</td>
+<td>0..2</td>
+<td>MonSig0 to MonSig2</td>
+</tr>
+<tr class="odd">
+<td>AnalysisFilterNum</td>
+<td>0..19</td>
+<td>AFilter0 to AFilter19</td>
+</tr>
+<tr class="even">
+<td>MaxEventNum</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>MaxAnSigNum</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>MaxAnFiltNum</td>
+<td>20</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc468451039" class="anchor"></span>Table 3.3: Ranges and enumerations.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>StatusType</td>
+<td>Bit Number:</td>
+<td>Description</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>LoopBit 1</p>
+<p>AdaptiveBit 2</p>
+<p>FFLoopBit 3</p>
+<p>MoveUpAtStartUpBit 4</p>
+<p>FloorFFLoopBit 5</p>
+<p>FloorFFAdaptiveBit 6</p>
+<p>PneuLoopBit 7</p>
+<p>NoiseFilterBit 8</p>
+<p>UseEtherCatOutput 9</p>
+<p>Bit10 10</p>
+<p>Bit11 11</p>
+<p>NoEtherCatSFFBit 12</p>
+<p>UseFBForFFBit…………13</p>
+<p>DitherCompBit…………..14</p>
+<p>PFFLoopBit……………...15</p>
+<p>PFFAdaptiveBit………....16</p>
+<p>UseTempSensorsBit …..17</p></td>
+<td><p>FB Loop Status toggle</p>
+<p>Stage FF adaptive toggle</p>
+<p>Stage FF active toggle</p>
+<p>Move system up after startup</p>
+<p>Floor FF active toggle(not used)</p>
+<p>Floor FF adaptive toggle(not used)</p>
+<p>Pneumatic Loop Active toggle</p>
+<p>Use Noise filter stages toggle</p>
+<p>(not used)</p>
+<p>(not used)</p>
+<p>(not used)</p>
+<p>(not used)</p>
+<p>Use filtered velocity axes for FF</p>
+<p>Dither compensation active toggle</p>
+<p>Pneumatic FF active toggle</p>
+<p>Pneumatic FF adaptive toggle</p>
+<p>Use temp. sensors</p></td>
+</tr>
+<tr class="odd">
+<td>Individualloopstatus</td>
+<td>Bit Number</td>
+<td>Velocity Axis</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p></td>
+<td><p>Xtrans “Axis1”</p>
+<p>Zrot “Axis2”</p>
+<p>Ytrans “Axis3”</p>
+<p>Ztrans “Axis4”</p>
+<p>Yrot “Axis5”</p>
+<p>Xrot “Axis6”</p></td>
+</tr>
+<tr class="odd">
+<td>PosIndividualLoopStatus</td>
+<td>Bit Number</td>
+<td>Position Axis</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p></td>
+<td><p>Xrot “Axis1”</p>
+<p>Yrot “Axis2”</p>
+<p>Xtrans “Axis3”</p>
+<p>Ytrans “Axis4”</p>
+<p>Zrot “Axis5”</p>
+<p>Ztrans “Axis6“</p></td>
+</tr>
+<tr class="odd">
+<td>PneumIndividualLoopStatus</td>
+<td>Bit Number</td>
+<td>Pneumatic Axis</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>1</p>
+<p>2</p>
+<p>3</p></td>
+<td><p>ZtPneu “Axis1”</p>
+<p>YrPneu “Axis2”</p>
+<p>XrPneu “Axis3”</p></td>
+</tr>
+<tr class="odd">
+<td>DigitalInputBitmask</td>
+<td>Bit Number</td>
+<td>Description</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>9</p>
+<p>10</p>
+<p>11</p>
+<p>12</p>
+<p>13</p>
+<p>14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p></td>
+<td><p>Monitor Key</p>
+<p>Reset Key</p>
+<p>Opto-coupler Input1</p>
+<p>Opto-coupler Input2</p>
+<p>Opto-coupler Input3</p>
+<p>Opto-coupler Input4</p>
+<p>Amplifier1 Temperatur Error</p>
+<p>Amplifier1 power Error</p>
+<p>Amplifier1 connected</p>
+<p>Amplifier2 Temperatur Error</p>
+<p>Amplifier2 power Error</p>
+<p>Amplifier2 connected</p>
+<p>24V Power Supply</p>
+<p>15V Power Supply</p>
+<p>Board ID Bit0</p>
+<p>Board ID Bit1</p>
+<p>Board ID Bit2</p>
+<p>Board ID Bit3</p>
+<p>Board ID Bit4</p>
+<p>Board ID Bit5</p></td>
+</tr>
+<tr class="odd">
+<td>DigitalOutputBitMask</td>
+<td>Bit Number</td>
+<td>Description</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>9</p>
+<p>10</p>
+<p>11</p>
+<p>12</p>
+<p>13</p>
+<p>14</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>20</p></td>
+<td><p>Open Collector1</p>
+<p>Open Collector2</p>
+<p>Open Collector3</p>
+<p>Open Collector4</p>
+<p>Open Collector5</p>
+<p>Open Collector6</p>
+<p>Opto coupler1</p>
+<p>Opto coupler2</p>
+<p>Opto coupler3</p>
+<p>Opto coupler4</p>
+<p>Amplifier0 enable</p>
+<p>Amplifier1 enable</p>
+<p>Monitor LED</p>
+<p>Reset LED</p>
+<p>Reserved</p>
+<p>Reserved</p>
+<p>Reserved</p>
+<p>Reserved</p>
+<p>Reserved</p>
+<p>Reserved</p></td>
+</tr>
+<tr class="odd">
+<td>NumPneumAxes</td>
+<td><p>0</p>
+<p>1</p>
+<p>2</p></td>
+<td><p>ZtPneum</p>
+<p>YrPneum</p>
+<p>XrPneum</p></td>
+</tr>
+<tr class="even">
+<td>NumIOTypes</td>
+<td><p>0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6</p>
+<p>7</p>
+<p>8</p>
+<p>9</p>
+<p>10</p>
+<p>11</p>
+<p>12</p></td>
+<td><p>SensorType<br>
+ActuatorType<br>
+VelocityAxisType<br>
+NoiseType<br>
+VelocityAxisOutputType<br>
+PositionType<br>
+AllAxesType (not supported)</p>
+<p>GeoRMSType(not supported)</p>
+<p>PneumType</p>
+<p>AnalysisFilterType(not supported)</p>
+<p>FFType</p>
+<p>PFFType</p>
+<p>TemperatureSensorType</p></td>
+</tr>
+<tr class="odd">
+<td>num_ff_sources = 7</td>
+<td>0-6</td>
+<td>any input signal</td>
+</tr>
+<tr class="even">
+<td>num_pff_sources = 4</td>
+<td>0-3</td>
+<td>any input signal</td>
+</tr>
+<tr class="odd">
+<td>NumGeo</td>
+<td>0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6</td>
+<td><p>InpX1FB</p>
+<p>InpY1FB</p>
+<p>InpZ1FB</p>
+<p>InpX2FB</p>
+<p>InpZ2FB</p>
+<p>InpY3FB</p>
+<p>InpZ3FB</p></td>
+</tr>
+<tr class="even">
+<td>NumPosAxes</td>
+<td><p>0<br>
+1<br>
+2<br>
+3</p>
+<p>4</p>
+<p>5</p></td>
+<td><p>XpRot<br>
+YpRot<br>
+Xtrans<br>
+Ytrans</p>
+<p>ZpRot</p>
+<p>Zptrans</p></td>
+</tr>
+<tr class="odd">
+<td>NumPosStages</td>
+<td>0..3</td>
+<td>Stage1 to Stage4</td>
+</tr>
+<tr class="even">
+<td>NumIsolators</td>
+<td><p>0</p>
+<p>1</p>
+<p>2</p></td>
+<td><p>Isolator1 Vertical</p>
+<p>Isolator2 Vertical</p>
+<p>Isolator3 Vertical</p></td>
+</tr>
+<tr class="odd">
+<td>NumCondition</td>
+<td>0<br>
+1<br>
+2</td>
+<td><p>Up</p>
+<p>Not used</p>
+<p>Down</p></td>
+</tr>
+<tr class="even">
+<td>NoiseTypes</td>
+<td><p>0<br>
+1<br>
+2</p>
+<p>4</p>
+<p>5</p></td>
+<td><p>No noise<br>
+Random/White noise<br>
+Sine wave</p>
+<p>Duty cycle</p>
+<p>Chirp sine</p></td>
+</tr>
+<tr class="odd">
+<td>TSwitchConfig</td>
+<td>0<br>
+1<br>
+2</td>
+<td>Automatic switching<br>
+Always velocity loop<br>
+Always proximity loop</td>
+</tr>
+<tr class="even">
+<td>TFFStage</td>
+<td>0..2<br>
+3..5<br>
+6,7</td>
+<td>Reference Path<br>
+Secondary Path<br>
+Core Filter (Error Filter)</td>
+</tr>
+<tr class="odd">
+<td>num_lags</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>MaxFilter</td>
+<td><p>NOFIL 0</p>
+<p>LPF1O 1</p>
+<p>LPF2O 2</p>
+<p>HPF1O 3</p>
+<p>HPF2O 4</p>
+<p>BPF 5</p>
+<p>NOTCH 6</p>
+<p>PID 7</p>
+<p>HOPT 8</p>
+<p>INOTCH 9</p>
+<p>VLOOP 10</p>
+<p>PLOOP 11</p>
+<p>PPID 12</p>
+<p>LEADLAG 13</p>
+<p>LEADLAG2 14</p>
+<p>ANOTCH 15</p>
+<p>HPFXX 16</p>
+<p>LPFXX 17</p>
+<p>STRETCH 18</p>
+<p>BPF2E 19</p>
+<p>LIMINTEG 20</p>
+<p>Var_Filt 21</p>
+<p>ANOTCH5P 22</p>
+<p>LOPID……………………23</p></td>
+<td><p>Empty filter</p>
+<p>Low pass filter, 1<sup>st</sup> order</p>
+<p>Low pass filter, 2<sup>nd</sup> order</p>
+<p>High pass filter, 1<sup>st</sup> order</p>
+<p>High pass filter, 2<sup>nd</sup> order</p>
+<p>Band pass filter</p>
+<p>Notch filter</p>
+<p>Low frequency limited PID</p>
+<p>HOPT filter</p>
+<p>Inverted Notch filter</p>
+<p>Velocity loop filter</p>
+<p>Position loop filter</p>
+<p>PID filter</p>
+<p>Lead lag filter 1<sup>st</sup> order</p>
+<p>Lead lag filter 2<sup>nd</sup> order</p>
+<p>asymmetric Notch filter</p>
+<p>High pass filter with q-factor</p>
+<p>Low pass filter with q-factor</p>
+<p>Stretcher filter</p>
+<p>Band pass filter 2 edition</p>
+<p>Limited integrator</p>
+<p>Variable filter<br>
+ANOTCH with 5 parameters</p>
+<p>Limited Output PID</p></td>
+</tr>
+<tr class="odd">
+<td>TraceErrorCode</td>
+<td>0<br>
+1<br>
+2</td>
+<td>Trace started<br>
+Tracing already in progress<br>
+Too many samples</td>
+</tr>
+<tr class="even">
+<td>TraceStatus</td>
+<td>0<br>
+1</td>
+<td>Tracing Ready<br>
+Tracing in progress</td>
+</tr>
+<tr class="odd">
+<td>MotorStatus</td>
+<td>0<br>
+1<br>
+2<br>
+3</td>
+<td>Normal operation<br>
+Motor overpowered/overheated<br>
+Motor disabled<br>
+Motor shutdown completely</td>
+</tr>
+<tr class="even">
+<td>VertLoopStati</td>
+<td><p>0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6</p>
+<p>7</p></td>
+<td><p>down</p>
+<p>going up to softstop</p>
+<p>up at softstop (not used)</p>
+<p>going up (not used)</p>
+<p>up</p>
+<p>going down</p>
+<p>at powerup position</p>
+<p>vertical loop OK</p></td>
+</tr>
+<tr class="odd">
+<td>AutoSwitchLoopStatus</td>
+<td>Bit represenations :</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>AutoSwitch......................1</p>
+<p>AlwaysV..........................2</p>
+<p>AlwaysP..........................3</p>
+<p>AlwaysBoth.....................4</p>
+<p>FaultCondition................5</p>
+<p>RunningV........................6</p>
+<p>RunningP........................7</p></td>
+<td><p>Auto switch status</p>
+<p>Always velocity loop</p>
+<p>Always position loop</p>
+<p>Always velocity and position loop</p>
+<p>Fault condition status</p>
+<p>Velocity loop running status</p>
+<p>Position loop running status</p></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="rci-command-and-controller-response-example">RCI-Command and controller response example</h2>
+<p>Here are some examples of RCI-Commands sent by a host program and the controller responses of those commads.</p>
+<p><strong>Remark:</strong> The controller responses as a terminator the characters sequence <strong>&lt;\r\n\r\r&gt;</strong> instead <strong>&lt;\r&gt;</strong>. The last 3 characters of the terminator are redundant and could be ignored.</p>
+<p><strong>Example 1:</strong></p>
+<p>Host RCI-command:</p>
+<p>RCI_Command String “<strong>:0B?AA BGVIS##&lt;\r&gt;</strong>”</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Prefix</strong></th>
+<th><strong>len</strong></th>
+<th><strong>Msg_id</strong></th>
+<th><strong>data</strong></th>
+<th><strong>CRC</strong></th>
+<th><strong>term</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>ctrl</strong></td>
+<td><strong>cmd</strong></td>
+<td><strong>param</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Char</strong></td>
+<td><strong>:</strong></td>
+<td><strong>0B</strong></td>
+<td><strong>?</strong></td>
+<td><strong>AA</strong></td>
+<td><strong>BGVIS</strong></td>
+<td><strong>NONE</strong></td>
+<td><strong>##</strong></td>
+<td><strong>\r</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Controller Response:</p>
+<p>Response string “<strong>:18?0AA 00 BGVIS 4 0 1 1279&lt;\r\n\r\r&gt;</strong>”</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Prefix</strong></th>
+<th><strong>len</strong></th>
+<th><strong>Msg_id</strong></th>
+<th><strong>status</strong></th>
+<th><strong>data</strong></th>
+<th><strong>CRC</strong></th>
+<th><strong>term</strong></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>ctrl</strong></td>
+<td><strong>Status code</strong></td>
+<td><strong>cmd</strong></td>
+<td><strong>param</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>char</strong></td>
+<td><strong>:</strong></td>
+<td><strong>18</strong></td>
+<td><strong>?</strong></td>
+<td><strong>0</strong></td>
+<td><strong>AA</strong></td>
+<td><strong>00</strong></td>
+<td><strong>BGVIS</strong></td>
+<td><strong>4 0 1 12</strong></td>
+<td><strong>79</strong></td>
+<td><strong>\r\n\r\r</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example 2:</strong></p>
+<p>Host RCI-command:</p>
+<p>RCI_Command String “<strong>:0B$1F BGVIS##&lt;\r&gt;</strong>”</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Prefix</strong></th>
+<th><strong>len</strong></th>
+<th><strong>Msg_id</strong></th>
+<th><strong>data</strong></th>
+<th><strong>CRC</strong></th>
+<th><strong>term</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>ctrl</strong></td>
+<td><strong>cmd</strong></td>
+<td><strong>param</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Char</strong></td>
+<td><strong>:</strong></td>
+<td><strong>0B</strong></td>
+<td><strong>$</strong></td>
+<td><strong>1F</strong></td>
+<td><strong>BGVIS</strong></td>
+<td><strong>NONE</strong></td>
+<td><strong>##</strong></td>
+<td><strong>\r</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Controller Response:</p>
+<p>Response string “<strong>:18$01F 00 BGVIS 4 0 1 1215&lt;\r\n\r\r&gt;</strong>”</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Prefix</strong></th>
+<th><strong>len</strong></th>
+<th><strong>Msg_id</strong></th>
+<th><strong>status</strong></th>
+<th><strong>data</strong></th>
+<th><strong>CRC</strong></th>
+<th><strong>term</strong></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>ctrl</strong></td>
+<td><strong>Status code</strong></td>
+<td><strong>cmd</strong></td>
+<td><strong>param</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>char</strong></td>
+<td><strong>:</strong></td>
+<td><strong>18</strong></td>
+<td><strong>$</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1F</strong></td>
+<td><strong>00</strong></td>
+<td><strong>BGVIS</strong></td>
+<td><strong>4 0 1 12</strong></td>
+<td><strong>15</strong></td>
+<td><strong>\r\n\r\r</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example 3:</strong></p>
+<p>Host RCI-command:</p>
+<p>RCI_Command String “<strong>:0B$1F DGVIS##&lt;\r&gt;</strong>”</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Prefix</strong></th>
+<th><strong>len</strong></th>
+<th><strong>Msg_id</strong></th>
+<th><strong>data</strong></th>
+<th><strong>CRC</strong></th>
+<th><strong>term</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>ctrl</strong></td>
+<td><strong>cmd</strong></td>
+<td><strong>param</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Char</strong></td>
+<td><strong>:</strong></td>
+<td><strong>0B</strong></td>
+<td><strong>$</strong></td>
+<td><strong>1F</strong></td>
+<td><strong>DGVIS</strong></td>
+<td><strong>NONE</strong></td>
+<td><strong>##</strong></td>
+<td><strong>\r</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Controller Response:</p>
+<p>Response string “<strong>:1E$31F 03 DGVISUNKNOWN COMMAND77&lt;\r\n\r\r&gt;</strong>”</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Prefix</strong></th>
+<th><strong>len</strong></th>
+<th><strong>Msg_id</strong></th>
+<th><strong>status</strong></th>
+<th><strong>data</strong></th>
+<th><strong>CRC</strong></th>
+<th><strong>term</strong></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>ctrl</strong></td>
+<td><strong>Status code</strong></td>
+<td><strong>cmd</strong></td>
+<td><strong>param</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>char</strong></td>
+<td><strong>:</strong></td>
+<td><strong>1E</strong></td>
+<td><strong>$</strong></td>
+<td><strong>3</strong></td>
+<td><strong>1F</strong></td>
+<td><strong>03</strong></td>
+<td><strong>DGVIS</strong></td>
+<td><strong>UNKNOWN COMMAND</strong></td>
+<td><strong>77</strong></td>
+<td><strong>\r\n\r\r</strong></td>
+</tr>
+</tbody>
+</table>
+<p>For more examples see appendix.</p>
+<h1 id="remote-command-descriptions">Remote Command Descriptions</h1>
+<p>The following sections describe the remote commands used to communicate with the controller in detail.</p>
+<p><strong>Note</strong>: Some parameters could be accessed by more than one RCI-Command.</p>
+<h2 id="basic-group">BASIC Group</h2>
+<h3 id="bgsts---get-system-loop-status">BGSTS - get system loop status</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get information about the individual loop status in the Feed-back-system (velocity loop) and the overall System configuration.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>Individual Loop Status<br>
+System Status Word</td>
+<td>hex<br>
+hex</td>
+<td>IndividualLoopStatus<br>
+StatusType</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bssts---set-system-loop-status">BSSTS - set system loop status</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set information about the individual loop status in the Feed-back-system and the overall System configuration.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Individual Loop Status<br>
+System Status Word</td>
+<td>hex<br>
+hex</td>
+<td>IndividualLoopStatus<br>
+StatusType</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgvis---get-version-information">BGVIS - get version information</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get version information of the running firmware.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>Majorversion<br>
+Minorversion<br>
+Patchlevel</p>
+<p>LibVersion</p></td>
+<td><p>int<br>
+int<br>
+int</p>
+<p>int</p></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bsopl---set-output-limit">BSOPL - set output limit</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the output limit for the feedback control system. This variable limits the output of the linear motors.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>output limit (%)</td>
+<td>int</td>
+<td>0-100</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgopl---get-output-limit">BGOPL - get output limit</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the output limit of the linear motors.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>output limit (%)</td>
+<td>int</td>
+<td>0-100</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bsffl---set-feed-forward-output-limit">BSFFL - set feed-forward output limit</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the output limit for the feed-forward control system. It specifies the threshold value of all FF-axis-output.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>output limit (%)</td>
+<td>int</td>
+<td>0-400</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgffl---get-feedforward-output-limit">BGFFL - get feedforward output limit</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the output limit for the feed-forward control system.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>output limit (%)</td>
+<td>int</td>
+<td>0-400</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bssws---set-switch-signal">BSSWS - set switch signal</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the signal that is monitored for the use of the automatic switching procedure.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>Signal</td>
+<td>IOSignalType</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgsws---get-switch-signal">BGSWS - get switch signal</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the signal that is monitored for the use of the automatic switching procedure.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>Signal</td>
+<td>IOSignalType</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bsocd---set-switch-conditions">BSOCD - set switch conditions</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the configuration for the automatic loop switching procedure. This includes a triggerlevel that has to be exceeded, a minimum triggering time for this to happen until automatic switching is done. Furthermore, the duration of the switched loop has to be specified. The SwitchConfig contains a bitfield indicating whether to do automatic switching, always velocity or proximity loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Trigger level (%)<br>
+Min. trigger time (sec.)<br>
+Switch duration (sec.)</p>
+<p>SwitchConfig</p></td>
+<td>int<br>
+float<br>
+float<br>
+int</td>
+<td><p>0-100<br>
+-<br>
+-</p>
+<p>TSwitchConfig</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgocd---get-switch-conditions">BGOCD - get switch conditions</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the configuration for the automatic switching procedure.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>Trigger level (%)<br>
+Min. trigger time (sec.)<br>
+Switch duration (sec.)</p>
+<p>SwitchConfig<br>
+AutoSwitchStatus</p></td>
+<td><p>int<br>
+float<br>
+float</p>
+<p>int</p>
+<p>int</p></td>
+<td><p>0-100<br>
+-<br>
+-</p>
+<p>TSwitchConfig<br>
+AutoSwitchLoopStatus</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="bggsc---get-global-system-constants">BGGSC - get global system constants</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get some global system constants of the running firmware.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>NumTestmodes<br>
+NumFBAxes<br>
+NumPneumAxes<br>
+NumPosAxes<br>
+NumGeophones<br>
+NumProximities<br>
+NumFBStages<br>
+NumPosStages<br>
+NumFFStages<br>
+NumIsolators<br>
+Sampling frequency</p>
+<p>FirmwareConfigInfo</p></td>
+<td><p>int<br>
+int<br>
+int<br>
+int<br>
+int<br>
+int<br>
+int<br>
+int<br>
+int<br>
+int<br>
+int</p>
+<p>string</p></td>
+<td><p>NumTestMode<br>
+num_axes<br>
+NumPneumAxes<br>
+NumPosAxes<br>
+NumGeo<br>
+NumProx<br>
+NumVelStages<br>
+NumPosStages<br>
+TFFStage<br>
+NumIsolators<br>
+-</p>
+<p>Info about firmware supported new features.</p></td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc468451040" class="anchor"></span>Table 4.1: Firmware configuration info phrases.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Firmware Config Info phrase</strong></th>
+<th><strong>Meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>Cascaded</em></td>
+<td>The cascaded position control is supported.</td>
+</tr>
+<tr class="even">
+<td><em>NAF</em></td>
+<td>Analysis filters monitoring is not supported.</td>
+</tr>
+<tr class="odd">
+<td><em>NALS</em></td>
+<td>Automatic loop switching is not supported.</td>
+</tr>
+<tr class="even">
+<td><em>EtherCat</em></td>
+<td>EtherCat communication module and its features are supported.</td>
+</tr>
+<tr class="odd">
+<td><em>PneumRamp</em></td>
+<td>The pneumatic Ramp routine is supported.</td>
+</tr>
+<tr class="even">
+<td><em>TmpSens</em></td>
+<td><p>Firmware is supporting:</p>
+<ul>
+<li><p>AD-Mapping of the temperature sensors.</p></li>
+<li><p>AD-Mapping for all AD-Converters signals (physical signals).</p></li>
+<li><p>Input signals are extended to support all physical signals.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><em>ZMS</em></td>
+<td>This is a customizable performance and safety monitoring routine which is supported.</td>
+</tr>
+<tr class="even">
+<td><em>SEQ</em></td>
+<td>Performance monitoring and earth quake detection support.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bsocv---set-motor-overcurrentoverheating-values">BSOCV - set motor Overcurrent/overheating values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Configure the motor overcurrent/overheating failsafe subsystem. This includes the specification of whether to disable all motors in case of failure of one individual motor, a reset delay time that specifies the time after the motor gets back into normal state again and an array of overcurrent/temperature thresholds (for each motor).</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>DisableAllFlag<br>
+ResetDelay (sec.)<br>
+Thresholds[12] (°C) (digit)</td>
+<td>OnOff<br>
+float<br>
+float</td>
+<td>OnOff Chars<br>
+-<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgocv---get-motor-overcurrentoverheating-values">BGOCV - get motor Overcurrent/overheating values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the configuration of the failsafe motor overheating procedure.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>DisableAllFlag<br>
+ResetDelay (sec.)<br>
+Thresholds[12] (°C) (digit)</td>
+<td>OnOff<br>
+float<br>
+float</td>
+<td><p>OnOff Chars<br>
+-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p>DisableAllFlag: “On” to disable all linear motors in case of failure of one motor. Otherwise “Off”.</p>
+<p>ResetDelay: the reset delay time in second.</p>
+<p>Threshold: In case of UseTempSensorsBit (using temperature sensors) then it demonstrates the linear motor temperature threshold in grad Celsius for (OutX1, OutY1, OutZ1, OutX2, OutY2, OutZ2, OutX3, OutY3, OutZ3, OutX4, OutY4 and OutZ4). In case of not using temperature sensors) then it demonstrates the linear motor overcurrent threshold in digit for (OutX1, OutY1, OutZ1, OutX2, OutY2, OutZ2, OutX3, OutY3, OutZ3, OutX4, OutY4 and OutZ4).</p>
+<h3 id="bgmpv---get-motor-overcurrenttemperature-values">BGMPV - get motor Overcurrent/Temperature values</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the actual motor overcurrent “power consumption” respectively temperature values.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>MotorTemp[12] (°C) (digit)</td>
+<td>float[]</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>MotorTemp: In case of using temperature sensors this parameter demonstrates the linear motor temperature in grad Celsius for (OutX1, OutY1, OutZ1, OutX2, OutY2, OutZ2, OutX3, OutY3, OutZ3, OutX4, OutY4 and OutZ4).</p>
+<p>In case of not using temperature sensors this parameter demonstrates the linear motor overcurrent in digit for (OutX1, OutY1, OutZ1, OutX2, OutY2, OutZ2, OutX3, OutY3, OutZ3, OutX4, OutY4 and OutZ4)</p>
+<h3 id="bgmps---get-motor-failsafe-stati">BGMPS - get motor failsafe stati</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the motor overheating stati.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>MotorStati[12]</td>
+<td>hex[]</td>
+<td>MotorStatus</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bscot--set-controller-type">BSCOT – set controller type</h3>
+<p>The Firmware doesn’t allow changing the controller type. The controller type is fixed “4”. This command doesn’t have any affect.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set controller type</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>ContType</td>
+<td>int</td>
+<td>0 – 4</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgcot--get-controller-type">BGCOT – Get controller type</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get controller type</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>ContType</td>
+<td>int</td>
+<td>0 - 4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bsads--set-adcsel-sequence">BSADS – Set adcsel sequence</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set adcsel sequence, the adcsel seguence contains the numbers of AD-channels for the input signals. This command assigns each physically input signal to its AD-Channel.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>CMapAdcs[25]</td>
+<td>int</td>
+<td>0 – 44</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgads--get-adcsel-sequence">BGADS – Get adcsel sequence</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get adcsel sequence</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>None</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>CMapAdcs[25]</td>
+<td>int</td>
+<td>0 - 44</td>
+</tr>
+</tbody>
+</table>
+<p>CMapAdcs: this is the AD-Channel-Mapping for all physical input. (InpX1FB, InpY1FB, InpZ1FB, InpX2FB, InpZ2FB, InpY3FB, InpZ3FB, InpXFF, InpYFF, InpZFF, InpProx1, InpProx2,InpProx3, InpProxH1, InpProxH2, InpProxH3, InpXPOS, InpXACC, InpYPOS, InpYACC, InpY2FB, InpX3FB, InpX4FB, InpY4FB, InpZ4FB).</p>
+<h3 id="bstsa--set-temperature-sensor-adc-mapping">BSTSA – Set Temperature Sensor adc Mapping</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the AD-Converter mapping for the motor temperature sensor input signals.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>TempSensAdcMapp[12]</td>
+<td>int</td>
+<td>0 – 44</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>None</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgtsa--get-temperature-sensor-adc-mapping">BGTSA – Get Temperature Sensor adc Mapping</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the AD-Converter mapping for the motor temperature sensor input signals.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>None</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>TempSensAdcMapp [12]</td>
+<td>int</td>
+<td>0 - 44</td>
+</tr>
+</tbody>
+</table>
+<p>TempSensAdcMapp: this is the AD-Channel-Mapping for the motor temperature sensor. (X1Motor, Y1Motor, Z1Motor, X2Motor, Y2Motor, Z2Motor, X3Motor, Y3Motor, Z3Motor, X4Motor, Y4Motor, Z4Motor). See appendix for the right AD-Mapping.</p>
+<h3 id="bsdas--set-dacs-sequence">BSDAS – Set dacs sequence</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set dacs sequence, the dacs sequence contains the number of the DA-channel of the output signals. This command assigns each physically output signal to its DA-Channel.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>CMapDac[20]</td>
+<td>int</td>
+<td>0 – 22</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>None</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgdas--get-dacs-sequence">BGDAS – Get dacs sequence</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get dacs sequence</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>None</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>CMapdac[20]</td>
+<td>int</td>
+<td>0 - 22</td>
+</tr>
+</tbody>
+</table>
+<p>CMapdac: this is the DA-Channel-Mapping for physical outputs. (OutX1, OutY1, OutZ1, OutX2, OutY2, OutZ2, OutX3, OutY3, OutZ3, OutX4, OutY4, OutZ4, OutV1, OutV2, OutV3, OutV1H, OutV2H, OutV3H, DiagInpDac, DiagOutDac)</p>
+<h3 id="bsfbl--set-fb-limiter">BSFBL – Set FB Limiter</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the desired limiter values for the logical FB-Axis of the velocity loop</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>FBLimiter[6] (digit)</td>
+<td>float</td>
+<td>-</td>
+<td><p>128000.0</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgfbl--get-fb-limiter">BGFBL – GET FB LIMITER</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the values of the adjusted FB-Limiters.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>FBLimiter[6] (digit)</td>
+<td>float</td>
+<td>-</td>
+<td>128000.0</td>
+</tr>
+</tbody>
+</table>
+<p><em>FBLimiter</em>: Those are the logical axis Limiter values in digits. The array values are ordered as following “Xtrans, Zrot, Ytrans, Ztrans, Yrot and Xrot”.</p>
+<p>The FB-Loop limitation limits the output of the last stage filter of each Velocity axis. The limiter value for each axis is separately adjustable by RCI-Command.</p>
+<p><strong>Ramp driving at start-up phase</strong></p>
+<p><strong>Overview</strong></p>
+<p>The mean intend of the ramp driving is to avoid a suddenly jerk forces caused by the motors at a start-up phase. There are two types of Ramp driving, the first one is based on the actuator output (only linear motors) and the second one is based on the logical velocity axes.</p>
+<p>During the start-up phase the value of the limitation is reset to zero and increased incrementally until the start-up time is expired. The limitation reaches its adjusted value even when the start-up time is expired. The start-up time is by the user through RCI-Command adjustable.</p>
+<p>We get a start-up phase by following cases:</p>
+<ul>
+<li><p>Turning the controller on</p>
+</li>
+<li><p>Turning the overall loop on</p>
+</li>
+<li><p>After motor overheating state and the overall loop is on</p>
+</li>
+<li><p>After occurrence of the automatic loop switching and the overall loop is on.</p>
+</li>
+</ul>
+<p><strong>Logical axes ramp driving</strong></p>
+<p>In case of logical axes ramp driving the FB-limitation of the velocity logical axis drives a ramp at the start-up phase.</p>
+<p>The FB-limitation value starts with zero and ends after the start-up time with the adjusted value for each axis.</p>
+<p><strong>Motor output ramp driving</strong></p>
+<p>In this case the output-limiter value drives ramp at the start-up phase.</p>
+<p>The motor output-limiter value starts with zero and ends after the start-up time with the adjusted output-limiter value.</p>
+<h3 id="bssut-set-start-up-time-and-the-ramp-type">BSSUT-Set Start-up time and the ramp type</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>This command set the type of the ramp and the value of the desired start-up-time.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>RampType</p>
+<p>StartUpTime (sec.)</p></td>
+<td><p>Int</p>
+<p>float</p></td>
+<td><p>0 -1</p>
+<p>-</p></td>
+<td><p>0</p>
+<p>1</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bgsut-get-start-up-time-and-the-ramp-type">BGSUT-get Start-up time and the ramp type</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>This command gets the type of the adjusted ramp and the value of the adjusted start-up-time.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>RampType</p>
+<p>StartUpTime (sec.)</p></td>
+<td><p>Int</p>
+<p>float</p></td>
+<td><p>0 -1</p>
+<p>-</p></td>
+<td><p>0</p>
+<p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>RampType</strong>:</em> “0” the actuators drive the ramp during startup phase, “1” the velocity logical axes outputs drive the ramp.</p>
+<p><em><strong>StartUpTime (RampTime)</strong></em>: This is the start-up-time period in seconds.</p>
+<h3 id="bgsst---get-position-and-pneumatic-individual-loop-status">BGSST - Get Position and Pneumatic Individual loop status</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Retrieves the individual loop status parameter of velocity loop and the overall system status.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>PositionIndividualLoopStatus<br>
+PneumaticIndividualLoopStatus</p>
+<p>DigitalInputWord</p>
+<p>DigitalOutputWord</p></td>
+<td><p>hex<br>
+hex</p>
+<p>hex</p>
+<p>hex</p></td>
+<td><p>PosIndividualLoopStatus<br>
+PneumIndividualLoopStatus</p>
+<p>DigitalInputBitmask</p>
+<p>DigitalOutputBitMask</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="bssst---set-position-and-pneumatic-individual-loop-status">BSSST - set Position and Pneumatic Individual loop status</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Specifies the individual loop status value and the overall system status.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>PositionIndividualLoopStatus<br>
+PneumaticIndividualLoopStatus</td>
+<td>hex<br>
+hex</td>
+<td>PosIndividualLoopStatus<br>
+PneumIndividualLoopStatus</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="position-control-loop-group">position CONTROL Loop Group</h2>
+<h3 id="cssmv---set-position-sensor-matrix">CSSMV - set position sensor matrix</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the sensor steering matrix of the position loop. This means, tell the controller how to calculate a logical position axis signal out of the sensor signals. Note that the sensors for the steering matrices has to be set using CSPSD command.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>PosAxis<br>
+SensorMult[6]</td>
+<td>int<br>
+float</td>
+<td>NumPosAxes<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cgsmv---get-position-sensor-matrix">CGSMV - get position sensor matrix</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the sensor steering matrix of the position loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>PosAxis</td>
+<td>int</td>
+<td>NumPosAxes</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>SensorMult[6]</td>
+<td>float</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="csmmv---set-position-motor-matrix">CSMMV - set position motor matrix</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the motor steering matrix of the position loop. This means, tell the controller how to calculate motor outputs out of a logical position axis signal. Note that the motor devices have to be set using CSPMD command.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>PosAxis<br>
+MotorMult[8]</td>
+<td>int<br>
+float</td>
+<td>NumPosAxes<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cgmmv---get-position-motor-matrix">CGMMV - get position motor matrix</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the motor steering matrix of the position loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>PosAxis</td>
+<td>int</td>
+<td>NumPosAxes</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>MotorMult[8]</td>
+<td>float</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cspov---set-proximity-offset-values">CSPOV - set proximity offset values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td><p>Set the offsets of the proximity signals. This is essential for the position loop, because it tries to drive the input signal to zero. It is useful to determine these proximity values by experiment or by using CAUCO command when the system is in a correct position.</p>
+<p>The proximity offset values are used to calculate the 6 virtual input signals Proxx_NO.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>ProxOff[6] (digit)</td>
+<td>float</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cgpov---get-proximity-offset-values">CGPOV - get proximity offset values</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the offsets of the proximity signals.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>ProxOff[6] (digit)</td>
+<td>float</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>ProxOff: this is the array including the proximity offset values for (InpProx1, InpProx2, InpProx3, InpProxH1, InpProxH2, InpProxH3).</p>
+<h3 id="cauco---use-current-proximity-values-as-offsets">CAUCO - use current proximity values as offsets</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Use the current proximity values as reference offsets.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cspfs---set-proximity-filter-stage">CSPFS - set proximity filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set a filter stage for the proximity loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>PosAxis<br>
+PosStage<br>
+FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>int<br>
+int<br>
+int<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>NumPosAxes<br>
+NumPosStage<br>
+MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cgpfs---get-proximity-filter-stage">CGPFS - get proximity filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get a filter stage for the proximity loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>PosAxis<br>
+PosStage</td>
+<td>int<br>
+int</td>
+<td>NumPosAxes<br>
+NumPosStage</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>int<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="csmov---set-motor-offset-values">CSMOV - set motor offset values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the motor offset values that will be added to the motor output and the PneumProxOffset will be added to the proximity input signals used by the pneumatic loop “vrefupadd”.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Y1offset (digit)<br>
+X2offset (digit)</p>
+<p>Y3offset (digit)</p>
+<p>X4Offset (digit)</p>
+<p>Y2Offset (digit)</p>
+<p>X1Offset (digit)</p>
+<p>Y4Offset (digit)</p>
+<p>X3Offset (digit)</p>
+<p>ProxV1 PneumProxOffset (digit)</p>
+<p>ProxV2 PneumProxOffset (digit)</p>
+<p>ProxV3 PneumProxOffset (digit)</p></td>
+<td><p>float</p>
+<p>float<br>
+float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cgmov---get-motor-offset-values">CGMOV - get motor offset values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the motor offset values that will be added to the motor outputs and the PneumProxOffset..</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>Y1offset (digit)<br>
+X2offset (digit)</p>
+<p>Y3offset (digit)</p>
+<p>X4Offset (digit)</p>
+<p>Y2Offset (digit)</p>
+<p>X1Offset (digit)</p>
+<p>Y4Offset (digit)</p>
+<p>X4Offset (digit)</p>
+<p>ProxV1 PneumProxOffset (digit)</p>
+<p>ProxV2 PneumProxOffset (digit)</p>
+<p>ProxV3 PneumProxOffset (digit)</p></td>
+<td><p>float</p>
+<p>float<br>
+float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cspsd---set-position-sensor-devices">CSPSD - set Position sensor devices</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>This command specifies which sensor inputs should be used to build the position logical axes.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>PosAxis<br>
+InputDevices[6]</td>
+<td>int<br>
+IOSignal</td>
+<td>NumPosAxes<br>
+Only sensor IOType</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cgpsd---get-position-sensor-devices">CGPSD - get Position sensor devices</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the sensor input devices of the position loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>PosAxis</td>
+<td>int</td>
+<td>NumPosAxes</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>InputDevices[6]</td>
+<td>IOSignal</td>
+<td>Only sensor IOType</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cspmd---set-position-motor-devices">CSPMD - set Position MOTOR devices</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>This command specifies which actuator outputs should be used for the specified position loop axis.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>PosAxis<br>
+OutputDevices[8]</td>
+<td>int<br>
+IOSignal</td>
+<td>NumPosAxes<br>
+Only actuator IOType</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cgpmd---get-position-motor-devices">CGPMD - get Position MOTOR devices</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get actuator outputs of the position loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>PosAxis</td>
+<td>int</td>
+<td>NumPosAxes</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>OutputDevices[8]</td>
+<td>IOSignal</td>
+<td>Only actuator IOType</td>
+</tr>
+</tbody>
+</table>
+<h3 id="non-linear-position-loop">Non Linear Position loop</h3>
+<p>The non-linear position is a special feature which is implemented for a couple of firmware versions. As the name says it is not a linear control loop and intended to stabilize a non-linear system behavior. Basically it is used to help stabilizing a pneumatic loop which is not stable by a big vibration. It uses only the first three position axes.</p>
+<h4 id="cgsfp---get-switch-function-parameters">CGSFP - get Switch function parameters</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the configuration parameters of the automatic switch routine of the non-linear position loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p><em><strong>AtInput<br>
+ResetPID</strong></em></p>
+<p><em><strong>DeadBand [digits]</strong></em></p>
+<p><em><strong>RisingRange</strong></em></p></td>
+<td><p>int<br>
+int</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>[0 2]</p>
+<p>[0 1]</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="cssfp---set-switch-function-parameters">CSSFP - set Switch function parameters</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the configuration parameters of the automatic switch routine of the position loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p><em><strong>AtInput<br>
+ResetPID</strong></em></p>
+<p><em><strong>DeadBand [digits]</strong></em></p>
+<p><em><strong>RisingRange</strong></em></p></td>
+<td><p>int<br>
+int</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>[0 2]</p>
+<p>[0 1]</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>AtInput</strong></em>: The switch function trigger signal.</p>
+<ul>
+<li><p>1: Switching the non-linear position loop On/Off will be triggered by the input of the position logical axes. This means switch trigger signal is axis input.</p>
+</li>
+<li><p>0: Switching the non-linear position loop On/Off will be triggered by the output of the position logical axes This means switch trigger signal is axis output after last stage.</p>
+</li>
+<li><p>2: The non-linear position control loop is not used; the position control loop works normal as a linear control loop.</p>
+</li>
+</ul>
+<p><em><strong>ResetPID</strong></em>: the PID-Reset flag, to reset the PID filters by switching off the non-linear position loop.</p>
+<ul>
+<li><p>0: No reset of the PID/PPID filters.</p>
+</li>
+<li><p>1: Reset PID/PPID.</p>
+</li>
+</ul>
+<p><em><strong>DeadBand</strong></em>: This is a position value. If the switch trigger signal is lower than this value, then non-linear position loop is switched off. Otherwise the non-linear loop is on.</p>
+<p><em><strong>RisingRange</strong></em>: This is a position value. The difference between the DeadBand and RisingRange specifies the tangent of the non-linear loop output.</p>
+<h2 id="diagnostics-group">DIAGNOSTICS Group</h2>
+<h3 id="dstmo---set-testmode">DSTMO - set testmode</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set a testmode. Note that this feature should not be used since it is only for backward compatibility.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>TestMode</td>
+<td>int</td>
+<td>NumTestmode</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgtmo---get-testmode">DGTMO - get testmode</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the current testmode.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>TestMode</td>
+<td>int</td>
+<td>NumTestmode</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsnip---set-noise-injection-point">DSNIP - set noise injection point</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the noise injection point, that means, specify a location where the noise is going to be injected. If you specify a sensor or any impossible injection point, the controller reports a failure.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>NoiseInectPoint</td>
+<td>IOSignal</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgnip---get-noise-injection-point">DGNIP - get noise injection point</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the point in the control system where the noise is injected.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>NoiseInectPoint</td>
+<td>IOSignal</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>The following table gives an overview about the signals could be selected as noise injection point.
+<span id="_Toc468451041" class="anchor"></span>Table 4.2: Noise injection IOSignal.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>IOType</strong></th>
+<th><strong>MainIndex</strong></th>
+<th><strong>SubIndex</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ActuatorType « 1 »</td>
+<td>LastOutput</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>VelocityAxisType « 2 »</td>
+<td>NumVelAxes</td>
+<td><p>-1: axis raw input</p>
+<p>NumVelStages: axis signal after filter</p>
+<p>NumVelStages+1: axis output</p></td>
+</tr>
+<tr class="odd">
+<td>NoiseType « 3 »</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>VelocityAxisOutputType « 4 »</td>
+<td>NumVelAxes</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>PositionType « 5 »</td>
+<td>NumPosAxes</td>
+<td><p>-1: axis raw input</p>
+<p>NumPosStages: axis signal after filter</p>
+<p>NumPosStages+1: axis output</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsesp---set-excitation-noise-signal-parameters">DSESP - set EXCITATION “Noise” SIGNAL Parameters</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the noise signal parameters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>NoiseType</p>
+<p>Param1</p>
+<p>Param2</p>
+<p>Param3</p>
+<p>Param4</p></td>
+<td><p>Int</p>
+<p>Float</p>
+<p>Float</p>
+<p>Float</p>
+<p>float</p></td>
+<td><p>NoiseType</p>
+<p>-1.0 – 1.0</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgesp---get-excitation-noise-signal-parameters">DGESP - get Excitation “noise” signal parameters</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get noise signal parameters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>NoiseType</p>
+<p>Param1</p>
+<p>Param2</p>
+<p>Param3</p>
+<p>Param4</p></td>
+<td><p>Int</p>
+<p>Float</p>
+<p>Float</p>
+<p>Float</p>
+<p>float</p></td>
+<td><p>NoiseType</p>
+<p>-1.0 – 1.0</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc468451042" class="anchor"></span>Table 4.3: Excitation parameter.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Noise Type</strong></th>
+<th><strong>Noise Parameter meaning</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><strong>Parameter</strong></td>
+<td><strong>Definition</strong></td>
+</tr>
+<tr class="even">
+<td>White noise</td>
+<td><p>Param1</p>
+<p>Param2</p>
+<p>Param3</p>
+<p>Param4</p></td>
+<td><p>Excitation signal gain</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="odd">
+<td>Sine wave</td>
+<td><p>Param1</p>
+<p>Param2</p>
+<p>Param3</p>
+<p>Param4</p></td>
+<td><p>Excitation signal gain</p>
+<p>Sine frequency (Hz)</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Duty Cycle</td>
+<td><p>Param1</p>
+<p>Param2</p>
+<p>Param3</p>
+<p>Param4</p></td>
+<td><p>Excitation signal gain</p>
+<p>Time period for High in millisecond</p>
+<p>Time period for low in millisecond</p>
+<p>-</p></td>
+</tr>
+<tr class="odd">
+<td>Chirp sine</td>
+<td><p>Param1</p>
+<p>Param2</p>
+<p>Param3</p>
+<p>Param4</p></td>
+<td><p>Excitation signal gain</p>
+<p>Start frequency (Hz)</p>
+<p>End frequency (Hz)</p>
+<p>Chirp sine Time period in millisecond</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTE:</strong> The following next 6 RCI-Commands (DSNTY, DSNTY, DSNSG, DGNSG, DSNSF and DGNSF) are used to set respectively get the properties of the noise signal. Those commands are old and they don’t support all parameters needed for the new noise type “Duty cycle and Chirp sine”. Please use “<strong>DSESP</strong> and <strong>DGESP</strong>” to configure the noise signal.</p>
+<h3 id="dsnty---set-noise-type">DSNTY - set noise type</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the type of noise going to be injected.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>NoiseType</td>
+<td>int</td>
+<td>NoiseTypes</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgnty---get-noise-type">DGNTY - get noise type</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the type of noise that is currently used.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>NoiseType</td>
+<td>int</td>
+<td>NoiseTypes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsnsg---set-test-signal-gain">DSNSG - set test signal gain</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the amplitude of the excitation/noise signal.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>TestGain</td>
+<td>float</td>
+<td>0&lt; x &lt; 1.0</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgnsg---get-test-signal-gain">DGNSG - get test signal gain</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the amplitude of the excitation/noise signal.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>TestGain</td>
+<td>float</td>
+<td>0&lt; x &lt; 1.0</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>Active loop<br>
+Time elapsed</td>
+<td>int<br>
+float</td>
+<td>SwitchLoop<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsnsf---set-test-signal-frequency">DSNSF - set test signal frequency</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the frequency for the excitation signal (if sinewave is used).</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>TestFreq (Hz)</td>
+<td>float</td>
+<td>0&lt; x &lt;600</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgnsf---get-test-signal-frequency">DGNSF - get test signal frequency</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the frequency for the excitation signal (if sinewave is used).</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>TestFreq (Hz)</td>
+<td>float</td>
+<td>0&lt; x &lt; 600</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsnfu---set-noise-filter-usage">DSNFU - set noise filter usage</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Specify whether to use the noise pre-filtering feature.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>UseNoiseFilters</td>
+<td>OnOff</td>
+<td>OnOff Chars</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgnfu---get-noise-filter-usage">DGNFU - get noise filter usage</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the current noise pre-filtering feature status.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>UseNoiseFilters</td>
+<td>OnOff</td>
+<td>OnOff Chars</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsnfs---set-noise-filter-stage">DSNFS - set noise filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set one stage of filters used for noise pre-filtering.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Stage<br>
+FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4<br>
+Parameter5</p></td>
+<td><p>int<br>
+int<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>[0 – 3]<br>
+MaxFilters<br>
+-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgnfs---get-noise-filter-stage">DGNFS - get noise filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get one stage of the filters used for noise pre-filtering.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Stage</td>
+<td>int</td>
+<td>[0 – 3]</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>int<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>MaxFilter<br>
+-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dsdos---set-diagnostic-output-signals">DSDOS - set diagnostic output signals</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Specify the signals to be seen on the analog BNC output connectors of the controller.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Diag0</p>
+<p>Diag1</p></td>
+<td><p>IOSignal</p>
+<p>IOSignal</p></td>
+<td><p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgdos---get-diagnostic-output-signals">DGDOS - get diagnostic output signals</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the signals that can be seen on the analog BNC output connectors of the controller.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>Diag0</p>
+<p>Diag1</p></td>
+<td><p>IOSignal</p>
+<p>IOSignal</p></td>
+<td><p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Toc468451043" class="anchor"></span>Table 4.4: Diagnostic IOSignal Description.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>IOType</strong></th>
+<th><strong>MainIndex</strong></th>
+<th><strong>SubIndex</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SensorType « 0 »</td>
+<td>LastInput</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>ActuatorType « 1 »</td>
+<td>LastOutput</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>VelocityAxisType « 2 »</td>
+<td>NumVelAxes</td>
+<td><p>-1: axis raw input</p>
+<p>NumVelStages: axis signal after filter</p>
+<p>NumVelStages+1: axis output</p></td>
+</tr>
+<tr class="even">
+<td>NoiseType « 3 »</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>VelocityAxisOutputType « 4 »</td>
+<td>NumVelAxes</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>PositionType « 5 »</td>
+<td>NumPosAxes</td>
+<td><p>-1: axis raw input</p>
+<p>NumPosStages: axis signal after filter</p>
+<p>NumPosStages+1: axis output</p></td>
+</tr>
+<tr class="odd">
+<td>AllAxesType (not supported) « 6 »</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>PneumType « 8 »</td>
+<td>NumPneumAxes</td>
+<td><p>-1: axis raw input</p>
+<p>NumPneumStages: after filter</p>
+<p>NumPneumStages+1: axis output</p></td>
+</tr>
+<tr class="odd">
+<td>FFType « 10 »</td>
+<td>num_ff_source</td>
+<td><p>[0 – 5]: channel signal after filter</p>
+<p>&gt;6: FF Axis output</p></td>
+</tr>
+<tr class="even">
+<td>PFFType « 11 »</td>
+<td>num_pff_source</td>
+<td><p>[0 – 5]: channel signal after filter</p>
+<p>&gt;6: PFF Axis output</p></td>
+</tr>
+<tr class="odd">
+<td>TemperatureSensorType « 12 »</td>
+<td>[0 – 11]</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgcss---get-current-switch-status">DGCSS - get current switch status</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the current status of the automatic switch procedure. The elapsed time in the current loopstatus is returned as well. In case of not fulfilling the switch criterion the timer gives the period of time of exceeded threshold. In case of fulfilling the criterion, the timer gives the time until the delay time has passed.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>LoopSwitchStatus</p>
+<p>ElapsedTime (sec.)</p></td>
+<td><p>Int</p>
+<p>float</p></td>
+<td><p>AutoSwitchLoopStatus</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dstiv---set-trace-information-values">DSTIV - set trace information values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set configuration parameters for the data tracing function.<br>
+Specify two signals to be digitally traced and the number of samples to acquire.<br>
+You are able to specify an Undersample parameter. It determines the space between subsequent trace-samples while filling the buffer. (Normal tracing each sample: Undersample=1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>TraceSig0</p>
+<p>TraceSig1</p>
+<p>Undersample<br>
+NumberOfSamples</p>
+<p>NoTraceFilter</p></td>
+<td><p>IOSignal</p>
+<p>IOSignal</p>
+<p>int<br>
+int<br>
+int</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>1-65534<br>
+1-8192</p>
+<p>0-1 (0: use anti-aliasing filter , 1: don’t use anti-aliasing filter)</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgtiv---get-trace-information-values">DGTIV - get trace information values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get configuration parameters for the data tracing function.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>TraceSig0</p>
+<p>TraceSig1</p>
+<p>Undersample<br>
+NumberOfSamples</p>
+<p>NoTraceFilter</p></td>
+<td><p>IOSignal</p>
+<p>IOSignal</p>
+<p>int<br>
+int<br>
+int</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>1-65534<br>
+1-8192</p>
+<p>0-1 (0: use anti-aliasing filter , 1: don’t use anti-aliasing filter)</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dasta---start-trace-action">DASTA - start trace action</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Start the trace action. Don't forget to set the data trace information values!</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>ErrorCode</td>
+<td>hex</td>
+<td>TraceErrorCode</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgtas---get-trace-action-status">DGTAS - get trace action status</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Query the tracing status. Especially of interest may be the status &quot;Tracing Ready&quot;.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>TraceCode</td>
+<td>hex</td>
+<td>TraceStatus</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgtbv---get-trace-buffer-values">DGTBV - get trace buffer values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td><p>Get the values of the tracing procedure.</p>
+<p>A ReadOffset of -1 means, get the next values.</p>
+<p>Any other offset determines the read offset of the internal buffer.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>ReadOffset</td>
+<td>int</td>
+<td>-1..8191</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>NumSamples<br>
+Ch1[NumSamples]<br>
+Ch2[NumSamples]</td>
+<td><p>int</p>
+<p>float[]<br>
+float[]</p></td>
+<td>0-16<br>
+-<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dspmv---set-performance-monitor-values">DSPMV - set performance monitor values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td><p>Configures the performance monitoring feature parameters.</p>
+<p>This includes a signal to mointor, a Threshold that gives the limit of the signal, a minimum triggering time in which the signal has to be exceeded and a hold time that specifies how long the failure status is to be held. The minimum trigger time and the hold time are given in second.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>PerfMonitorSig</p>
+<p>Threshold<br>
+MinTime (sec.)<br>
+HoldTime (sec.)</p></td>
+<td>IOSignal<br>
+int<br>
+float<br>
+float</td>
+<td><p>-</p>
+<p>[0 – 32767]<br>
+-<br>
+-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgpmv---get-performance-monitor-values">DGPMV - get performance monitor values</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Read the configuration parameters of the performance monitoring feature.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>PerfMonitorSig</p>
+<p>Threshold (digit)<br>
+MinTime (sec.)<br>
+HoldTime (sec.)</p></td>
+<td>IOSignal<br>
+int<br>
+float<br>
+float</td>
+<td>-<br>
+[0 – 32767]<br>
+-<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgpms---get-performance-status">DGPMS - get performance status</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the status of the performance monitoring. If a failure status is detected, this function returns a performance status of 1, meaning Fail. Additionally, the timer of the current status is returned. In case of OK the timer gives the period of time of exceeded threshold. In case of Fail, the timer gives the time until the hold time has passed and state OK is reached again.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>PerformanceStatus<br>
+Timer (sec.)</td>
+<td><p>int</p>
+<p>float</p></td>
+<td>0/1=OK/Fail<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dglrc---get-last-received-command">DGLRC - get Last received command</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the last received command.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>LastCommand</td>
+<td>string</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgslo---get-system-load">DGSLO - get System Load</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the performance load of the digital signal processor DSP “TMS320C6713B” used to process the control-algorithm. The system load is dependent on the controller configuration “which loops are configured” and the number of the AD-Channel sets number. It shouldn’t exceed the 86%.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>SystemLoad</td>
+<td>float</td>
+<td>(0 – 100%)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dgade---get-amplifier-disable-events">DGADE - get Amplifier Disable Events</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>This command gets the digital status words which are traced in circular buffer to monitor the amplifiers disabling events.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>DigitalInputWords[10]</td>
+<td>uint</td>
+<td>DigitalInputBitmask</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logging-routine">Logging Routine</h3>
+<p>The logging routine implemented in the firmware v3.2.66 and higher gives the user the possibility to buffer many signals to on-board external RAM.</p>
+<p>The max memory space available for buffering the logging data is 8MByte. This means 2.097.152 floating point values could be buffered.</p>
+<p>Up to 40 signals; called <em><strong>Trace-Signals</strong></em> or <em><strong>Motitor-Signals</strong></em>; could be simultaneously buffered. The number of the signals to be traced “buffered” is adjustable per RCI-Command as like as the buffer length.</p>
+<p>There are two types of logging; the first one is events logging. Up to 40 signals “trace-signals” could be buffered circularly until an event occurs. The second type is no event logging; in this case the trace-signals will be logged into the buffer until the buffer length is filled.</p>
+<h4 id="event-logging">Event Logging</h4>
+<p>The event logging allows two kinds of events. The first one is a fixed event; when motor over-heating state occurred “<em><strong>Motor-Overheating-Event-Logging</strong></em>”; the second event is configurable “<em><strong>Free-Event-Logging</strong></em>”.</p>
+<p>When the event logging is started the trace-signals will be buffered into a circular buffer until the logging will be interrupted by the event occurrence. The logging begins to trace the next “Trace” or stop logging if the max number of possible traces is reached.</p>
+<p>The buffer length and the trace-signals number are adjustable per RCI commands. Dependent on the buffer length and trace-signals number events could be traced many times “many traces”.</p>
+<p>The adjustable event could be any signal of the IOSignals. The adjustable event consists of IOSignal, threshold value and trigger time. The event is occurred when the threshold has been exceeded at least for the trigger time period.</p>
+<h4 id="stnadard-event-logging">Stnadard Event Logging</h4>
+<p>The standard-event type services to log the trace-signals using the DSP-Board internal buffer. Only one trace is possible independent on the adjusted buffer length and the trace-signals number.</p>
+<p>In this case the trace-signals will be logged into the buffer until the buffer length is reached.</p>
+<h4 id="dsets--set-event-signal">DSETS – Set Event signal</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Using this command the adjustable event could be defined.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>EventSignal</p>
+<p>Threshold (digit)</p>
+<p>TrigTime (samples)</p></td>
+<td><p>IOSignal</p>
+<p>float</p>
+<p>int</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="dgets--get-event-signal">DGETS – Get Event signal</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the event parameters.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>EventSignal</p>
+<p>Threshold (digit)</p>
+<p>TrigTime (samples)</p></td>
+<td><p>IOSignal</p>
+<p>float</p>
+<p>int</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>EventSignal</em>: This is the signal type of the adjustable event; it is an IOSignal.</p>
+<p><em>Threshold</em>: The threshold value of the adjustable event in digits.</p>
+<p><em>TrigTime</em>: the trigger time in samples. The event is occurred when the event signal value exceeds the threshold for the time period of <em>TrigTime</em>. If this happened then the buffered data will be saved to the memory.</p>
+<h4 id="dsmos--set-monitor-signal-trace-signal">DSMOS – Set Monitor Signal “trace-signal”</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Defines the signals to be monitored.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>SigNum</p>
+<p>MonSig</p></td>
+<td><p>Int</p>
+<p>IOSignal</p></td>
+<td>0 - 39</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="dgmos--get-monitor-signal-trace-signal">DGMOS – Get Monitor Signal “trace-signal”</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the parameters of a monitor signal.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>SigNum</td>
+<td>Int</td>
+<td>0 - 39</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>MonSig</td>
+<td>IOSignal</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>SigNum:</em> the number of the monitor-signal.</p>
+<p><em>MonSig:</em> the parameters of a monitor-signal.</p>
+<h4 id="dsetp--set-event-trace-parameters">DSETP – Set Event Trace Parameters</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Configures the parameters of the event tracing “logging”</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>UsedEvent</p>
+<p>MaxBuffLen</p>
+<p>MonSigNum</p>
+<p>UnderSampling</p>
+<p>DelayTime (sample)</p>
+<p>Average</p></td>
+<td><p>int</p>
+<p>int</p>
+<p>int</p>
+<p>int</p>
+<p>int</p>
+<p>int</p></td>
+<td><p>0 – 2</p>
+<p>1 – 0x20000</p>
+<p>1 – 40</p>
+<p>1 - 0xFFFF</p>
+<p>-</p>
+<p>0 – 1</p></td>
+<td><p>0</p>
+<p>0</p>
+<p>0</p>
+<p>1</p>
+<p>5</p>
+<p>0</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="dgetp--get-event-trace-parameters">DGETP – Get Event Trace Parameters</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the parameters of the event tracing.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>UsedEvent</p>
+<p>MaxBuffLen</p>
+<p>MonSigNum</p>
+<p>UnderSampling</p>
+<p>DelayTime (sample)</p>
+<p>Average</p></td>
+<td><p>int</p>
+<p>int</p>
+<p>int</p>
+<p>int</p>
+<p>int</p>
+<p>int</p></td>
+<td><p>0 – 2</p>
+<p>1 – 0x30000</p>
+<p>1 – 40</p>
+<p>1 - 0xFFFF</p>
+<p>-</p>
+<p>0 – 1</p></td>
+<td><p>0</p>
+<p>0</p>
+<p>0</p>
+<p>1</p>
+<p>Sample frequency</p>
+<p>0</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><em>UsedEvent</em>: set to 0 to use the motor overcurrent status as event, set to 1 for using the adjustable event as logging event and set to 2 just to trace the monitor-signals.</p>
+</li>
+<li><p><em>MaxBufflen</em>: this is the max length of a trace buffer (samples number of the buffer).</p>
+</li>
+<li><p><em>MonSigNum</em>: the number of the trace-signals should be logged.</p>
+</li>
+<li><p><em>UnderSampling</em>: set it to 1 if you want to trace each sample, set it to x to trace every x-th sample.</p>
+</li>
+<li><p><em>DelayTime</em>: In Case <em>UsedEvent</em> is equal to 0, this is the time period in sample should expired before the trace will be saved. In other words this is the minimum time between two events. In Case of <em>UsedEvent</em> is equal to1 then this is the sample number should be traced after occurring the event (Should be smaller than <em>MaxBuffLen</em>. In Case of <em>UsedEvent</em> is equal to 2 then this parameter doesn’t effect the logging.</p>
+</li>
+<li><p><em>Average</em>: set it to 1 to trace the average value of the monitor signal in case of UnderSampling. Otherwise set it to zero.</p>
+</li>
+</ul>
+<h4 id="dsset--start-stop-event-tracing">DSSET – Start Stop Event Tracing</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Starts and stops the event tracing.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>LoggingStatus</td>
+<td>int</td>
+<td>0 – 1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>LoggingStatus</em>: set it to 1 to start the logging, set to 0 to stop it.</p>
+<p>NOTE: after starting the logging, the already saved traces became invalid “deleted”.</p>
+<h4 id="dgeti--get-event-tracing-information">DGETI – Get Event Tracing Information</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the event tracing information.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>LoggingStatus</p>
+<p>MaxTraceNum</p>
+<p>SavedTraceNum</p>
+<p>Error</p>
+<p>LoggedSampleNum</p></td>
+<td><p>Int</p>
+<p>Int</p>
+<p>Int</p>
+<p>Int</p>
+<p>int</p></td>
+<td><p>0 – 1</p>
+<p>0 – 100</p>
+<p>0 – 100</p>
+<p>0 – 1</p>
+<p>0 - MaxBuffLen</p></td>
+<td><p>0</p>
+<p>0</p>
+<p>0</p>
+<p>0</p>
+<p>0</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>MaxTraceNum</em>: While the available memory space is finite, this value give the max possible event traces could be saved. In case of no event logging this value is equal to 1. In case of event logging this value is dependent on the <em>MonSigNum</em> and <em>MaxBuffLen</em> and will be calculated when the event trace parameters are set. This value is limited by the firmware and so couldn’t be greater than 100.</p>
+<p><em>SavedTraceNum</em>: gives the number of the saved event traces.</p>
+<p><em>Error</em>: 0 if there is no error occurred during the logging, 1 trace buffer overflow error.</p>
+<p><em>LoggedSampleNum</em>: the already logged samples and could be picked up.</p>
+<h4 id="dglda--get-logged-data-complete">DGLDA – Get Logged Data “COMPLETE”</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the saved trace data. This command dumps all the trace data to the host.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>TraceNum &lt; SavedTraceNum</td>
+<td>int</td>
+<td>0 - 100</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>TraceData</td>
+<td>float</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>TraceNum</em>: the number of the saved trace, which you want to pick its data. The value of this parameter should be less than the <em>SavedTraceNum;</em> otherwise the controller responses with error number 0x15.</p>
+<p><em>TraceData</em>: The trace data contains MaxBuffLen Lines, each line contains a MonSigNum values. The first column is corresponding to the first monitor signal and the second to the second monitor signal and so on. You could capture the data to a text file using the windows hyperterminal tool or similar tool.</p>
+<h4 id="dgldv--get-logged-data-values-sample-wise">DGLDV – Get Logged Data values “sample wise”</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the monitor signal values of a specific sample number of a specific trace.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>TraceNum &lt; SavedTraceNum</p>
+<p>SampleNum</p></td>
+<td><p>Int</p>
+<p>int</p></td>
+<td><p>0 – 100</p>
+<p>0 – <em>MaxBuffLen-1</em></p></td>
+<td><p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>MonSigValue[MonSigNum]</td>
+<td>float</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>TraceNum</em>: the number of a saved trace, which you want to pick its data. The value of this parameter should be less than the <em>SavedTraceNum;</em> otherwise the controller responses with error number 0x15.</p>
+<p>SampleNum: the sample number “line number”.</p>
+<p>MonSigValue: is the monitor signal values of the specific sample number.</p>
+<h4 id="dsati--set-actual-time">DSATI – Set actual time</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>This command set the actual time.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Day</p>
+<p>Hour</p>
+<p>Min</p>
+<p>Sec</p></td>
+<td><p>Unsigned char</p>
+<p>Unsigned char</p>
+<p>Unsigned char</p>
+<p>Unsigned char</p></td>
+<td><p>0 – 255</p>
+<p>0 – 23</p>
+<p>0 – 59</p>
+<p>0 – 59</p></td>
+<td><p>0</p>
+<p>0</p>
+<p>0</p>
+<p>0</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="dgati--get-actual-time">DGATI – Get actual time</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the actual system time.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>Day</p>
+<p>Hour</p>
+<p>Min</p>
+<p>Sec</p></td>
+<td><p>Unsigned char</p>
+<p>Unsigned char</p>
+<p>Unsigned char</p>
+<p>Unsigned char</p></td>
+<td><p>0 – 255</p>
+<p>0 – 23</p>
+<p>0 – 59</p>
+<p>0 – 59</p></td>
+<td><p>0</p>
+<p>0</p>
+<p>0</p>
+<p>0</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dgevt--get-event-trace-time">DGEVT – Get event ”trace” time</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the time point when an event is occurred.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>TraceNum &lt; SavedTraceNum</td>
+<td>int</td>
+<td>0 - 100</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>Day</p>
+<p>Hour</p>
+<p>Min</p>
+<p>Sec</p></td>
+<td><p>Unsigned char</p>
+<p>Unsigned char</p>
+<p>Unsigned char</p>
+<p>Unsigned char</p></td>
+<td><p>0 – 255</p>
+<p>0 – 23</p>
+<p>0 – 59</p>
+<p>0 – 59</p></td>
+<td><p>0</p>
+<p>0</p>
+<p>0</p>
+<p>0</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>TraceNum:</em> the number of the saved event “trace”.</p>
+<p><em>Day</em>: the day’s number, the day’s number will be set to zero if it exceeds 255.</p>
+<p><em>Hour</em>: the hour’s number.</p>
+<p><em>Min</em>: the minute’s number.</p>
+<p><em>Sec</em>: the second’s number.</p>
+<p>In case of no event logging the event time should be ignored.</p>
+<h4 id="dgmsv--get-monitor-signals-values">DGMSV – Get monitor signals values</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>This command allows picking up the monitor signal values. This command is not dependent on the event logging traces.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Index1</p>
+<p>Index2</p></td>
+<td><p>Int</p>
+<p>int</p></td>
+<td><p>0 – 39</p>
+<p>0 - 39</p></td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>MonSigVal [Index2 – Index1]</td>
+<td>float</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>Index1:</em> The index of the first Monitor signal should be dumped.</p>
+<p><em>Index2:</em> The index of the last Monitor signal should be dumped.</p>
+<p>MonSigVal: Monitor Signal values array.</p>
+<h2 id="feedforward-group">FEEDFORWARD Group</h2>
+<h3 id="fsffs---set-feedforward-status">FSFFS - set feedforward status</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td><p>Configure the feedforward subsystem.</p>
+<p>LoopStatus toggles whether the FF subsystem is active or not.</p>
+<p>AdaptiveStatus toggles whether the tuning process is active.</p>
+<p>TypeDigital specifies whether to await digital signals or use analogue ones.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>LoopStatus<br>
+TypeDigital<br>
+TypeBoxercross<br>
+AdaptiveStatus</td>
+<td><p>OnOff</p>
+<p>OnOff</p>
+<p>OnOff</p>
+<p>OnOff</p></td>
+<td>OnOff Chars<br>
+OnOff Chars<br>
+OnOff Chars<br>
+OnOff Chars</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgffs---get-feedforward-status">FGFFS - get feedforward status</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Read the configuration of the FF subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>LoopStatus<br>
+TypeDigital<br>
+TypeBoxercross<br>
+AdaptiveStatus</td>
+<td><p>OnOff</p>
+<p>OnOff</p>
+<p>OnOff</p>
+<p>OnOff</p></td>
+<td>OnOff Chars<br>
+OnOff Chars<br>
+OnOff Chars<br>
+OnOff Chars</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fspfs---set-feedforward-filter-stage">FSPFS - set feedforward filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set one filter stage of the FF subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Axis<br>
+Source<br>
+Stage<br>
+FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>int<br>
+int<br>
+int<br>
+ftype<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>NumVelAxes<br>
+num_ff_source<br>
+TFFStage<br>
+MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgpfs---get-feedforward-filter-stage">FGPFS - get feedforward filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get one filter stage of the FF subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Source<br>
+Stage</td>
+<td>int<br>
+int<br>
+int</td>
+<td>NumVelAxes<br>
+num_ff_sources<br>
+TFFStage</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>ftype<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p>For each FF-Source there are 6 stage filters (3 reference filters and 3 secondary filters). The velocity logical axes are used as error for the adaptive algorithm. There are 6 velocity logical axes and also 6 error signals. For each error signal there are two stage filters (core filters “error filters”).</p>
+<p><em>TFFStage</em>:</p>
+<p>0 – 6 to adjust the reference and secondary filters. <em>TFFStage</em> is related to the <em>num_ff_sources</em>.</p>
+<p>7 – 8 to adjust the error filters. <em>TFFStage</em> is related to the <em>NumVelAxes</em>.</p>
+<h3 id="fsffp---set-feedforward-parameters">FSFFP - set feedforward parameters</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td><p>Set adaptive tuning parameters of a specific ff-source. Note that for each Source, there is a bitfield of Outputs and an AdaptionRate, whereas the AdaptiveStatus is a subsystem-wide status.</p>
+<p>The Outputs-Bitfield determines, with witch velocity axes the ff-source is combined. Each ff-source could be combined with all 6 velocity axes.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Source<br>
+Outputs<br>
+AdaptiveStatus<br>
+AdaptionRate</td>
+<td>int<br>
+hex<br>
+OnOff<br>
+float</td>
+<td>num_ff_sources<br>
+IndividualLoopStatus<br>
+OnOff Chars<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgffp---get-feedforward-parameters">FGFFP - get feedforward parameters</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get adaptive tuning parameters of the FF subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Source</td>
+<td>int</td>
+<td>num_ff_source</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>Outputs<br>
+AdaptiveStatus<br>
+AdaptionRate</td>
+<td>hex<br>
+OnOff<br>
+float</td>
+<td>IndividualLoopStatus<br>
+OnOff Chars<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<p>Source: the number of a specific ff-channel should be configured.</p>
+<p>Outputs: a hex value to determine, with which velocity logical axes the source is combined.</p>
+<p>AdaptiveStatus: the FF-Subsystem adaptive status.</p>
+<p>AdaptionRate: this is the learning constant for the LMS-Algorithm used by the adaptive tuning to calculate the FIR-Filter gains “tabs”.</p>
+<h3 id="farff---reset-feedforward-filter">FARFF - reset feedforward filter</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Reset a specific FF filter to zero. This affects the adaptive gains only.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Source</td>
+<td>int<br>
+int</td>
+<td>NumVelAxes<br>
+num_ff_sources</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fsffg---set-feedforward-gains">FSFFG - set feedforward gains</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the gains of a specific adaptive FF filter “FIR-Filter”.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Source<br>
+Gains[num_lags]</td>
+<td>int<br>
+int<br>
+float</td>
+<td>NumVelAxes<br>
+num_ff_sources<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgffg---get-feedforward-gains">FGFFG - get feedforward gains</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the gains of a specific adaptive FF filter.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Source</td>
+<td>int<br>
+int</td>
+<td>NumVelAxes<br>
+num_ff_sources</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>Gains[num_lags]</td>
+<td>float</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fsffi---set-feedforward-inputs">FSFFI - set feedforward inputs</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Specify the Input signals to be used as FF source signals. the inputs array contains the indexes of the input signals should be used by the by the FF-Subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>Inputs[num_ff_sources]</td>
+<td>int</td>
+<td>LastInput</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgffi---get-feedforward-inputs">FGFFI - get feedforward inputs</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the input signals that are used as FF source signals.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>Inputs[num_ff_source]</td>
+<td>int[]</td>
+<td>LastInput</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fsffc---set-feedforward-configuration">FSFFC - set feedforward configuration</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Configure the adaptive FF filters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>NoOfGains<br>
+UseFBSignals</td>
+<td>int<br>
+OnOff</td>
+<td>num_lags<br>
+OnOff Chars</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgffc---get-feedforward-configuration">FGFFC - get feedforward configuration</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the configuration of the adaptive FF filters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>NoOfGains<br>
+UseFBSignals</td>
+<td><p>int</p>
+<p>OnOff</p></td>
+<td>num_lags<br>
+OnOff Chars</td>
+</tr>
+</tbody>
+</table>
+<p>UseFBSignals: Off to use the velocity logical axis raw input as error signal. On to use the logical axis signal after stage6 as error signal.</p>
+<h3 id="fszrp--set-parameter-for-sff-additionl-signals">FSZRP – set parameter for SFF Additionl signals</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the offset for stage X- and Y-Position signals and the maximum of the X- and Y-Position. Those parameters are used to calculate the additional SFF signals.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>XposOffset (digit)</p>
+<p>YposOffset (digit)</p>
+<p>XposMax (digit)</p>
+<p>YposMax (digit)</p></td>
+<td><p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgzrp---get-parameter-for-ff-additionl-signals">FGZRP - Get parameter for FF Additionl signals</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get parameter for calculating the additional SFF signals.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>XposOffset (digit)</p>
+<p>YposOffset (digit)</p>
+<p>XposMax (digit)</p>
+<p>YposMax (digit)</p></td>
+<td><p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="fsfat--set-floor-feed-forward-adaptive-algorithm-type">FSFAT – Set Floor Feed forward ADAPTIVE ALGORITHM type</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Specifies the type of the used adaptive algorithm by the floor feed forward control channels.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>UsedFFFAlgorithmType</td>
+<td>int</td>
+<td><p>[0 – 1]</p>
+<p>0: LMS algorithm</p>
+<p>1: RLS algorithm</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgfat---get-floor-feed-forward-adaptive-algorithm-type">FGFAT - get Floor Feed forward ADAPTIVE ALGORITHM type</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the type of the adaptive algorithm of the FFF.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>UsedFFFAlgorithmType</td>
+<td>int</td>
+<td><p>[0 – 1]</p>
+<p>0: LMS algorithm</p>
+<p>1: RLS algorithm</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="fssfm--set-stage-ff-input-multiplier">FSSFM – Set Stage FF input multiplier</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Specifies the multipliers for the input signals of the stage.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>SFFMult[4]</td>
+<td>float</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>None</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgsfm---get-stage-ff-input-multiplier">FGSFM - Get Stage FF input multiplier</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the multipliers of the stage input signals.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>SFFMult[4]</td>
+<td>float</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>SFFMult[4]: this is array contains the stage-feed-forward signal multipliers with the order (InpXPOS, InpXACC, InpYPOS and InpYACC).</p>
+<h3 id="fsfsp---set-pneumatic-stage-feedforward-filter-stage">FSFSP - set pneumatic stage feedforward filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set one filter stage of the pneumatic SFF subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Axis<br>
+Source<br>
+Stage<br>
+FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>int<br>
+int<br>
+int<br>
+ftype<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>NumPneumAxes<br>
+num_pff_source<br>
+TFFStage<br>
+MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgfsp---get-pneumatic-stage-feedforward-filter-stage">FGFSP - get pneumatic stage feedforward filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get one filter stage of the pneumatic SFF subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Source<br>
+Stage</td>
+<td>int<br>
+int<br>
+int</td>
+<td>NumPneumAxes<br>
+num_pff_sources<br>
+TFFStage</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>ftype<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p>For each FF-Source there are 6 stage filters (3 reference filters and 3 secondary filters). The pneumatic logical axes are used as error for the adaptive algorithm. There are 3 pneumatic logical axes and also 3 error signals. For each error signal there are two stage filters (core filters “error filters”).</p>
+<p><em>TFFStage</em>:</p>
+<p>0 – 6 to adjust the reference and secondary filters. <em>TFFStage</em> is related to the <em>num_pff_sources</em>.</p>
+<p>7 – 8 to adjust the error filters. <em>TFFStage</em> is related to the <em>NumPneumAxes</em>.</p>
+<h3 id="fsppf---set-pneumatic-feedforward-parameters">FSPpf - set Pneumatic feedforward parameters</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set adaptive tuning parameters of a specific ff-source of the pneumatic SFF. Note that for each Source, there is a bitfield of Outputs and an AdaptionRate. The Outputs-Bitfield determines, with witch pneumatic axes the ff-source is combined. Each ff-source could be combined with all 3 pneumatic axes.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Source<br>
+Outputs<br>
+AdaptionRate</td>
+<td>int<br>
+hex<br>
+float</td>
+<td>num_pff_sources<br>
+[0 – 7]<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgppf---get-pneumatic-feedforward-parameters">FGPpf - get Pneumatic feedforward parameters</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get adaptive tuning parameters of the FF subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Source</td>
+<td>int</td>
+<td>num_pff_source</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>Outputs<br>
+AdaptionRate</td>
+<td>hex<br>
+float</td>
+<td>[0 – 7]<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<p>Source: the number of a specific ff-channel should be configured.</p>
+<p>Outputs: a hex value to determine, with which pneumatic logical axes the source is combined.</p>
+<p>AdaptionRate: this is the learning constant for the LMS-Algorithm used by the adaptive tuning to calculate the FIR-Filter gains “tabs”.</p>
+<p>Outputs-BitField</p>
+<table>
+<thead>
+<tr>
+<th>BitNumber:</th>
+<th>Pneumatic axis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Ztpneum</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Yrpneum</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Xrpneum</td>
+</tr>
+</tbody>
+</table>
+<h3 id="farpf---reset-pneumatic-feedforward-fir-filter">FARPF - reset Pneumatic feedforward FIR filter</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Reset a specific FIR filter tabs “gains” to zero.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Source</td>
+<td>int<br>
+int</td>
+<td>NumPneumAxes<br>
+num_pff_sources</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fsgpf---set-pneumatic-feedforward-gains">FSGPF - set Pneumatic feedforward gains</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the gains of a specific FIR filter.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Source<br>
+Gains[num_lags]</td>
+<td>int<br>
+int<br>
+float</td>
+<td>NumPneumAxes<br>
+num_pff_sources<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fggpf---get-pneumatic-feedforward-gains">FGGPF - get Pneumatic feedforward gains</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the gains of a specific FIR filter.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Source</td>
+<td>int<br>
+int</td>
+<td>NumPneumAxes<br>
+num_pff_sources</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>Gains[num_lags]</td>
+<td>float</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fsipf---set-pneumatic-feedforward-inputs">FSIPF - set Pneumatic feedforward inputs</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Specify the Input signals to be used as FF source signals. The inputs array contains the indexes of the input signals should be used by the by the pneumatic FF-Subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>Inputs[num_pff_sources]</td>
+<td>int</td>
+<td>LastInput</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgipf---get-pneumatic-feedforward-inputs">FGIPF - get Pneumatic feedforward inputs</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the input signals that are used as FF source input for the pneumatic FF.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>Inputs[num_pff_source]</td>
+<td>int[]</td>
+<td>LastInput</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fscpf---set-pneumatic-feedforward-configuration">FSCPF - set Pneumatic feedforward configuration</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Configure the adaptive FF filters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>NoOfGains<br>
+Threshold (digit)</td>
+<td>int<br>
+float</td>
+<td>num_lags<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fgcpf---get-pneumatic-feedforward-configuration">FGCPF - get Pneumatic feedforward configuration</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the configuration of the adaptive FF filters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>NoOfGains<br>
+Threshold (digit)</td>
+<td><p>int</p>
+<p>float</p></td>
+<td>num_lags<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<p>Threshold: this is a limitation value for the pneumatic FF-output will be add to the output of the pneumatic logical axes.</p>
+<h2 id="nvram-and-new-commands-group">NVRAM and New commands Group</h2>
+<h3 id="narup---restore-user-parameters">NARUP - restore user parameters</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Force the controller to fetch the parameter set out of the Non-Volatile-Memory.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nasup---save-user-parameters">NASUP - save user parameters</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Force the controller to save the current parameter set into the non-volatile-memory.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="naclr---clear-nvram">NACLR - clear NVRAM</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Force the controller to clear the parameter-area of the non-volatile-memory.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nssfr---set-sample-frequency">NSSFR - set sample frequency</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the sample frequency. The second parameter of this command “mode” has no effect. The sample frequency should be only changed by an experienced engineer, because selecting a very high frequency could hang up the system.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Sample frequency</p>
+<p>mode</p></td>
+<td><p>Float</p>
+<p>int</p></td>
+<td><p>-</p>
+<p>(0,1)</p></td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ngsfr---get-sample-frequency">NGSFR - get sample frequency</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the actual adjusted sample frequency</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>Sample frequency</td>
+<td>float</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nsexl--set-controller-configuration">NSEXL – Set controller configuration</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td><p>This command set which control-loops are configured and will be processed in the firmware. When one control-loop is not configured this forces the firmware to skip processing it.</p>
+<p>The controller configuration parameter should be only changed by an experienced engineer, because selecting a wrong value could hang up the system.</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>ExistingLoops</td>
+<td>int</td>
+<td>0x0-0xFFFF</td>
+<td>0x01</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ngexl--get-controller-configuration">NGEXL – Get controller configuration</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>This command get which control-loops are configured</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>ExistingLoops</td>
+<td>int</td>
+<td>0x0-0xFFFF</td>
+<td>0x01</td>
+</tr>
+</tbody>
+</table>
+<p>ExistingLoops bits representation:</p>
+<p><span id="_Toc468451044" class="anchor"></span>Table 4.5: ExistingLoop “LoopConfig” parameter bits presentation.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Bit number</td>
+<td>meaning</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><p>1: FB “velocity” loop is configured,</p>
+<p>0: no effect (velocity loop is always present)</p></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><p>1: position loop is configured,</p>
+<p>0: position loop is not configured.</p></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><p>1: pneumatic loop is configured</p>
+<p>0: pneumatic loop is not configured.</p></td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Not used</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td><p>1: Whole FF-Subsystem is configured.</p>
+<p>0: Whole FF-Subsystem is not configured.</p></td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td><p>1: Stage FF-Subsystem is configured.</p>
+<p>0: Stage FF-Subsystem is not configured.</p></td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td><p>1: Floor FF-Subsystem is configured.</p>
+<p>0: Floor FF-Subsystem is not configured.</p></td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td><p>1: Pneumatic FF-Subsystem is configured.</p>
+<p>0: Pneumatic FF-Subsystem is not configured.</p></td>
+</tr>
+<tr class="even">
+<td>9 - 32</td>
+<td>No used</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nsasn--set-adc-channel-set-number">NSASN – set ADC-Channel set number</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the ADC-Sets number should be converted.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>ADC_Sets_Num</td>
+<td>int</td>
+<td>0-7</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ngasn---get-adc-channel-set-number">NGASN - get ADC-Channel set number</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the ADC-Sets number.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>ADCs_Set_Num</td>
+<td>int</td>
+<td>0-7</td>
+</tr>
+</tbody>
+</table>
+<p>The opticon controller supports up to 40 ADC-Channels. The most application are not using all ADC-Channels. The number of the used ADC-Channels is dependent on the application “System” for example some systems doesn’t contains proximity sensors, FFF-Sensors or stage FF-Signals.</p>
+<p>Conversion and reading the ADC-Channels loads the interrupt routine. Therefore it makes sense to read only the used ADC-Channels.</p>
+<p>The ADC-Signals will be converted set wise. Each set includes 6 ADCs.</p>
+<p>Enumeration:
+<span id="_Toc468451045" class="anchor"></span>Table 4.6: AD-Channel set number description.</p>
+<table>
+<thead>
+<tr>
+<th>ADC_Set_Num</th>
+<th>Number of ADCs will be read</th>
+<th>ADC-Channel number range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>6</td>
+<td>(0 – 5)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>12</td>
+<td>(0 – 11)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>18</td>
+<td>(0 – 17)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>24</td>
+<td>(0 – 23)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>30</td>
+<td>(0 – 29)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>36</td>
+<td>(0 – 35)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>40</td>
+<td>(0 – 39)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pneumatic-group">PNEUMATIC Group</h2>
+<h3 id="pspsm--set-pneumatic-steering-matrix">PSPSM – Set Pneumatic steering matrix</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>The command sets the multipliers of the sensor and motor steering matrix of a pneumatic logical axis.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Axis</p>
+<p>InputMult[4]</p>
+<p>OutputMult[4]</p></td>
+<td><p>int</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>NumPneumAxes</p>
+<p>-</p>
+<p>-</p></td>
+<td><p>-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgpsm--get-pneumatic-steering-matrix">PGPSM – get pneumatic steering matrix</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>The command gets the multipliers of the sensor and motor steering matrix of a pneumatic logical axis.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis</td>
+<td>Int</td>
+<td>NumPneumAxes</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>InputMult[4]</p>
+<p>OutputMult[4]</p></td>
+<td><p>float</p>
+<p>float</p></td>
+<td><p>-</p>
+<p>-</p></td>
+<td><p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pggiv---get-proximity-input-values">PGGIV - get proximity input values</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the current reading of the proximity sensors (in digits). The proximity values are filtered using a low pass filter at 5Hz.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>PoxInput[6] (digit)</td>
+<td>long</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pspaf---set-pneumatic-axis-filter-stage">PSPAF - set pneumatic Axis filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set parameters of one filterstage of the pneumatic control loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>VAxis<br>
+Stage<br>
+FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>int<br>
+int</p>
+<p>int<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>NumPneumAxes<br>
+NumPneumStages<br>
+MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgpaf---get-pneumatic-axis-filter-stage">PGPAF - get pneumatic Axis filter stage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get parameters of one filterstage of the pneumatic control loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>VAxis<br>
+Stage</td>
+<td>int<br>
+int</td>
+<td>NumPneumAxes<br>
+NumPneumStages</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>int<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pspcp---set-pneumatic-config-parameters">PSPCP - set pneumatic config parameters</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Configure the pneumatic subsystem. This includes a setpoint for the payload to lift initially (soft-stop), a running setpoint for the payload while in normal operation and a mode tolerance value.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>SoftLift (digit)<br>
+SetPoint (digit)<br>
+ModeTolerance (digit)</td>
+<td>float<br>
+float<br>
+float</td>
+<td>-<br>
+-<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgpcp---get-pneumatic-config-parameters">PGPCP - get pneumatic config parameters</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Read the configuration parameters of the pneumatic control loop.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>SoftLift (digit)<br>
+SetPoint (digit)<br>
+ModeTolerance (digit)</td>
+<td>float<br>
+float<br>
+float</td>
+<td>-<br>
+-<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pspvo---set-pneumatic-valve-offset">PSPVO - set pneumatic valve offset</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the valve offsets for up and down vertical loop stati for the in the firmware supported four valve outputs. The UpOffset values are used to move the system up. The DownOffset are used to move the system down.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>UpOffset[4] (digit)<br>
+DownOffset[4] (digit)</td>
+<td>float<br>
+float</td>
+<td>0 – 32767.0<br>
+0 – 32767.0</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgpvo---get-pneumatic-valve-offset">PGPVO - get pneumatic valve offset</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get the valve offsets.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>-</td>
+<td>int</td>
+<td>NumPneumAxes</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>UpOffset[4] (digit)<br>
+DownOffset[4] (digit)</td>
+<td>float<br>
+float</td>
+<td>0 – 32767.0<br>
+0 – 32767.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pauco---use-current-pressure-offset">PAUCO - use current pressure offset</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Use the current valve outputs as offset for up or down.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Condition</td>
+<td>int</td>
+<td><p>0,1,2</p>
+<p>0,1: use current valve outputs as UpOffset</p>
+<p>2: use current valve outputs as DownOffset</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pamov---move-pneumatic-system">PAMOV - move pneumatic system</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Move the pneumatic system using the specified action.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Condition</td>
+<td>int</td>
+<td><p>0,1,2</p>
+<p>0,1: move up</p>
+<p>2: move down</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgpas---get-pneumatic-axes-status-information">PGPAS - get Pneumatic axes status information</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get pneumatic axes information. This includes the current vertical-loop status, the VRef-value (averaged running setpoint), the actual logical axes inputs and the logical axes outputs.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>VertLoopStatus<br>
+LoopSetpoint (digit)<br>
+AxisInput[3] (digit)<br>
+AxisOutput[3] (digit)</td>
+<td>int<br>
+int<br>
+float<br>
+float</td>
+<td><p>VertLoopStati<br>
+-</p>
+<p>-<br>
+-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgphv---get-pneumatic-height-and-valve-output">PGPHV - get Pneumatic height and valve output</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get pneumatic loop information. This includes the actual isolator’s heights and the current valve outputs.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>Height[4] (digit)<br>
+ValveOutput[4] (digit)</td>
+<td>float<br>
+float</td>
+<td>-<br>
+-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="psdca--set-dither-compensation-alpha">PSDCA – set dither compensation alpha</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the dither compensation alpha “learn constant” of the adaptive filter to calculate the dither compensation values for the velocity logical axes.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>Dither comp. Alpha</td>
+<td>Float</td>
+<td>-</td>
+<td>-1e-3</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>None</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgdca--get-dither-compensation-alpha">PGDCA – get dither compensation alpha</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Move the pneumatic system using the specified action.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>Dither comp. alpha</td>
+<td>float</td>
+<td>-</td>
+<td>-1e-3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="psdit---set-dither-value">PSDIT - set dither value</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the dither value for one pneumatic loop. The first input doesn’t have effect.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Loop type (vertical,horizontal)<br>
+DitherValue (digit)</td>
+<td>int<br>
+float</td>
+<td><p>(0,1)</p>
+<p>-</p></td>
+<td>-<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgdit---get-dither-value-of-pneumatic-loop">PGDIT - get dither value of pneumatic loop</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the dither value of pneumatic loop. The first input must be zero.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>LoopType (vertical,horizontal)</td>
+<td>int</td>
+<td>(0,1)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>DitherValue (digit)</td>
+<td>float</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="psdcb--set-dither-compensation-alpha">PSDCB – set dither compensation alpha</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set a dither compensation alpha “learn constant”. The first input must be zero.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>Default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>LoopType (vertical,horizontal)</p>
+<p>Dither comp. Alpha</p></td>
+<td><p>int</p>
+<p>Float</p></td>
+<td><p>(0,1)</p>
+<p>-</p></td>
+<td><p>-</p>
+<p>-1e-3</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>None</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgdcb--get-dither-compensation-alpha">PGDCB – get dither compensation alpha</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the dither compensation learn constant. The first input must be zero.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>LoopType (vertical,horizontal)</td>
+<td>int</td>
+<td>(0,1)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>Dither comp. alpha</td>
+<td>float</td>
+<td>-</td>
+<td>-1e-3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="psdfr---set-dither-frequency">PSDFR - set dither frequency</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the dither frequency of the pneumatic loops. The first input must be zero.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>LoopType (vertical,horizontal)</p>
+<p>Dither frequency</p></td>
+<td><p>int</p>
+<p>int</p></td>
+<td><p>(0,1)</p>
+<p>15-150</p></td>
+<td><p>-</p>
+<p>35 Hz</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgdfr---get-dither-frequency">PGDFR - GEt dither frequency</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the dither frequency of the pneumatic loops. The first input must be zero.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>LoopType (vertical,horizontal)</td>
+<td>int</td>
+<td>(0,1)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>Dither frequency</td>
+<td>int</td>
+<td>15-150</td>
+<td>35 Hz</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pspss---set-pneumatic-setpoint-status">PSPSS - set PNEUMatic SETPOINT STATUS</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Set the status of the pneumatic setpoint. Set this parameter to “1” to use the pneumatic setpoint for all pneumatic axes instead only for the Ztrans, in this case the setpoint will be subtracted from all axes input. Set it to “0” to use the setpoint only for the pneumatic Ztrans-axis.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>UsePneumAxisSetPointForAllAxes</td>
+<td>int</td>
+<td>(0,1)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pgpss---get-pneumatic-setpoint-status">PGPSS - GEt pneumatic setpoint status</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the status of the pneumatic setpoint.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>UsePneumAxisSetPointForAllAxes</td>
+<td>int</td>
+<td>(0,1)</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><em>UsePneumAxisSetPointForAllAxes:</em> 0 means the running setpoint will be used only by the pneumatic Ztrans axis. 1 means the running setpoint will be used for all pneumatic axes.</p>
+<h3 id="pgpst---get-position-status-timer">PGPST - GEt Position status Timer</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td><p>This command retrieves the two values of the time periods of the last position (VertLoopStatus) okay and VertLoopStatus not okay states.</p>
+<p>This Command is supported in firmware version 3.3.31 and higher.</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+<td>default</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>PositionOKTimer [seconds]</p>
+<p>PositionNOKTimer [seconds]</p></td>
+<td><p>float</p>
+<p>float</p></td>
+<td><p>-</p>
+<p>-</p></td>
+<td><p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="velocity-group">VELOcity Group</h2>
+<h3 id="vssmv---set-velocity-sensor-matrix">VSSMV - set velocity sensor matrix</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Specify the sensor-steering matrix of the velocity loop. This includes multiplicators for each of the geophone sensors that may be used.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+SensorMult[7]</td>
+<td>int<br>
+float</td>
+<td>NumVelAxes<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vgsmv---get-velocity-sensor-matrix">VGSMV - get velocity sensor matrix</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the sensor steering matrix of the velocity loop used for the specified axis.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>Axis</td>
+<td>int</td>
+<td>NumVelAxes</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>SensorMult[7]</td>
+<td>float</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vsmmv---set-velocity-motor-matrix">VSMMV - set velocity motor matrix</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set the motor steering matrix of the velocity loop. This means, how to calculate motor outputs out of a logical axis signal. Specify multiplicators for each of the possible 12 motors.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+MotorMult[12]</td>
+<td>int<br>
+float</td>
+<td>NumVelAxes<br>
+-</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vgmmv---get-velocity-motor-matrix">VGMMV - get velocity motor matrix</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the motor steering matrix of the velocity loop subsystem for the specified axis.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>Axis</td>
+<td>int</td>
+<td>NumVelAxes</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>MotorMult[12]</td>
+<td>float</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vsvfs---set-velocity-filterstage">VSVFS - set velocity filterstage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Set one filterstage in the velocity loop subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>Axis<br>
+Stage<br>
+FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>int<br>
+int<br>
+ftype<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>NumVelAxes<br>
+NumVelStages<br>
+MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vgvfs---get-velocity-filterstage">VGVFS - get velocity filterstage</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Get one filterstage in the velocity loop subsystem.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td>Axis<br>
+Stage</td>
+<td>int<br>
+int</td>
+<td>NumVelAxes<br>
+NumVelStages</td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td><p>FilterType<br>
+Parameter1<br>
+Parameter2<br>
+Parameter3</p>
+<p>Parameter4</p>
+<p>Parameter5</p></td>
+<td><p>ftype<br>
+float<br>
+float<br>
+float</p>
+<p>float</p>
+<p>float</p></td>
+<td><p>MaxFilter<br>
+-<br>
+-<br>
+-</p>
+<p>-</p>
+<p>-</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="vggiv---get-geophone-input-values">VGGIV - get geophone input values</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description:</td>
+<td>Get the current reading of the geophone sensors.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr>
+<td>Input:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Output:</td>
+<td>GeoInputs[NumGeo] (digit)</td>
+<td>int</td>
+<td>+/-32767</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-commands">Additional Commands</h2>
+<h3 id="lspsl---set-power-supply-unit-limitation-config">LSpsl - set power supply unit limitation config</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>Specify the power supply unit limitation config parameters.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>CurrentLimitValue<br>
+CurrentSIUnit</p>
+<p>ResetOverloadsCounter</p>
+<p>ResetMaxCurrentValue</p></td>
+<td><p>float<br>
+float</p>
+<p>int</p>
+<p>int</p></td>
+<td><p>&gt;0<br>
+&gt;0</p>
+<p>[0 – 1]</p>
+<p>[0 – 1]</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lgpsl---get-power-supply-unit-limitation-config">LGpsl - Get power supply unit limitation config</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>Description:</td>
+<td>retrieve the power supply unit limitation config parameters and some other power supply current values and the power supply current overload status.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Parameters</td>
+<td>Type</td>
+<td>Range</td>
+</tr>
+<tr class="odd">
+<td>Input:</td>
+<td><p>CurrentLimitValue<br>
+CurrentSIUnit</p>
+<p>CurrentOverloadStatus</p>
+<p>PositiveCurrentValue</p>
+<p>NegativeCurrentValue</p>
+<p>CompleteCurrentValue</p>
+<p>MaxCurrentValue</p>
+<p>CurrentOverloadsCounter</p></td>
+<td><p>float<br>
+float</p>
+<p>int</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>float</p>
+<p>int</p></td>
+<td><p>&gt;0<br>
+&gt;0</p>
+<p>[0 – 1]</p>
+<p>[0 – 1]</p></td>
+</tr>
+<tr class="even">
+<td>Output:</td>
+<td>none</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h1 id="appendix">Appendix:</h1>
+<h2 id="si-unit-conversion-factors-to-digit">SI Unit conversion factors to digit</h2>
+<p><strong>Note</strong>: Remember that the SI-Unit conversion factors are system dependent and they could vary. The bellow given SI-Unit conversion factors are approximately values for the most standard systems.</p>
+<p>Digit: is the SI-Unit used in the firmware for the mostly parameters.
+<span id="_Toc468451046" class="anchor"></span>Table 5.1: SI unit conversion factors to digits.</p>
+<table>
+<thead>
+<tr>
+<th><strong>SI UNIT</strong></th>
+<th><strong>Conversion factor to digits</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Velocity [mms<sup>-1</sup>]</td>
+<td>17854 digits/mms<sup>-1</sup></td>
+</tr>
+<tr>
+<td>(Telemechanic sensor “18mm type”) Displacement [µm]</td>
+<td>4.7 digits/µm</td>
+</tr>
+<tr>
+<td>(Telemechanic sensor “12mm type”) Displacement [µm]</td>
+<td>8.2 digits/µm</td>
+</tr>
+<tr>
+<td>(Pulsotronic sensor “12mm type”) Displacement [µm]</td>
+<td>9.51 digits/µm</td>
+</tr>
+<tr>
+<td>(Pulsotronic sensor “18mm type”) Displacement [µm]</td>
+<td>5.2 digits/µm</td>
+</tr>
+<tr>
+<td>(LM80 motor, Std. opticon 2A) Force [N]</td>
+<td>204.75 digits/N</td>
+</tr>
+<tr>
+<td>Voltage [V]</td>
+<td>3276.7 digits/V</td>
+</tr>
+</tbody>
+</table>
+<p>All Time constants and parameters in the firmware are in samples. Sometimes parameters are given in seconds. These parameters are converted inside the firmware to samples.</p>
+<p>The time unit in the firmware is based on sample frequency samples.</p>
+<p>1 second = SF samples,</p>
+<p>Where:</p>
+<p>SF is the adjusted sample frequency value.</p>
+<p>The conversion factor for the force is dependent on the used controller and linear motor.</p>
+<p>Use the following equation to calculate the force conversion factor.</p>
+<h2 id="si-unit-conversion-factors-for-the-diagnostic-output">SI Unit conversion factors for the diagnostic output</h2>
+<p>The following table shows the SI unit conversion factors for the opticon diagnostic output.
+<span id="_Toc468451047" class="anchor"></span>Table 5.2: SI unit conversion factors to diagnostic output [voltage].</p>
+<table>
+<thead>
+<tr>
+<th><strong>SI UNIT</strong></th>
+<th><strong>Conversion factor to Voltage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Velocity [mms<sup>-1</sup>]</td>
+<td>5.4649 V/mms<sup>-1</sup></td>
+</tr>
+<tr>
+<td>(telemechanic sensor “18mm type”) Displacement [mm]</td>
+<td>1.43467 V/mm</td>
+</tr>
+<tr>
+<td>(Telemechanic sensor “12mm type”) Displacement [µm]</td>
+<td>2.5025 V/mm</td>
+</tr>
+<tr>
+<td>(Pulsotronic sensor “12mm type”) Displacement [mm]</td>
+<td>2.903 V/mm</td>
+</tr>
+<tr>
+<td>(Pulsotronic sensor “18mm type”) Displacement [µm]</td>
+<td>1.587 V/mm</td>
+</tr>
+<tr>
+<td>(LM80 Std. opticon 2A) Force [N]</td>
+<td>0.0625 V/N</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The conversion factor for the force is dependent on the used controller and linear motor.</p>
+<p>Use the following equation to calculate the force conversion factor.</p>
+<h2 id="status-code">Status code</h2>
+<p><span id="_Toc468451048" class="anchor"></span>Table 5.3: Status codes and their specific values.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Status code</strong></th>
+<th><strong>Value (hex)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TC_SUCCESS</td>
+<td>0x00</td>
+</tr>
+<tr>
+<td>TC_BAD_CRL</td>
+<td>0x01</td>
+</tr>
+<tr>
+<td>TC_INCOMPLETE_COMMAND</td>
+<td>0x02</td>
+</tr>
+<tr>
+<td>TC_UNKNOWN_COMMAND</td>
+<td>0x03</td>
+</tr>
+<tr>
+<td>TC_INVALID_CHAR</td>
+<td>0x04</td>
+</tr>
+<tr>
+<td>TC_INVALID_ONOFF_VALUE</td>
+<td>0x05</td>
+</tr>
+<tr>
+<td>TC_INVALID_FLOAT</td>
+<td>0x06</td>
+</tr>
+<tr>
+<td>TC_INVALID_INTEGER</td>
+<td>0x07</td>
+</tr>
+<tr>
+<td>TC_INVALID_HEX</td>
+<td>0x08</td>
+</tr>
+<tr>
+<td>TC_INVALID_FILTER_STAGE</td>
+<td>0x09</td>
+</tr>
+<tr>
+<td>TC_INVALID_AXIS_CODE</td>
+<td>0x0A</td>
+</tr>
+<tr>
+<td>TC_INVALID_FILTER_PARAM</td>
+<td>0x0B</td>
+</tr>
+<tr>
+<td>TC_INVALID_FILTER_TYPE</td>
+<td>0x0C</td>
+</tr>
+<tr>
+<td>TC_INVALID_FF_SOURCE</td>
+<td>0x0D</td>
+</tr>
+<tr>
+<td>TC_OUT_OF_RANGE</td>
+<td>0x0E</td>
+</tr>
+<tr>
+<td>TC_PASSTHRU_OFF</td>
+<td>0x0F</td>
+</tr>
+<tr>
+<td>TC_NVRAM_PROTECTED</td>
+<td>0x10</td>
+</tr>
+<tr>
+<td>TC_NOT_ALLOWED_NOW</td>
+<td>0x11</td>
+</tr>
+<tr>
+<td>TC_KASSANDRA_NOT_RESPONDING</td>
+<td>0x12</td>
+</tr>
+<tr>
+<td>TC_KASSANDRA_NOT_PRESENT</td>
+<td>0x13</td>
+</tr>
+<tr>
+<td>TC_EVENT_LOGGING_IS_STARTED</td>
+<td>0x14</td>
+</tr>
+<tr>
+<td>TC_NO_EVENT_TRACES_IS_SAVED</td>
+<td>0x15</td>
+</tr>
+<tr>
+<td>TC_COMM_MENU_NOT_ALLOWED</td>
+<td>0xFB</td>
+</tr>
+<tr>
+<td>TC_TIMEOUT</td>
+<td>0xFC</td>
+</tr>
+<tr>
+<td>TC_SLAVE_COMM_FAIL</td>
+<td>0xFD</td>
+</tr>
+<tr>
+<td>TC_ABORT_STATUS</td>
+<td>0xFE</td>
+</tr>
+<tr>
+<td>TC_COMMAND_NOT_IMPLEMENTED</td>
+<td>0xFF</td>
+</tr>
+</tbody>
+</table>
+<h2 id="temperature-sensors-ad-mapping">Temperature sensors AD-Mapping</h2>
+<p><span id="_Toc468451049" class="anchor"></span>Table 5.4: Linear motor temperature sensor AD-Mapping.</p>
+<table>
+<thead>
+<tr>
+<th>Temperature Sensor</th>
+<th>AD-Mapping standard opticon</th>
+<th>AD-Mapping 19&quot; opticon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X1MotorTemp</td>
+<td>44</td>
+<td>44</td>
+</tr>
+<tr>
+<td>Y1MotorTemp</td>
+<td>26</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Z1MotorTemp</td>
+<td>27</td>
+<td>29</td>
+</tr>
+<tr>
+<td>X2MotorTemp</td>
+<td>28</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Y2MotorTemp</td>
+<td>44</td>
+<td>44</td>
+</tr>
+<tr>
+<td>Z2MotorTemp</td>
+<td>29</td>
+<td>31</td>
+</tr>
+<tr>
+<td>X3MotorTemp</td>
+<td>44</td>
+<td>44</td>
+</tr>
+<tr>
+<td>Y3MotorTemp</td>
+<td>30</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Z3MotorTemp</td>
+<td>31</td>
+<td>33</td>
+</tr>
+<tr>
+<td>X4MotorTemp</td>
+<td>32</td>
+<td>34</td>
+</tr>
+<tr>
+<td>Y4MotorTemp</td>
+<td>44</td>
+<td>44</td>
+</tr>
+<tr>
+<td>Z4MotorTemp</td>
+<td>33</td>
+<td>35</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rci-messages-examples">RCI-Messages Examples</h2>
+<h3 id="rci-command-using-length-and-crc">RCI-command using length and CRC</h3>
+<p>The following RCI-Commands contain massage length and CRC. Both values will be checked from TC and in case of rejection based on those values the TC response with an error message.</p>
+<p>Use the current proximity values as offset:</p>
+<p>Command: “:0B000 CAUCO39&lt;\r&gt;”Response: “:0F0000 00 CAUCO2D&lt;\r\n\r\r&gt;”</p>
+<p>Command: “:0B000 CAUCO34&lt;\r&gt;” Response: “:0D01CRC ERROR5F&lt;\r\n\r\r&gt;”</p>
+<p>Get the proximity offset values:</p>
+<p>Command: “:0B000 CGPOV2F&lt;\r&gt;“ Response: “:5D0000 00 CGPOV -1.00000E+00 -4.00000E+00 -1.00000E+00 -5.00000E+00 +1.00000E+00 -5.00000E+003F&lt;\r\n\r\r&gt;“</p>
+<p>Set velocity sensor matrix values:</p>
+<p>Command: „:6A000 VSSMV 0 -1.00000E+00 +0.00000E+00 +0.00000E+00 +1.00000E+00 +0.00000E+00 +0.00000E+00 +0.00000E+00 77&lt;\r&gt;“ Response: “:0F0000 00 VSSMV3B&lt;\r\n\r\r&gt;“</p>
+<h3 id="rci-command-without-checking-crc">RCI-command without checking CRC</h3>
+<p>The CRC of the next commands message will not be checked from the TC, because CRC is set to the string “##”.</p>
+<p>Use the current proximity values as offset:</p>
+<p>Command: “:0B000 CAUCO##&lt;\r&gt;” Response: “:0F0000 00 CAUCO2D&lt;\r\n\r\r&gt;”</p>
+<p>Command: “:0A000 CAUCO##&lt;\r&gt;”</p>
+<p>Response: “:1301LENGTH MISMATCH3B&lt;\r\n\r\r&gt;”</p>
+<p>Get the proximity offset values:</p>
+<p>Command: “:0B000 CGPOV##&lt;\r&gt;“ Response: “:5D0000 00 CGPOV -1.00000E+00 -4.00000E+00 -1.00000E+00 -5.00000E+00 +1.00000E+00 -5.00000E+003F&lt;\r\n\r\r&gt;“</p>
+<p>Command: “:0C000 CGPOV ##&lt;\r&gt;“ Response: “:5D0000 00 CGPOV -1.00000E+00 -4.00000E+00 -1.00000E+00 -5.00000E+00 +1.00000E+00 -5.00000E+003F&lt;\r\n\r\r&gt;“</p>
+<p>Command: “:0G000 CGPOV##&lt;\r&gt; “</p>
+<p>Response: “:1201LENGTH NOT HEX1E&lt;\r\n\r\r&gt;”</p>
+<p>Set velocity sensor matrix values:</p>
+<p>Command: „:68000 VSSMV 0 -1.00000E+00 +0.00000E+00 +0.00000E+00 +1.00000E+00 +0.00000E+00 +0.00000E+00 +0.00000E+00##&lt;\r&gt;“ Response: “:0F0000 00 VSSMV3B&lt;\r\n\r\r&gt;“</p>
+<p>Command: „:68000 VSSMV 6 -1.00000E+00 +0.00000E+00 +0.00000E+00 +1.00000E+00 +0.00000E+00 +0.00000E+00 +0.00000E+00##&lt;\r&gt;“ Response: “:0F0E00 0E VSSMV3B&lt;\r\n\r\r&gt;“</p>
+<h3 id="rci-command-without-checking-length-and-crc">RCI-command without checking length and CRC</h3>
+<p>In the following RCI-Commands the message length and CRC are set to the string “##”. This leads the TC to ignore both values.</p>
+<p>Use the current proximity values as offset:</p>
+<p>Command: “:##000 CAUCO##&lt;\r&gt;” Response: “:0F0000 00 CAUCO2D&lt;\r\n\r\r&gt;”</p>
+<p>Get the proximity offset values:</p>
+<p>Command: “:##000 CGPOV##&lt;\r&gt;“ Response: “:5D0000 00 CGPOV -1.00000E+00 -4.00000E+00 -1.00000E+00 -5.00000E+00 +1.00000E+00 -5.00000E+003F&lt;\r\n\r\r&gt;“</p>
+<p>Set velocity sensor matrix values:</p>
+<p>Command: „:##000 VSSMV 0 -1.00000E+00 +0.00000E+00 +0.00000E+00 +1.00000E+00 +0.00000E+00 +0.00000E+00 +0.00000E+00##&lt;\r&gt;“ Response: “:0F0000 00 VSSMV3B&lt;\r\n\r\r&gt;“</p>
+<h3 id="rci-command-with-a-response-length-greater-than-0xf8">RCI-command with a response length greater than 0xF8</h3>
+<p>The length of the nest controller response is 0x120, because the length is represented in two hex values, therefore only the first byte is sending and this is the 0x20. What is wrong and should be ignored.</p>
+<p>Command: “:##!1C DGMSV 0 20##&lt;\r&gt;”</p>
+<p>Response: “:20!01C 00 DGMSV -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+00 -2.01581E+0068&lt;\r\n\r\r&gt;“</p>
+<p>The length of the next controller response is 0x217, because the length is represented in two hex values, therefore only the first byte is sending and this is the 0x17. What is wrong and should be ignored.</p>
+<p>Command: “ :##!1D DGMSV 0 39##&lt;\r&gt; “</p>
+<p>Response: „:17!01D 00 DGMSV -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+00 -1.63919E+0029&lt;\r\n\r\r&gt;“</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

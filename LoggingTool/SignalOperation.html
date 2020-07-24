@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Log manipulation SignalOperation operation value | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Log manipulation SignalOperation operation value | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="log-manipulation-signaloperation-operation-value">Log manipulation <em>SignalOperation</em> operation value</h1>
+
+<p>The <strong>SignalOperation</strong> <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-operation">lmpo-operation</a> contains a varios actions. It's value consists of a collection of signal manipulation commands <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-cmd">lmpo-cmd</a>.<br>
+A &quot;<strong>lmpo-cmd</strong>&quot; consists of  <strong><em>cmd-name</em></strong>  &quot;<em>italic</em>, <strong>polt</strong> &quot; and list of <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#cmd-config"><strong>cmd-config</strong></a> seperated by a semicolon &quot;;&quot; or semicolon+space &quot;; &quot;.<br>
+A <strong>cmd-config</strong> consists of a keyword &quot;<strong>polt</strong>&quot; and a value, they are seperated by a colon &quot;:&quot; or by a colon+space &quot;: &quot;. Some <strong>cmd_configs</strong> are valueless.
+The following table describes all possible <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#sam-cmd">lmpo-cmds</a> of the <strong>Operation</strong> <a class="xref" href="../sidimat19xa/am-cmds/definitions.html#lmpo-operation">lmpo-operation</a>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>sam-cmd</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ <em><strong>remove-points</strong></em>; <strong>sig1</strong>:x; <strong>sig2</strong>:x; ...; <strong>sign</strong>:x; <strong>first</strong>:x; <strong>last</strong>:x; <strong>index1</strong>:x; <strong>index2</strong>:x }</td>
+<td>removes points from the listed signals (sig1 ... sign).</td>
+</tr>
+<tr>
+<td>{ <em><strong>title</strong></em>; <strong>sig</strong>:x; <strong>title</strong>:title; }</td>
+<td>changes the title of sig.</td>
+</tr>
+<tr>
+<td>{ <em><strong>clone</strong></em>; <strong>sig</strong>:x; <strong>newsig</strong>:x; [<strong>title</strong>:x;] }</td>
+<td>clones sig to newsig and set title to newsig.</td>
+</tr>
+<tr>
+<td>{ <em><strong>remove</strong></em>; <strong>sig1</strong>:x; <strong>sig2</strong>:x; ...; <strong>sign</strong>:x}</td>
+<td>removes all listed signals (sig1 ... sign) from signals dictionary.</td>
+</tr>
+<tr>
+<td>{ <em><strong>add-from-csv</strong></em>; <strong>file</strong>:filepath; <strong>sig</strong>:x; }</td>
+<td>export <strong>sig</strong> from signals dictionary to a csv file.</td>
+</tr>
+<tr>
+<td>{ <em><strong>export-to-csv</strong></em>; <strong>file</strong>:x; <strong>sig</strong>:x; [<strong>title</strong>:x;] }</td>
+<td>add <strong>newsig</strong> from a csv file to signals dictionary and set title to newsig. The <strong>newsig</strong> will be labeled with <strong>title</strong>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>xysig</strong></em>; <strong>xsig</strong>:x; <strong>ysig</strong>:x; <strong>newsig</strong>:x; [<strong>title</strong>:x;] }</td>
+<td>build new signal (x: xsig y-axis, y: ysig y-axis). The <strong>newsig</strong> will be labeled with <strong>title</strong>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>add</strong></em>; <strong>sig</strong>:x; <strong>factor</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x]  }</td>
+<td>add <strong>factor</strong> to <strong>sig</strong> and optional save the resultto <strong>newsig</strong>.The <strong>newsig</strong> will be labeled with <strong>title</strong>. If <strong>newsig</strong> ist ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>mult</strong></em>; <strong>sig</strong>:x; <strong>factor</strong>:x; [<strong>newsig</strong>:x;] }</td>
+<td>multiply <strong>factor</strong> with <strong>sig</strong> and optional save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>divide</strong></em>; <strong>sig</strong>:x; <strong>factor</strong>:x; [<strong>newsig</strong>:x;] }</td>
+<td>divide <strong>sig</strong> through <strong>factor</strong> and optional save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>subt</strong></em>; <strong>sig</strong>:x; <strong>factor</strong>:x; [<strong>newsig</strong>:x;] }</td>
+<td>subtracts <strong>factor</strong> from <strong>sig</strong> and optional save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>avg</strong></em>; <strong>sig</strong>:x; <strong>param</strong>:x; [<strong>mult</strong>:x]}</td>
+<td>build the average value of <strong>sig</strong> y-value-serie then optionally multiply the result with <strong>mult</strong> and save the result to <strong>param</strong> in the parameter dictionary.</td>
+</tr>
+<tr>
+<td>{ <em><strong>max</strong></em>; <strong>sig</strong>:x; <strong>param</strong>:x; ; [<strong>mult</strong>:x]}</td>
+<td>build the maximum value of <strong>sig</strong> y-value-serie then optionally multiply the result with <strong>mult</strong> and save the result to <strong>param</strong> in the parameter dictionary.</td>
+</tr>
+<tr>
+<td>{ <em><strong>min</strong></em>; <strong>sig</strong>:x; <strong>param</strong>:x; [<strong>mult</strong>:x]}</td>
+<td>build the minimum value of <strong>sig</strong> y-value-serie then optionally multiply the result with <strong>mult</strong> and save the result to <strong>param</strong> in the parameter dictionary.</td>
+</tr>
+<tr>
+<td>{ <em><strong>std</strong></em>; <strong>sig</strong>:x; <strong>param</strong>:x; [<strong>mult</strong>:x]}</td>
+<td>build the standard diviation value of <strong>sig</strong> y-value-serie then optionally multiply the result with <strong>mult</strong> and save the result to <strong>param</strong> in the parameter dictionary.</td>
+</tr>
+<tr>
+<td>{ <em><strong>pkpk</strong></em>; <strong>sig</strong>:x; <strong>param</strong>:x; [<strong>mult</strong>:x]}</td>
+<td>build the peak-to-peak value of <strong>sig</strong> y-value-serie then optionally multiply the result with <strong>mult</strong> and save the result to <strong>param</strong> in the parameter dictionary.</td>
+</tr>
+<tr>
+<td>{ <em><strong>median</strong></em>; <strong>sig</strong>:x; <strong>length</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;] }</td>
+<td>calculate the median (with the length <strong>length</strong>) of the <strong>sig</strong> y-values and optionally save the result to <strong>newsig</strong>. The <strong>newsig</strong> is labeled with <strong>title</strong>. If <strong>newsig</strong> is ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>average</strong></em>; <strong>sig</strong>:x; <strong>length</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;] }</td>
+<td>calculate the average (with the length <strong>length</strong>) of the <strong>sig</strong> y-values and optionally save the result to <strong>newsig</strong>. The <strong>newsig</strong> is labeled with <strong>title</strong>. If <strong>newsig</strong> is ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>rms</strong></em>; <strong>sig</strong>:x; <strong>length</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;] }</td>
+<td>calculate the root mean square &quot;rms&quot; (with the length <strong>length</strong>) of the <strong>sig</strong> y-values and optionally save the result to <strong>newsig</strong>. The <strong>newsig</strong> will be labeled with <strong>title</strong>. If <strong>newsig</strong> is ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>derivative</strong></em>; <strong>sig</strong>:x; <strong>length</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;] }</td>
+<td>calculate the derivative of the <strong>sig</strong> y-values and optionally save the result to <strong>newsig</strong>. The <strong>newsig</strong> will be labeled with <strong>title</strong>. If <strong>newsig</strong> is ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>integrate</strong></em>; <strong>sig</strong>:x; <strong>length</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;] }</td>
+<td>integrates the <strong>sig</strong> y-values and optionally save the result to <strong>newsig</strong>. The <strong>newsig</strong> will be labeled with <strong>title</strong>. If <strong>newsig</strong> is ommitted the <strong>sig</strong> will be overwritten.</td>
+</tr>
+<tr>
+<td>{ <em><strong>add-2sig</strong></em>; <strong>sig1</strong>:x; <strong>sig2</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;]}</td>
+<td>add <strong>sig1</strong> with <strong>sig2</strong> and optionally save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig1</strong> will be overwritten. The <strong>newsig</strong> will be labeled with <strong>title</strong>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>mult-2sig</strong></em>; <strong>sig1</strong>:x; <strong>sig2</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;]}</td>
+<td>multiply <strong>sig1</strong> with <strong>sig2</strong> and optionally save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig1</strong> will be overwritten. The <strong>newsig</strong> will be labeled with <strong>title</strong>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>subt-2sig</strong></em>; <strong>sig1</strong>:x; <strong>sig2</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;]}</td>
+<td>subract <strong>sig2</strong> from <strong>sig1</strong> and optionally save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig1</strong> will be overwritten. The <strong>newsig</strong> will be labeled with <strong>title</strong>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>divide-2sig</strong></em>; <strong>sig1</strong>:x; <strong>sig2</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;]}</td>
+<td>divide <strong>sig1</strong> through <strong>sig1</strong> and optionally save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig1</strong> will be overwritten. The <strong>newsig</strong> will be labeled with <strong>title</strong>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>derivative-2sig</strong></em>; <strong>sig1</strong>:x; <strong>sig2</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;]}</td>
+<td>calculate the derivative of the <strong>sig1</strong> y-values using <strong>sig2</strong> y-axis as x-axis and optionally save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig1</strong> will be overwritten. The <strong>newsig</strong> will be labeled with <strong>title</strong>.</td>
+</tr>
+<tr>
+<td>{ <em><strong>integrate-2sig</strong></em>; <strong>sig1</strong>:x; <strong>sig2</strong>:x; [<strong>newsig</strong>:x;] [<strong>title</strong>:x;]}</td>
+<td>integarte <strong>sig1</strong> y-values using <strong>sig2</strong> x-axis and optionally save the result to <strong>newsig</strong>. If <strong>newsig</strong> is ommitted the <strong>sig1</strong> will be overwritten. The <strong>newsig</strong> will be labeled with <strong>title</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<h3 id="example1">Example1</h3>
+<p>The following operation actions listed below measures the open/closed force mobilty transfer function of the Yrot axis.</p>
+<pre><code class="lang-xml">&lt;Operation Name=&quot;SignalOperation&quot;&gt;
+  &lt;Value&gt;
+    &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;remove-points;last:2; sig1:F1S1; sig2:F1S2; sig3:F1S3; sig4:F1S4; sig5:F1S5&lt;/anyType&gt;
+    &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;remove-points;first:2; sig1:F1S1; sig2:F1S2; sig3:F1S3; sig4:F1S4; sig5:F1S5&lt;/anyType&gt;
+    &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;remove-points;index1:20;index2:40; sig1:F1S1; sig2:F1S2; sig3:F1S3; sig4:F1S4; sig5:F1S5&lt;/anyType&gt;
+    &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xysig; ysig:F1S2; xsig:F1S1; newsig:F1S2M&lt;/anyType&gt;  
+    &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xysig; ysig:F1S3; xsig:F1S1; newsig:F1S3M; title:Polyout-Excitation&lt;/anyType&gt;
+    &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xysig; ysig:F1S4; xsig:F1S1; newsig:F1S4M&lt;/anyType&gt;
+  &lt;/Value&gt;
+&lt;/Operation&gt;
+</code></pre>
+<h3 id="example2">Example2</h3>
+<pre><code class="lang-xml">&lt;!-- Yrot Axis--&gt;
+   &lt;AutoMeasurent Name=&quot;FMYrotRawOCL&quot; IsEnabled=&quot;true&quot;&gt;
+    &lt;OperationList&gt;
+      &lt;Operation Name=&quot;Operation&quot;&gt;
+        &lt;Value&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;individual-loopstatus; velocity:101111&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;clear-cached-measurements;&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;trace-sig;signum:2; type:2; mainindex:4; subindex:-1&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;excit-sig;type:4; mainindex:4; &lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;waitms; time:2000;&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;measure;&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;cache-measurement;&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;individual-loopstatus; velocity:111111&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;waitms; time:2000;&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;measure;&lt;/anyType&gt;
+        &lt;/Value&gt;
+      &lt;/Operation&gt;
+
+      &lt;Operation Name=&quot;Save&quot;&gt;
+        &lt;Value&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;frf2fig;file:Yrot_Raw_OCL_AW_FRF.idefigure&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;time2fig;file:Yrot_Raw_OCL_AW_TimeSpec.idefigure&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;frf2pic;file:Yrot_Raw_OCL_AW_FRF.png&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;time2pic;file:Yrot_Raw_OCL_AW_TimeSpec.png&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;raw;file:Yrot_Raw_OCL_AW.sidimat19x&lt;/anyType&gt;
+        &lt;/Value&gt;
+      &lt;/Operation&gt;
+      &lt;Operation Name=&quot;CheckSpec_#FMYr0OCLAW&quot;&gt;
+        &lt;Value&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;cache;file:Yrot_Raw_OCL_AW_FRF.idefigure&lt;/anyType&gt;
+         &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;max; sig:F1P1S2; specmin:18.5; specmax:23.7;rmin:1;rmax:15&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;max-pos; sig:F1P1S2; specmin:2.0; specmax:3.0; rmin:1; rmax:15&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;ocl-lbw; olsig:F1P1S2; clsig:F1P1S1; rmin:1; rmax:14; specmax:1.5&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;ocl-hbw;olsig:F1P1S2; clsig:F1P1S1; specmin:11; rmin:1; rmax:14;&lt;/anyType&gt;
+        &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;ocl-damp;olsig:F1P1S2; clsig:F1P1S1; specmin:17; rmin:1; rmax:14;&lt;/anyType&gt;
+        &lt;/Value&gt;
+      &lt;/Operation&gt;
+      &lt;Operation Name=&quot;Report&quot;&gt;
+        &lt;Value&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;para3;Yrot Force Mobility at raw input Open/Close Loop&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;text;Here are the force mobility measurements. Measured at the velocity axes raw input&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;pic;Measurements\ForceMobility\Raw_OCL_AW\Yrot_Raw_OCL_AW_FRF.png&lt;/anyType&gt;
+        &lt;/Value&gt;
+      &lt;/Operation&gt;
+    &lt;/OperationList&gt;
+    &lt;/AutoMeasurent&gt;
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sidimat19xA Auto Measurement Operations </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sidimat19xA Auto Measurement Operations ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sidimat19xa-auto-measurement-operations">Sidimat19xA Auto Measurement Operations</h1>
+
+<p>The Sidimat auto measurement operation consist of operation name and anset of operation value. The value is a collection of objects.</p>
+<p><em>Operation name</em> | <em>Value (Cmds)</em> | <em>Description</em>
+-- | -- | --
+<em>CheckSpec</em> | See <a href="CheckSpecValue.html">CheckSpec Value</a> | Checks the specification of one or many curves of an IDEFigure figure.
+<em>Report</em> | see <a href="ReportValue.html">Report Value</a> | Writes an entry to the auto measurement report. Its value contains a collection of actions (operations).
+<em>OpenAndExcuteAutoMeasurementFile</em> | {<em>filepath</em>} | Opens the auto measurement file <em>filepath</em> and excutes it. The <em>filepath</em> has the extension <em>.SiDiMaTAMF</em>.
+<em>Measure</em> | {None} | Evaluates the sidimat19xa measurement.
+<em>RCICommand</em> | {Valid ascii RCI-Command} | Sends the ascii RCI-Command to controller.
+<em>InvokeRCIMethod</em> | {Not supported} |
+<em>SetParameter</em> | {Not supported} |
+<em>Operation</em> | See <a href="OperationValue.html">Operation Value</a>
+<em>SetTraceInfo</em> | { } | Configures the trace setting parameters.
+<em>SetExcitSig</em> | { } | Sets the setting of the excitation signal.
+<em>SetExcitFil</em> | {filnum;type;p1;p2;p3;p4;p5} |Sets an excitation file.
+<em>SetExcitSetting</em> | {iosig} | Set the injection point of the excitation signal. The value of this operation is from type IOSignalType {type mainindex subindex}.
+<em>ExcitFilterUsage</em> | {on or off} | toggles the filtering of the excitation signal on/off.
+<em>VelIndividualLoopStatus</em> | {status} | Sets the status of the individual velocity loop. the format of status is binary.
+<em>OverAllActiveLoopStatus</em> | {status} | Sets the OverallActive status. The value status could be one from the following states {on, off}.
+<em>SystemLoopStatus</em> | {action} | Evaluates an system loop status action. The value action could be one action or many by space seperated actions from the following actions {Read, Cache, Restore, OverAllOff, OverAllOff, FFOn, FFOff, PFFOn, PFFOff, PneumOn, PneumOff}.
+<em>CacheMeasurement</em> | {none} | caches the actual sidimat measurement.
+<em>ClearAllCachedMeasurement</em> | {none} | clears all cached sidimat measurements.
+<em>Waitms</em> | {ms} | Forces the auto measuring thread to sleep for the specific time ms. ms is given in milisecond.
+<em>ChangeCreateDirectory</em> | {path} | Sets the auto measurement work directory (WorkPath) to path. The value path could be relative or absolute.
+<em>ResetDirectory</em> | {none} | Sets the work-path to the original-path.
+<em>SaveRawMeasurement</em> | {<em>filepath</em>} | Saves Sidimat measurement including the cached measurement to .sidimat19x file (path). The value path has the extension .sidimat19x and could be absolute or relative. If path string contains ':' then the path is assumed absolute.
+<em>SaveFRFFigure</em> | {<em>filepath</em>} | Saves the frequency response figure of Sidimat measurement including the cached measurement to .IDEFigure file (path). The value path has the extension .IDEFigure and could be absolute or relative.
+<em>SaveTimeSpecFigure</em> | {<em>filepath</em>} | Saves the time/spectrum figure of Sidimat measurement including the cached measurement to .IDEFigure file (path). The value path has the extension .IDEFigure and could be absolute or relative.
+<em>SaveFRF2Picture</em> | {<em>filepath</em>} | Saves the frequency response figure of Sidimat measurement including the cached measurement to .png file (path). The value path has the extension .png and could be absolute or relative.
+<em>SaveTimeSpec2Picture</em> | {<em>filepath</em>} | Saves the time/spectrum figure of Sidimat measurement including the cached measurement to .png file (path). The value path has the extension .IDEFigure and could be absolute or relative.
+<em>RescalePlots</em> | {plots} | Rescale the sidimat plots listed is the value plots. The value plots could be one plot or many by space seperated plots from the following plots {Amplitude, Phase, Coherence, Time1, Time2, Spectrum1, Spectrum2}.
+<em>AddCurveFromCsvFileTo</em> | {<em>filepath</em>;plots} | Adds curve x/y-pairs from a simicolon seperated .csv file (<em>filepath</em>) to sidimat plot. The value path has the extension .csv and could be absolute or relative. The value plots could be one plot or many by space seperated plots from the following plots {Amplitude, Phase, Coherence, Time1, Time2, Spectrum1, Spectrum2}.
+<em>Save</em> | See <a href="SaveValue.html">Save Value</a> | Saves an idefigure to file or picture. It also saves a sidimat19x raw measurement.
+<em>Logg</em> | See <a href="LoggValue.html">Logg Value</a> | Handles the internal logging actions.
+<em>Measurement</em> | See  <a href="MeasurementValue.html">Measurement Value</a> | Handles the internal logging actions.
+<a id="filepath"></a> <strong><em>filepath</em></strong>: If <em>filepath</em> string contains a colon ':' or start with or backslash &quot;\\&quot;, then absolute path is assummed, otherwise the path is relative to <em>working directory</em>.<br>
+<a id="path"></a><strong><em>path</em></strong>: If <em>path</em> string contains a colon ':' or start with double backslash &quot;\\&quot; , then absolute path is assummed, otherwise the path is relative to <em>working directory</em>.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

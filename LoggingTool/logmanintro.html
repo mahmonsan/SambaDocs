@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>LoggManXml | SAMBA19x Website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="LoggManXml | SAMBA19x Website ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="loggmanxml">LoggManXml</h1>
+
+<p>To prepare and plot a logged data set it is a convenient way to use a data manipulation and plotting script file <strong>.LoggManXml</strong>.<br>
+The <strong>.LoggManXml</strong> file has xml format and consists of a various actions like <strong>SignalActions</strong> to prepare the logged data, <strong>SubplotActions</strong> to plot the prepared data or the raw data and to config the plot property and <strong>FigureActions</strong> to config all plots inside the figure with the same properties.
+There are basically a couple of operations, <a href="SignalOperation.html">SignalOperation</a> is used by <strong>SignalActions</strong> , <a href="PlotPropertyOperation.html">PlotProperty</a>, <a href="AnnotationOperation.html">Annotation</a> are used by <strong>SubplotActions</strong> and <strong>FigureActions</strong> and <a href="FigureOperation.html">FigureOperation</a> used by <strong>FigureActions</strong>.
+Optionally there are <strong>PostOperations</strong> to save figures and plot to pictures after finishing tha plotting.</p>
+<p>This is a sample file for <strong>.LoggManXml</strong> file.</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;SignalAndFigureConfiguration xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; FileVersion=&quot;1&quot;&gt;
+ &lt;OpenMultiDataFile&gt;false&lt;/OpenMultiDataFile&gt;
+  &lt;!-- Number of logged data files to open--&gt;
+  &lt;DataFilesNumber&gt;1&lt;/DataFilesNumber&gt;
+  &lt;Signals IsActive=&quot;true&quot;&gt;
+    &lt;SignalActions&gt;     
+      &lt;Operation Name=&quot;SignalOperation&quot;&gt;
+        &lt;Value&gt;
+            &lt;!-- multiply the first logged signal of first opened file with 0.10526--&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S1; factor: 0.10526&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S2; factor: 0.10526&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S3; factor: 0.10526&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S4; factor: 0.10526&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S5; factor: 0.10526&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S6; factor: 0.10526&lt;/anyType&gt;
+
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S7; factor:  3.0525e-4&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S8; factor:  3.0525e-4&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S9; factor:  3.0525e-4&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S10; factor:  3.0525e-4&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;mult; sig: F1S11; factor:  3.0525e-4&lt;/anyType&gt;
+          &lt;!-- build average (average length = 3) of signal F1S1 and save the result to newsig AvgProxV1--&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;average; sig: F1S1; length: 3; newsig: AvgProxV1&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;average; sig: F1S2; length: 3; newsig: AvgProxV2&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;average; sig: F1S3; length: 3; newsig: AvgProxV3&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;std; sig: F1S1; param: $3SigmaProxV1; mult: 3&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;std; sig: F1S2; param: $3SigmaProxV2; mult: 3&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;std; sig: F1S3; param: $3SigmaProxV3; mult: 3&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;std; sig: AvgProxV1; param: $3SigmaAvgProxV1; mult: 3&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;std; sig: AvgProxV2; param: $3SigmaAvgProxV2; mult: 3&lt;/anyType&gt;
+          &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;std; sig: AvgProxV3; param: $3SigmaAvgProxV3; mult: 3&lt;/anyType&gt;
+        &lt;/Value&gt;
+      &lt;/Operation&gt;
+    &lt;/SignalActions&gt;
+  &lt;/Signals&gt;
+  &lt;Figures&gt;
+  &lt;!--Fugure#1 !--&gt;
+    &lt;Figure IsActive=&quot;true&quot; Title=&quot;Proximity Sensor&quot; RowNumber=&quot;3&quot; ColumnNumber=&quot;2&quot;&gt;
+      &lt;Subplots&gt;
+        &lt;Subplot Row=&quot;1&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+            &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:ProxV1[um]; major-grid-width:5; minor-grid-width:1;&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S1&lt;/anyType&gt;                
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+            &lt;Operation Name=&quot;Annotation&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type: text; xpos: 10000; ypos: -11; text-content: ProxV1 3Sigma[um]= $3SigmaProxV1&lt;/anyType&gt;   
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#: 1; text-color:#FF0000FF; text-fontsize: 15; background: #40505050; &lt;/anyType&gt;                    
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;1&quot; Column=&quot;2&quot;&gt;
+          &lt;SubPlotActions&gt;
+            &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:ProxH1[um]&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S4&lt;/anyType&gt;                
+              &lt;/Value&gt;
+            &lt;/Operation&gt;            
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;2&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+           &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:ProxV2[um]; major-grid-width:5; minor-grid-width:1;&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S2&lt;/anyType&gt;        
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+           &lt;Operation Name=&quot;Annotation&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type: text; xpos: 10000; ypos: -11; text-content: ProxV2 3Sigma[um]= $3SigmaProxV2&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#: 1; text-color:#FF0000FF; text-fontsize: 15; background: #40505050; &lt;/anyType&gt;                 
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;2&quot; Column=&quot;2&quot;&gt;
+          &lt;SubPlotActions&gt;
+           &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:ProxH2[um]&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S5&lt;/anyType&gt;      
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;3&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+           &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:ProxV3[um]; major-grid-width:5; minor-grid-width:1;&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S3&lt;/anyType&gt; 
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+            &lt;Operation Name=&quot;Annotation&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type: text; xpos: 10000; ypos: -11; text-content: ProxV3 3Sigma[um]= $3SigmaProxV3&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#: 1; text-color:#FF0000FF; text-fontsize: 15; background: #40505050; &lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;3&quot; Column=&quot;2&quot;&gt;
+          &lt;SubPlotActions&gt;
+           &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:ProxH3[um]&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S6&lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+      &lt;/Subplots&gt;
+      &lt;FigureActions&gt;
+         &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+          &lt;Value&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;plot; grid:on&lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xaxis; label:time[sec.];min:0&lt;/anyType&gt;
+          &lt;/Value&gt;
+        &lt;/Operation&gt;
+      &lt;/FigureActions&gt;
+    &lt;/Figure&gt;
+    &lt;!--2 figure !--&gt;
+    &lt;Figure IsActive=&quot;true&quot; Title=&quot;Valve Output&quot; RowNumber=&quot;5&quot; ColumnNumber=&quot;1&quot;&gt;
+      &lt;Subplots&gt;
+        &lt;Subplot Row=&quot;1&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+            &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S7&lt;/anyType&gt; 
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:Valve1[V]&lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;2&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+            &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:Valve2[V]&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S8&lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;3&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+           &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:Valve3[V]&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S9&lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;4&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+           &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:Pvout[bar]&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S10&lt;/anyType&gt;      
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;5&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+           &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:Pin3[bar]&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:F1S11&lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+      &lt;/Subplots&gt;
+      &lt;FigureActions&gt;
+         &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+          &lt;Value&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;plot; grid:on&lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xaxis; label:time[sec.];min:0&lt;/anyType&gt;
+          &lt;/Value&gt;
+        &lt;/Operation&gt;
+      &lt;/FigureActions&gt;
+    &lt;/Figure&gt;
+    &lt;!--3 figure !--&gt;
+    &lt;Figure IsActive=&quot;true&quot; Title=&quot;Average Vertical Proximity Sensor&quot; RowNumber=&quot;3&quot; ColumnNumber=&quot;1&quot;&gt;
+      &lt;Subplots&gt;
+        &lt;Subplot Row=&quot;1&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+            &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:Avg ProxV1[um]; major-grid-width:5; minor-grid-width:1&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:AvgProxV1&lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+            &lt;Operation Name=&quot;Annotation&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type: text; xpos: 10000; ypos: -11; text-content: ProxV1 3Sigma[um]= $3SigmaAvgProxV1&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#: 1; text-color:#FF0000FF; text-fontsize: 15; background: #40505050; &lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;2&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+            &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:Avg ProxV2[um]; major-grid-width:5; minor-grid-width:1&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:AvgProxV2&lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+            &lt;Operation Name=&quot;Annotation&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type: text; xpos: 10000; ypos: -11; text-content: ProxV2 3Sigma[um]= $3SigmaAvgProxV2&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#: 1; text-color:#FF0000FF; text-fontsize: 15; background: #40505050; &lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+        &lt;Subplot Row=&quot;3&quot; Column=&quot;1&quot;&gt;
+          &lt;SubPlotActions&gt;
+           &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+             &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;yaxis; label:Avg ProxV3[um]; major-grid-width:5; minor-grid-width:1&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;curves; sig:AvgProxV3&lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+            &lt;Operation Name=&quot;Annotation&quot;&gt;
+              &lt;Value&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;add; type: text; xpos: 10000; ypos: -11; text-content: ProxV3 3Sigma[um]= $3SigmaAvgProxV3&lt;/anyType&gt;
+                &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;textann; ann#: 1; text-color:#FF0000FF; text-fontsize: 15; background: #40505050; &lt;/anyType&gt;
+              &lt;/Value&gt;
+            &lt;/Operation&gt;
+          &lt;/SubPlotActions&gt;
+        &lt;/Subplot&gt;
+      &lt;/Subplots&gt;
+      &lt;FigureActions&gt;
+         &lt;Operation Name=&quot;PlotProperty&quot;&gt;
+          &lt;Value&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;plot; grid:on&lt;/anyType&gt;
+            &lt;anyType xsi:type=&quot;xsd:string&quot;&gt;xaxis; label:time[sec.];min:0&lt;/anyType&gt;
+          &lt;/Value&gt;
+        &lt;/Operation&gt;
+      &lt;/FigureActions&gt;
+    &lt;/Figure&gt;
+  &lt;/Figures&gt;
+&lt;/SignalAndFigureConfiguration&gt;
+'''
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
